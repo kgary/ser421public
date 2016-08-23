@@ -1,0 +1,2 @@
+These scripts are best tested in the Firefox Firebug console as they often used the percent oh (%o) format specifier but nodeJS for some reason does not support it in their console global instance
+https://github.com/nodejs/node/issues/1716
