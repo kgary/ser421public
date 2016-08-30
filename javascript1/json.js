@@ -15,12 +15,35 @@ var personObj2 = JSON.parse(person);
 console.log(personObj2.firstName);
 
 var f = function(key, val) {
-    console.log("***" + key);
-    console.log("***" + val);
     if (key == "firstName") {
-	return (val+"ee");
+	   return (val+"ee");
     }
+    // Thanks Chris H. for pointing out the 
+    // missing return of val - love Javascript!
+    return val;
 };
 
 var personObj3 = JSON.parse(person, f);
 console.log(personObj3.firstName);
+
+
+
+
+
+
+
+
+var exprArr = ['{first json expr}', '{2nd expr}' ...]
+for (foo in exprArr) calc(foo[i])
+
+
+
+
+
+
+
+
+
+
+
+
