@@ -1,0 +1,53 @@
+<project name="SER422 Servlet Examples 2" default="deploy" basedir=".">
+
+    <property environment="env"/>
+
+    <property name="src"            value="java" />
+    <property name="build"          value="build" />
+    <property name="classes"        value="build/WEB-INF/classes" />
+    <property name="war"            value="servletexamples.war" />
+    <property name="tomcat.home"    value="/Users/kevinagary/work/asu/classes/ser422/spring2015/apache-tomcat-7.0.57"/>
+	
+    <target name="prepare">
+        <tstamp/>
+        <mkdir dir="${build}" />
+        <mkdir dir="${build}/WEB-INF/lib" />
+        <mkdir dir="${classes}" />
+    </target>
+
+    <target name="compile" depends="prepare">
+    	<echo message="Path to CATALINA_HOME is ${tomcat.home}"/>
+        <javac debug="true" srcdir="${src}" destdir="${classes}" >
+            <classpath>
+                <pathelement path="${tomcat.home}/lib/servlet-api.jar" />
+                <pathelement path="${tomcat.home}/lib/jsp.jar" />
+                <pathelement path="lib/jcServlet.jar" />
+                <pathelement path="lib/Acme.jar" />
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="dist" depends="compile">
+        <copy file="web.xml" todir="${build}/WEB-INF" overwrite="yes" />
+
+        <copy todir="${build}" overwrite="yes">
+            <fileset dir="web" includes="*.html, *.jsp" />
+        </copy>
+
+        <copy todir="${build}/WEB-INF/lib" overwrite="yes">
+            <fileset dir="lib" includes="*.jar" />
+        </copy>
+
+        <jar jarfile="${war}" basedir="${build}" />
+    </target>
+
+    <target name="deploy" depends="dist">
+        <copy file="${war}" todir="${tomcat.home}/webapps" overwrite="yes" />
+    </target>
+
+    <target name="clean">
+        <delete dir="${build}" />
+        <delete file="${war}" />
+    </target>
+
+</project>

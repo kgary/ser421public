@@ -1,0 +1,122 @@
+<!--
+   build.xml file for SER422 Spring 2016
+   Copyright 2016 Kevin A. Gary
+
+   This build.xml does most of the things asked of you in the
+   submission guidelines document. However, you may need to 
+   customize actions for these targets per each lab's
+   particular submission requirements, so please take the time
+   to understand how this works!
+-->
+
+<project name="DateServlet" default="compile" basedir=".">
+  <property file="build.properties"/>
+
+  <!-- init target makes the directory structure. You may not
+       require this if you set your environment up by hand. -->
+  <target name="init">
+    <tstamp/>
+    <mkdir dir="lib"/>
+    <mkdir dir="${classes.dir}"/>
+    <mkdir dir="${javadoc.dir}"/>
+    <mkdir dir="${properties.dir}"/>
+  </target>
+
+  <!-- Compiles your java files and puts the classes in classes.dir -->
+  <target name="compile" depends="init">
+    <javac
+      srcdir="${src.dir}"
+      destdir="${classes.dir}">
+      <!-- Make sure you set your classpath! -->
+      <classpath>
+        <fileset dir="${lib.dir}" includes="*.jar"/>
+        <fileset dir="${tomcat.home}-${tomcat.port1}/lib" includes="servlet-api.jar"/>
+        <pathelement path="${classes.dir}" />
+      </classpath>
+    </javac>
+  </target>
+
+  <!-- The deploy target will be highly dependent on your deployed app.
+       For example, if you are building a web-app, you should include
+       commands to copy files over to your deploy directory according
+       to the servlet specification, or create a .war file (via dist)
+       and copy it over. If you are creating a standalone app (like this
+       example does), you can create it in a given directory, or create
+       your dist jar first that can be run using java -jar. -->
+  <target name="deploy" depends="dist">
+    <echo message="Deploying to tomcat at ${tomcat.home}-${port}"/>
+    <copy file="${dist.jar}" todir="${tomcat.home}-${port}/webapps" overwrite="yes"/>
+  </target>
+
+  <target name="deploy-port1" depends="dist">
+    <antcall target="deploy">
+      <param name="port" value="${tomcat.port1}"/>
+    </antcall>
+  </target>
+  <target name="deploy-port2" depends="dist">
+    <antcall target="deploy">
+      <param name="port" value="${tomcat.port2}"/>
+    </antcall>
+  </target>
+  <target name="deploy-all" depends="dist">
+    <antcall target="deploy-port1"/>
+    <antcall target="deploy-port2"/>
+  </target>
+  
+  <target name="build" depends="compile">
+    <mkdir dir="${build.home}"/>
+    <mkdir dir="${build.home}/WEB-INF"/>
+    <copy todir="${build.home}/WEB-INF">
+      <fileset dir="." includes="${classes.dir}/**,${lib.dir}/**" excludes="${classes.dir}/driver/**"/>
+    </copy>
+    <copy todir="${build.home}/WEB-INF/${classes.dir}">
+      <fileset dir="${properties.dir}"/>
+    </copy>
+    <copy file="web.xml" tofile="${build.home}/WEB-INF/web.xml"/>
+  </target>
+    
+  <!-- This example dist target merely jars up the webapp files. -->
+  <target name="dist" depends="build">
+    <jar destfile="${dist.jar}" basedir="${build.home}">
+    </jar>
+  </target>
+
+  <!-- submit creates a single jarfile that you will upload to the
+       Gradebook channel on the class portal. -->
+  <target name="submit" depends="dist,javadoc">
+    <jar destfile="${submit.jar}" basedir="." includes="README.txt,build.properties,build.xml,web.xml,${src.dir}/**,${docs.dir}/**,${javadoc.dir}/**,${properties.dir}/**,${lib.dir}/**,${classes.dir}/**">
+     </jar>
+  </target>
+
+  <!-- Run javadoc on your java source code -->
+  <target name="javadoc" depends="init">
+    <javadoc packagenames="*"
+             sourcepath="src/java"
+             destdir="javadoc"
+             author="true"
+             version="true"
+             windowtitle="Lab 2 APIs"
+             doctitle="InClass"
+             bottom="Copyright 2015 Kevin Gary" />
+  </target>
+
+  <!-- Clean -->
+  <target name="clean">
+    <delete file="${dist.jar}"/>
+    <delete dir="${tomcat.home}-${tomcat-port1}/webapps/${app.name}"/>
+    <delete dir="${tomcat.home}-${tomcat-port2}/webapps/${app.name}"/>
+    <delete file="${tomcat.home}-${tomcat-port1}/webapps/${dist.jar}"/>
+    <delete file="${tomcat.home}-${tomcat.port2}/webapps/${dist.jar}"/>
+    <delete dir="${build.home}"/>
+    <delete dir="${classes.dir}"/>
+  </target>
+
+  <!-- Clean all -->
+  <target name="cleanall" depends="clean">
+    <delete dir="${javadoc.dir}"/>
+    <delete file="${submit.jar}"/>
+  </target>
+
+</project>
+  
+
