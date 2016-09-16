@@ -3,8 +3,11 @@
 
 var events = require('events');
 function Account() {
-  this.balance = 0;
-  events.EventEmitter.call(this);
+    this.balance = 0;
+    // below we make Account an EventEmitter, so this line explicitly
+    // invokes the EventEmitter constructor to initialize its part
+    // of the object (sorta like super(), but not exactly. A mix-in)
+  events.EventEmitter.call(this); 
   this.deposit = function(amount){
     this.balance += amount;
     this.emit('balanceChanged');

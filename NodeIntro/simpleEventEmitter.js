@@ -18,5 +18,5 @@ setTimeout(function() {
 }, 5000);
 setInterval(function() {
     radium.emit('radiation', 'GAMMA');
-}, 500);
-radium.emit('foo', 'BETA');
+}, 500).unref();
+//radium.emit('foo', 'BETA');
