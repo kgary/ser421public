@@ -1,0 +1,128 @@
+<html><head><title>JS3LoadRace3DOMRemoteReplaceDeferEl Example</title>
+<script>console.log('HEAD')
+</script>
+</head>
+<body onloadstart="console.log('ONLOADSTART')" onload='console.log("ONLOAD")'>
+<div id="fb-root"></div>
+<table width="1280">
+<tr><td valign="left" width="10%">ASULOGO</td>
+<td valign="center" width="80%"><CENTER><FONT SIZE="+2">Kevin A. Gary, Ph.D.</FONT></CENTER></td>
+<td valign="right" width="10%"><img src="./images/asulogo.jpg" ALIGN=RIGHT /></td></tr>
+<tr><td colspan="3">ASURIB</td></tr>
+<tr><td width="10%">my picture here</td>
+<td width="90%" colspan="2">
+Welcome to my homepage! I have been on the faculty at ASU since 2004, tenured in 2010. 
+I believe in creating challenging learning experiences for my students that prepares 
+them for industry, the profession, and life! I do this through 
+hands-on, project-based teaching in the 
+<a href="http://softwareenterprise.asu.edu">Software Enterprise</a>, use-inspired 
+applied research (particularly in e-Learning and healthcare), and applying 
+industry best practices in the classroom. My primary area is 
+"Software Engineering", but my interests vary from enterprise computing to mHealth to
+agile and open source software engineering.
+</td></tr> 
+</table>
+    <script>
+        console.log('Finished table 1, starting DOM replace remotely DEFER');
+    </script>
+    <!-- NEW: defer here -->
+    <script src="http://www.public.asu.edu/~kgary/ser421/JSDOMReplace3FooEl.js" defer/>
+<br/>
+<table width="1280">
+  <tr>
+    <td vAlign=top align=left width="25%">
+      <FONT SIZE="+1"><em><strong>Contact Info:</strong></em></FONT><br/>
+	<FONT SIZE="-1">
+    <P>
+      Associate Professor<br/>
+	<a href="http://cidse.engineering.asu.edu">The School of Computing, Informatics, and Decision Systems Engineering</a><br/>
+        <a href="http://engineering.asu.edu/">The Ira A. Fulton Schools of Engineering</a><br/>
+        <a href="http://poly.asu.edu">Software Engineering Program Faculty, Polytechnic Campus</a><br/>
+        7171 Sonoran Arroyo Mall<br/>
+	Peralta 230C <br/>
+        Mesa Arizona 85212<br/>
+        Phone: <a href="tel:1-480-727-1373">(480)727-1373</a><br/>
+	Email:<a href="mailto:kgary@asu.edu">kgary@asu.edu</a><br/>
+	Web: <a href="http://www.public.asu.edu/~kgary">homepage</a>, <a href="http://drgarysblog.blogspot.com">blog</a> <br/>
+<br/>
+	Twitter: <a href="https://twitter.com/drkevingary" class="twitter-follow-button" data-show-count="false">Follow @drkevingary</a>
+<br/>
+	AIM: <a href="aim:GoIm?screenname=myscreenname&message=hello">send an IM</a> <br/>
+ 
+<br/>
+<!--
+Skype 'My status' button
+http://www.skype.com/go/skypebuttons
+-->
+Skype: drkevingary <br/>
+<a href="skype:drkevingary?call"><img src="http://mystatus.skype.com/balloon/drkevingary" style="border: none;" width="150" height="60" alt="My status" /></a>
+<br/>
+    </P>
+	</FONT>
+    </td>
+    <td vAlign=top align=left width="35%">
+<FONT SIZE="+1">
+     <em><strong>Blog entries:</strong></em><br/>
+</FONT>
+<FONT SIZE="-1">
+<script language="JavaScript" src="http://www.feed2js.org//feed2js.php?src=http%3A%2F%2Fdrgarysblog.blogspot.com%2Ffeeds%2Fposts%2Fdefault&amp;chan=title&amp;num=3&amp;desc=150&amp;date=y&amp;targ=y&amp;pc=y&amp;html=p"  type="text/javascript"></script>
+
+<noscript>
+<a href="http://www.feed2js.org//feed2js.php?src=http%3A%2F%2Fdrgarysblog.blogspot.com%2Ffeeds%2Fposts%2Fdefault&amp;chan=title&amp;num=3&amp;desc=200&amp;date=y&amp;targ=y&amp;pc=y&amp;html=y">View RSS feed</a>
+</noscript>
+</FONT>
+    </td>
+    <td vAlign=top align=right width="40%">
+<FONT SIZE="+1">
+     <em><strong>My tweets:</strong></em><br/>
+</FONT>
+<a class="twitter-timeline"  href="https://twitter.com/drkevingary"  data-widget-id="390204299604541440">Tweets by @drkevingary</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<br/>
+<script>console.log('Middle table 2')</script>
+</td>
+  </tr>
+  <tr>
+    <td valign="top" colspan="1">
+      <FONT SIZE="+1"><em><strong>Links:</strong></em></FONT><br/>
+      <ul>
+  	<li><a href="./docs/CVfull.pdf">Current Vitae (including pubs)</a></li>
+        <li><a href="./docs/ASUGradResearch100212.pdf">Graduate seminar presentation of research projects (2012)</a></li>
+	<li><a href="http://www.igstk.org">IGSTK</a></li>
+	<li><a href="http://softwareenterprise.asu.edu">The Software Enterprise</a></li>
+	<li><a href="http://atic.asu.edu">The Advanced Technology Innovation Center (ATIC)</a>
+      </ul>
+<br/>
+<a href="http://www.nerdtests.com/ft_nq.php">
+<img src="http://www.nerdtests.com/images/ft/nq/21991e3bef.gif" alt="I am nerdier than 98% of all people. Are you a nerd? Click here to take the Nerd Test, get geeky images and jokes, and talk on the nerd forum!"></a>
+    </td>
+    <td align="left" valign="top" colspan="2">
+      <FONT SIZE="+1"><em><strong>Selected Publications (see <a href="./docs/CVfull.pdf">CV</a> for full list):</strong></em></FONT><br/>
+      <FONT SIZE="-0">
+      <ol>
+	<li>Gary, K., Kojcev, R., and Cleary, K. “A Systems Integration Architecture for NOTE Surgery”, Proceedings of the 16th Conference on Software Engineering and Applications (SEA 2012). Las Vegas, TX, November 2012.</li>
+	<li>Gary, K., Kocjev, R., and Cleary, K. “Observations on the Evolving Maturity of Software and Systems Architecture Supporting Surgical Procedures”, Workshop on Infrastructure, Tools, and Technologies for System of Systems of Medical Devices (SoSMD 2011). Kansas, November 2011.</li>
+	<li>Gary, K., Kokoori, S., Muffih, B., Enquobahrie, A., Cheng, P., Yaniv, Z., and Cleary, K. “Agile Methods for Safety-Critical Open Source Software”, Software: Practice and Experience, April 2011.</li>
+  	<li>Gary, K. The Software Enterprise: Practicing Best Practices in Software Engineering Education, <i>The International Journal of Engineering Education</i> Special Issue on Trends in Software Engineering Education, Volume 24, Number 4, July 2008, pp. 705-716.</li>
+	<li>Gary, K., The Software Enterprise: Preparing Industry-ready Software Engineers, in <i>Software Engineering: Effective Teaching and Learning Approaches</i>, Ellis, H., Demurjian, S., and Naveda, J.F., (eds.), Idea Group Publishing. October 2008.</li>
+	<li>Gary, K. and Koehnemann, H. Component-based Deployment for Web Applications: Methods and Issues, in <i>Software Engineering for Modern Web Applications</i>, Brandon, D. (ed.), Idea Group Publishing. 2008.</li>
+	<li>Gary, K., Blake, B., Ibanez, L., Gobbi, D., Aylward, S., and Cleary, K. IGSTK: An Open Source
+Software Platform for Image-Guided Surgery,  <i>IEEE Computer Special Issue on software engineering and application of software-based medical devices and device systems</i>, April 2006.</li>
+      </ol>
+      </FONT>
+    </td>
+  </tr>
+</table>
+    <p id="foo">HERE IS SOME RANDOM TEXT UNDER ID FOO</p>
+<script>console.log('Finished table 2')</script>
+<img src="./images/asurib.gif" width="1024" height="2px"/>
+<br/>
+<table width="1024">
+<tr><td valign="left" width="33%"><img src="./images/asulogo.jpg" ALIGN=LEFT /></td>
+<td valign="center" width="34%"><CENTER><FONT SIZE="-1">Copyright &copy; 2013 Kevin A. Gary</FONT></CENTER></td>
+<td valign="right" width="33%"><img src="./images/asulogo.jpg" ALIGN=RIGHT /></td></tr>
+</table>
+    <script>console.log('Finished table 3')</script>
+</body>
+</html>
