@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <link rel=stylesheet href="css/pure/style.css">
+        
+        <script src="page.js"></script>
+    </head>
+    <body onLoad="finalizePageRender()" onunload="onUnloadListener()">
+        <div data-role=page>
+            <div data-role=header>
+                <h1>Pain Report</h1>
+            </div>
+            <div data-role=content>
+                <div id="_prquestion"></div>
+                
+                <fieldset data-role="controlgroup" data-iconpos="right">
+                    <input type="radio" id="answer1" name="freq" _prAnswer="answer1" value="answer1" onchange="onChangeListener()"/><label for="answer1">None</label><br/>
+                    <input type="radio" id="answer2" name="freq" _prAnswer="answer2" value="answer2" onchange="onChangeListener()"/><label for="answer2">A few</label><br/>
+                    <input type="radio" id="answer3" name="freq" _prAnswer="answer3" value="answer3" onchange="onChangeListener()"/><label for="answer3">Some</label><br/>
+                    <input type="radio" id="answer4" name="freq" _prAnswer="answer4" value="answer4" onchange="onChangeListener()"/><label for="answer4">Many</label><br/>
+                    <input type="radio" id="answer5" name="freq" _prAnswer="answer5" value="answer5" onchange="onChangeListener()"/><label for="answer5">Every</label>
+                </fieldset>                             
+                <div id="_prnav"></div>
+            </div>
+            <div data-role=footer>
+                <div id="_prfooter"></div>
+            </div>
+        </div>
+    </body>
+</html>
