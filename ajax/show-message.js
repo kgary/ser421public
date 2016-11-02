@@ -15,7 +15,21 @@ function sendRequest() {
 }
 
 function handleResponse(request) {
-  if (request.readyState == 4) {
-    alert(request.responseText);
+  switch (request.readyState) {
+  case 0:
+      console.log("UNSENT");
+      break;
+  case 1:
+      console.log("OPENED");
+      break;
+  case 2:
+      console.log("HEADERS RECEIVED");
+      break;
+  case 3:
+      console.log("LOADING");
+      break;
+  case 4:
+      alert(request.responseText);
+      break;
   }
 }
