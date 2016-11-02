@@ -1,0 +1,10 @@
+<customers rating='vip'>
+    <customer id='a1234'> 
+      <firstName>Rafael</firstName> 
+      <lastName>Nadal</lastName> 
+    </customer> 
+    <customer id='a1235'> 
+      <firstName>Roger</firstName> 
+      <lastName>Federer</lastName> 
+    </customer> 
+</customers>

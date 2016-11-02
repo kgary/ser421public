@@ -1,0 +1,17 @@
+{
+  "customers": {
+    "rating": "vip",
+    "customer": [
+      {
+        "id": "a1234",
+        "firstName": "Rafael",
+        "lastName": "Nadal"
+      },
+      {
+        "id": "a1235",
+        "firstName": "Roger",
+        "lastName": "Federer"
+      }
+    ]
+  }
+}
