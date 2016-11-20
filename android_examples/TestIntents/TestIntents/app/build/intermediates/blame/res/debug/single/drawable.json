@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/TestIntents/app/build/intermediates/res/merged/debug/drawable/icon48x48_1.png",
+        "source": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/TestIntents/app/src/main/res/drawable/icon48x48_1.png"
+    },
+    {
+        "merged": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/TestIntents/app/build/intermediates/res/merged/debug/drawable/icon48x48_2.png",
+        "source": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/TestIntents/app/src/main/res/drawable/icon48x48_2.png"
+    },
+    {
+        "merged": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/TestIntents/app/build/intermediates/res/merged/debug/drawable/icon.png",
+        "source": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/TestIntents/app/src/main/res/drawable/icon.png"
+    },
+    {
+        "merged": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/TestIntents/app/build/intermediates/res/merged/debug/drawable/balloons.jpg",
+        "source": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/TestIntents/app/src/main/res/drawable/balloons.jpg"
+    }
+]

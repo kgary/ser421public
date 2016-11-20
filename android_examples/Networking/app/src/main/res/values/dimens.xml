@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="time_message_size">24dp</dimen>
+    <dimen name="address_message_size">22dp</dimen>
+    <dimen name="ftp_message_size">8dp</dimen>
+    <dimen name="url_message_size">24dp</dimen>
+    <dimen name="url_search_results_size">7dp</dimen>
+    <dimen name="url_search_error_size">14dp</dimen>
+    <dimen name="loan_separator_height">20dp</dimen>
+</resources>

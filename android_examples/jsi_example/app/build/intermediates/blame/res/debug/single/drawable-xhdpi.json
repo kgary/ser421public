@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
+        "source": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/build/intermediates/res/merged/debug/drawable-xhdpi/notification_icon.png",
+        "source": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/drawable-xhdpi/notification_icon.png"
+    },
+    {
+        "merged": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_help.png",
+        "source": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/drawable-xhdpi/ic_action_help.png"
+    }
+]

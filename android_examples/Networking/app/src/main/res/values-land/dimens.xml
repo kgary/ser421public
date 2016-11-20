@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="time_message_size">32dp</dimen>
+    <dimen name="ftp_message_size">10dp</dimen>
+    <dimen name="url_message_size">32dp</dimen>
+    <dimen name="url_search_results_size">8dp</dimen>
+    <dimen name="url_search_error_size">16dp</dimen>
+</resources>

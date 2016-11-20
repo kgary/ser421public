@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="myviewId" type="id"/>
+    <string name="app_name">Exercise System Intents</string>
+    <string name="hello">Exercise System Intents</string>
+</resources>
