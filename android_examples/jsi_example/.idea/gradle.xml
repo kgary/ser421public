@@ -8,8 +8,8 @@
         <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example" />
+            <option value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

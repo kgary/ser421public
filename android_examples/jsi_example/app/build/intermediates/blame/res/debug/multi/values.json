@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "outputFile": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/values/dimens.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 164
                 },
                 "from": {
-                    "file": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/values/dimens.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 209
                 },
                 "from": {
-                    "file": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/values/strings.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 262
                 },
                 "from": {
-                    "file": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/values/strings.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 312
                 },
                 "from": {
-                    "file": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/values/strings.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 380
                 },
                 "from": {
-                    "file": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/values/strings.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -126,7 +126,7 @@
                     "endOffset": 513
                 },
                 "from": {
-                    "file": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/values/styles.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,

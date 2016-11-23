@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/res/merged/debug/layout/fragment_main.xml",
+        "source": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/src/main/res/layout/fragment_main.xml"
     },
     {
-        "merged": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/build/intermediates/res/merged/debug/layout/fragment_main.xml",
-        "source": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/layout/fragment_main.xml"
+        "merged": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/src/main/res/layout/activity_main.xml"
     }
 ]

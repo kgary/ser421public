@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+        "outputFile": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 129
                 },
                 "from": {
-                    "file": "/Users/kgary/work/asu/classes/ser421/fall2016/android_examples/jsi_example/app/src/main/res/values-v21/styles.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/src/main/res/values-v21/styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
