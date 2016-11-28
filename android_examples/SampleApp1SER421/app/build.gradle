@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "20.0.0"
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
 
     defaultConfig {
         applicationId "ser421.asu.edu.sampleapp1ser421"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 20
         versionCode 1
         versionName "1.0"
