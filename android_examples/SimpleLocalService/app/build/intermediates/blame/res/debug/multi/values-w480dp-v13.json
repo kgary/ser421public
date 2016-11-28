@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/res/merged/debug/values-w480dp-v13/values-w480dp-v13.xml",
+        "outputFile": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-v13/values-w480dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 112
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-w480dp/values-w480dp.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-w480dp/values-w480dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-w480dp/values-w480dp.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-w480dp/values-w480dp.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

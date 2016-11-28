@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SimpleLocalService.iml" filepath="$PROJECT_DIR$/SimpleLocalService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/SimpleLocalService.iml" filepath="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/SimpleLocalService.iml" />
+      <module fileurl="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/app.iml" filepath="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/app.iml" />
     </modules>
   </component>
 </project>

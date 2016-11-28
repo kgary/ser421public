@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/res/merged/debug/values-zh-rTW/values-zh-rTW.xml",
+        "outputFile": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 145
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 238
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 338
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 420
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 517
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 625
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 721
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 817
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 912
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 1009
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 1104
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 1204
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1317
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-zh-rTW/values-zh-rTW.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,

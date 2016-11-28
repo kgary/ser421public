@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/res/merged/debug/values-h720dp-v13/values-h720dp-v13.xml",
+        "outputFile": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 117
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-h720dp/values-h720dp.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-h720dp/values-h720dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

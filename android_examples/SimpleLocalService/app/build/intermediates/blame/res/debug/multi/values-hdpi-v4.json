@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/res/merged/debug/values-hdpi-v4/values-hdpi-v4.xml",
+        "outputFile": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 325
                 },
                 "from": {
-                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2015/examples/ser421/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-hdpi/values-hdpi.xml",
+                    "file": "/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-hdpi/values-hdpi.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
