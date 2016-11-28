@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Networking.iml" filepath="$PROJECT_DIR$/Networking.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/Networking/Networking.iml" filepath="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/Networking/Networking.iml" />
+      <module fileurl="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/Networking/app/app.iml" filepath="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/Networking/app/app.iml" />
     </modules>
   </component>
 </project>
