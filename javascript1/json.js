@@ -23,27 +23,6 @@ var f = function(key, val) {
     return val;
 };
 
+
 var personObj3 = JSON.parse(person, f);
 console.log(personObj3.firstName);
-
-
-
-
-
-
-
-
-var exprArr = ['{first json expr}', '{2nd expr}' ...]
-for (foo in exprArr) calc(foo[i])
-
-
-
-
-
-
-
-
-
-
-
-
