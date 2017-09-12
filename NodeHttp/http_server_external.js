@@ -30,7 +30,7 @@ function parseWeather(weatherResponse, res) {
 function getWeather(city, res){
   var options = {
     host: 'api.openweathermap.org',
-    path: '/data/2.5/weather?q=' + city + "&APPID=d3772e348ab8cf35f9877845f6942efb"
+    path: '/data/2.5/weather?q=' + city + "&APPID=f9cd3610e9144f965638b5be216a0b1d"
   };
   http.request(options, function(weatherResponse){
     parseWeather(weatherResponse, res);

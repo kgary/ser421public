@@ -4,7 +4,8 @@
 var http = require( "http" );
 var url = require( "url" );
 
-var urlstring = "http://www.asu.edu/";
+var urlstring = "http://localhost:8080/hi.html"; 
+// "http://lead1.poly.asu.edu";
 var parsedurl = url.parse( urlstring );
 var cookies = [
   "foo=bar",
