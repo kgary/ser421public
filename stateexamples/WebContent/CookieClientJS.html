@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<HEAD>
+<TITLE>Cookie Client Shopping Cart JAVSCRIPT</TITLE>
+<!--  code below adapted from W3CSchools -->
+<script>
+function listItems() {
+    var theCookies = document.cookie.split(';');
+    var aString = '';
+    for (var i = 0; i < theCookies.length; i++) {
+    		if(theCookies[i].split("=")[0].trim().substring(0,4) == "cart") {
+        		aString += '<LI>' + theCookies[i].split("=")[1] + "</LI>\n";
+        	}
+    }
+    var elem = document.getElementById("cookieList");
+    elem.innerHTML = "<UL>"+aString+"</UL>";
+}
+
+// from http://goo.gl/C6nBl2
+function clearItems(path, domain ) {
+    var theCookies = document.cookie.split(';');
+    for (var i = 0; i < theCookies.length; i++) {
+  		if(theCookies[i].split("=")[0].trim().substring(0,4) == "cart" ) {
+    			document.cookie = theCookies[i].split("=")[0] + "=;"
+      		+ ((path) ? ";path="+path:"")+
+      		+ ((domain)?";domain="+domain:"") +
+      		";expires=Thu, 01 Jan 1970 00:00:01 GMT";
+      	}
+  	}
+  	listItems();
+}
+function removeItem() {
+	var elem = document.getElementsByName("newitem");
+	var theCookies = document.cookie.split(';');
+    for (var i = 0; i < theCookies.length; i++) {
+      	if(theCookies[i].split("=")[1].trim() == elem[0].value ) {
+    			document.cookie = theCookies[i].split("=")[0] + "=" +
+      		";expires=Thu, 01 Jan 1970 00:00:01 GMT";
+      	}
+     }
+     listItems();
+}
+function addItem() {
+	var elem = document.getElementsByName("newitem");
+    document.cookie="cart"+Math.round(Math.random()*1000000)+"="+elem[0].value;
+    listItems();
+}
+</script>
+</HEAD>
+<BODY>
+<p id="msg">Please choose an action below</p>
+You currently have the following items in your cart:<BR/>
+<p id="cookieList">
+</p>
+Enter an item: <INPUT TYPE="TEXT" NAME="newitem" SIZE="20"><BR/>
+Would you like to:<BR/>
+<INPUT TYPE=SUBMIT NAME="action" VALUE=" Add Item " onclick="addItem()">
+<INPUT TYPE=SUBMIT NAME="action" VALUE=" Remove Item " onclick="removeItem()">
+<INPUT TYPE=SUBMIT NAME="action" VALUE=" Check Out " onclick="clearItems()">
+</BODY>
+</HTML>
