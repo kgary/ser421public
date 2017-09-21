@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
   res.send(response);
   console.log('Response Finished? ' + res.finished);
   console.log('\nHeaders Sent: ');
-  console.log(res.headerSent);
+  console.log(res.headersSent);
 });
 app.get('/error', function (req, res) {
   res.status(400);

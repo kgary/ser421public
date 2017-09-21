@@ -5,7 +5,12 @@ var url = require('url');
 var app = express();
 app.listen(8081);
 app.get('/download', function (req, res) {
-  res.sendFile('word.docx', { root: './views/' }, 'new.docx');
+  res.sendFile('word.docx', { root: './views/' }, function(err) {
+	  if (err) 
+	      next(err);
+	  else 
+	      console.log("Sent file!");
+      });
 });
 app.get('/image', function (req, res) {
 	  res.sendFile('arch.jpg', 
