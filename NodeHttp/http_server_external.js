@@ -9,7 +9,7 @@ function sendResponse(weatherData, res){
     '<body>' +
     '<form method="post">' +
     'City: <input name="city"><br>' +
-    '<input type="submit" value="Get Weather">' +
+    '<input type="submit" value="Weather">' +
     '</form>';
   if(weatherData){
     page += '<h1>Weather Info</h1><p>' + weatherData +'</p>';
