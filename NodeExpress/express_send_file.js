@@ -6,7 +6,7 @@ var app = express();
 app.listen(8081);
 app.get('/image', function (req, res) {
   res.sendFile('arch.jpg', 
-               { maxAge: 24*60*60*1000,
+               { maxAge: 60*1000,
                  root: './views/'},
                function(err){
     if (err){
