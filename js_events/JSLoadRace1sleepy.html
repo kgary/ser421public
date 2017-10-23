@@ -1,4 +1,7 @@
 <html><head><title>JSLoad Race1 Sleepy Example</title>
+<!--
+This version adds a sleep function called at the top after body, then 2 other times when loading the table
+-->
 <script>console.log('HEAD')
     function sleep(milliSeconds){
 		var startTime = new Date().getTime(); // get the current time
@@ -6,8 +9,10 @@
 	}
 </script>
 </head>
+    <!-- SLEEPY -->
 <body onloadstart="console.log('ONLOADSTART')" onload='console.log("ONLOAD")'>
 <div id="fb-root"></div>
+    <!-- SLEEPY -->
 <script>sleep(3000)</script>
 <table width="1280">
 <tr><td valign="left" width="10%">ASULOGO</td>
@@ -27,6 +32,7 @@ industry best practices in the classroom. My primary area is
 agile and open source software engineering.
 </td></tr> 
 </table>
+    <!-- SLEEPY -->
     <script>console.log('Finished table 1')</script>
     <!-- NEW: Inserted 5 second sleep delay during page load -->
     <script>sleep(5000)</script>
@@ -83,6 +89,7 @@ Skype: drkevingary <br/>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <br/>
+        <!-- SLEEPY -->
 <script>console.log('Middle table 2')</script>
 
 </td>
@@ -118,6 +125,7 @@ Software Platform for Image-Guided Surgery,  <i>IEEE Computer Special Issue on s
     </td>
   </tr>
 </table>
+    <!-- SLEEPY -->
 <script>console.log('Finished table 2')</script>
     <script>sleep(3000)</script>
 <img src="./images/asurib.gif" width="1024" height="2px"/>

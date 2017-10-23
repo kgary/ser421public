@@ -1,7 +1,11 @@
 <html><head><title>JSLoad Race Example</title>
+<!-- 
+This version invokes an alert in the middle that causes a pause in document and script processing
+-->
 <script>console.log('HEAD')
 </script>
 </head>
+    <!-- SLEEPY -->
 <body onloadstart="console.log('ONLOADSTART')" onload='console.log("ONLOAD")'>
 <div id="fb-root"></div>
 <table width="1280">
@@ -22,6 +26,7 @@ industry best practices in the classroom. My primary area is
 agile and open source software engineering.
 </td></tr> 
 </table>
+    <!-- SLEEPY -->
     <script>console.log('Finished table 1')</script>
 <br/>
 <table width="1280">
@@ -78,7 +83,8 @@ Skype: drkevingary <br/>
 <br/>
 <script>console.log('Middle table 2')</script>
         <!-- NEW: Load non-sleepy script from localhost -->
-<script src='http://localhost/ser421/JSLoadRace2.js'></script>
+        <!-- SLEEPY - this will cause an alert to be raised and pause execution -->
+<script src='./JSLoadRace2.js'></script>
 </td>
   </tr>
   <tr>
@@ -112,6 +118,7 @@ Software Platform for Image-Guided Surgery,  <i>IEEE Computer Special Issue on s
     </td>
   </tr>
 </table>
+    <!-- SLEEPY -->
 <script>console.log('Finished table 2')</script>
  
 <img src="./images/asurib.gif" width="1024" height="2px"/>
@@ -121,6 +128,7 @@ Software Platform for Image-Guided Surgery,  <i>IEEE Computer Special Issue on s
 <td valign="center" width="34%"><CENTER><FONT SIZE="-1">Copyright &copy; 2013 Kevin A. Gary</FONT></CENTER></td>
 <td valign="right" width="33%"><img src="./images/asulogo.jpg" ALIGN=RIGHT /></td></tr>
 </table>
+    <!-- SLEEPY -->
     <script>console.log('Finished table 3')</script>
 </body>
 </html>

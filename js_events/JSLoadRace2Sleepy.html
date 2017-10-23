@@ -1,7 +1,12 @@
-<html><head><title>JS3 Race1 Example</title>
+<html><head><title>JSLoadRace2 Sleepy Example</title>
+<!-- 
+This version invokes an alert in the middle that causes a pause in document and script processing
+The referenced JS makes it sleep 3 seconds before the alert is raised
+-->
 <script>console.log('HEAD')
 </script>
 </head>
+    <!-- SLEEPY -->
 <body onloadstart="console.log('ONLOADSTART')" onload='console.log("ONLOAD")'>
 <div id="fb-root"></div>
 <table width="1280">
@@ -22,6 +27,7 @@ industry best practices in the classroom. My primary area is
 agile and open source software engineering.
 </td></tr> 
 </table>
+     <!-- SLEEPY -->
     <script>console.log('Finished table 1')</script>
 <br/>
 <table width="1280">
@@ -76,9 +82,10 @@ Skype: drkevingary <br/>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <br/>
+         <!-- SLEEPY -->
 <script>console.log('Middle table 2')</script>
-        <!-- NEW: loading remote script from localhost -->
-<script src='http://localhost/ser421/JSLoadRace2Sleepy.js'></script>
+        <!-- NEW: loading remote script from localhost, 3 sec delay -->
+<script src='./JSLoadRace2Sleepy.js'></script>
 </td>
   </tr>
   <tr>
@@ -112,6 +119,7 @@ Software Platform for Image-Guided Surgery,  <i>IEEE Computer Special Issue on s
     </td>
   </tr>
 </table>
+     <!-- SLEEPY -->
     <p id="foo">HERE IS SOME RANDOM TEXT UNDER ID FOO</p>
 <script>console.log('Finished table 2')</script>
 <img src="./images/asurib.gif" width="1024" height="2px"/>

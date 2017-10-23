@@ -1,4 +1,10 @@
 <html><head><title>JSLoadRace3 ReplaceRemoteAsync2 Example</title>
+<!-- 
+This is exactly the same as JSLoadRace3DOMReplaceRemoteAsync.html except it moves the
+script that modifies the DOM element with id foo up to the top and adds a whole bunch
+of span tags below, making for a longer parsing cycle that causes the race condition to fail.
+If you have bandwidth lag you will notice FOO not getting replaced, otherwise it will.
+-->
 <script>console.log('HEAD')
 </script>
 </head>
