@@ -26,7 +26,7 @@ arrayLoops();
 // Also see Firebug Lite and Faux Console if you want 
 // logging to actually do something on IE.
 // Firebug Lite: http://www.getfirebug.com/lite.html
-// Faux Console: http://icant.co.uk/sandbox/fauxconsole/
+// Faux Console: https://github.com/csanquer/fauxconsole
  
 try { console.log("Loading script"); 
 } catch(e) { console = { log: function() {} }; }
