@@ -2,49 +2,31 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/libs/internal_impl-21.0.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/kevinagary/.android/build-cache/80c974cd51e234165d61b6e7554f7c40d8534e96/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="21.0.0"
-        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
-        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_135f9f88a3aa95fd09e22205e6b18d8604e82c6d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/kevinagary/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.0.0"
-        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
-        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_68a8eb8bef5e31a825d2ae0a1d5e75dd65b3ef4f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.0.0"
-        sha1="24e468ee3ba748687b254d79e3a1333b6579fdab">
-        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e9572d1d4047e7efeffd932fb10866110f3863ed/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.0.0"
-        sha1="46cbb2160f12e841a1aadf80fb04dda86ad4f7e0">
-        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7d59055ad24636182231fee9fbd636210d8d7974/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.0.0"
+        revision="25.0.0"
         sha1="686344a780033e4ba22b926cd225f8d4941247e6">
-        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-21.0.0_584c919d01239e82e7cd63341848975aa681f306/classes.dex" />
+        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/pre-dexed/debug/classes_33e294f07445ea5706950a7dccb19e8aed06eb64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kevinagary/.android/build-cache/80c974cd51e234165d61b6e7554f7c40d8534e96/output/jars/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0_7b569fdd78008f8d39348bd7e6450fdb86bba915.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kevinagary/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0_68a8eb8bef5e31a825d2ae0a1d5e75dd65b3ef4f.jar" />
     </item>
 
 </items>

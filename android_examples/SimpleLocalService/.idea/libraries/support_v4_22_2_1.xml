@@ -1,12 +1,9 @@
 <component name="libraryTable">
   <library name="support-v4-22.2.1">
-    <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/annotations.zip!/" />
-    </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/res" />
-      <root url="jar://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar!/" />
-      <root url="jar://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/SimpleLocalService/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/505f64778352fff2ed6b0591a701897e4f566778/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/505f64778352fff2ed6b0591a701897e4f566778/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/505f64778352fff2ed6b0591a701897e4f566778/output/jars/libs/internal_impl-22.2.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

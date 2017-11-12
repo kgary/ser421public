@@ -7,7 +7,7 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$USER_HOME$/work/asu/classes/ser421/resources/commonsware/cw-omnibus/WebKit/GeoWeb1" />
+            <option value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/GeoWeb1" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
