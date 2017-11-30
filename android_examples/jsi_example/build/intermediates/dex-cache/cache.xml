@@ -3,21 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="/Users/kevinagary/.android/build-cache/80c974cd51e234165d61b6e7554f7c40d8534e96/output/jars/classes.jar"
+        jar="/Users/kevinagary/.android/build-cache/5bd09946c5dde4ab60be58761f7aa0e30a9cff44/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="686344a780033e4ba22b926cd225f8d4941247e6">
-        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/pre-dexed/debug/classes_33e294f07445ea5706950a7dccb19e8aed06eb64.jar" />
+        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/pre-dexed/debug/classes_6d942b7182808a63920441918f142228deba0ebb.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/kevinagary/.android/build-cache/80c974cd51e234165d61b6e7554f7c40d8534e96/output/jars/libs/internal_impl-21.0.0.jar"
+        jar="/Users/kevinagary/.android/build-cache/5bd09946c5dde4ab60be58761f7aa0e30a9cff44/output/jars/libs/internal_impl-21.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
-        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0_7b569fdd78008f8d39348bd7e6450fdb86bba915.jar" />
+        <dex dex="/Users/kevinagary/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0_4603782fb5d345258cd75ecbcfd082ec6d37478f.jar" />
     </item>
     <item
         is-multidex="false"

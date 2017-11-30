@@ -7,8 +7,10 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
+        android:debuggable="true"
         android:icon="@drawable/icon"
-        android:label="Test Intents" >
+        android:label="Test Intents"
+        android:testOnly="true" >
         <activity
             android:name="com.ai.android.testintents.MainActivity"
             android:label="Test Intents" >

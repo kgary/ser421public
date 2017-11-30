@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c9758526-ea65-4085-a5dd-cda871facc17" name="Default" comment="" />
     <ignored path="AndroidJSWebView1.iws" />
@@ -20,8 +28,62 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="AndroidJSWebView1" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AndroidJSWebView.java" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/java/com/prgguru/example/AndroidJSWebView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChennaiIntent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/java/com/prgguru/example/ChennaiIntent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -65,617 +127,617 @@
             <list>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of root project 'AndroidJSWebView1'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":projects" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
+                <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="validateSigningDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="assembleReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="processReleaseJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateReleaseAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="lintDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the configuration model of root project 'AndroidJSWebView1'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":model" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
+                <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mockableAndroidJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from root project 'AndroidJSWebView1' (some of the displayed tasks may belong to subprojects)." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":tasks" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
+                <option name="name" value="tasks" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Initializes a new Gradle build. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":init" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
+                <option name="name" value="init" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="incrementalDebugJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="deviceCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in root project 'AndroidJSWebView1'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":dependencies" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
+                <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="processDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="lint" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="packageDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileReleaseNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateDebugAndroidTestBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="processDebugUnitTestJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="testReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugAndroidTestShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeDebugShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="transformNative_libsWithMergeJniLibsForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the components produced by root project 'AndroidJSWebView1'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":components" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
+                <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileReleaseRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all Debug builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="assembleDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="processDebugAndroidTestManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugUnitTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="transformResourcesWithMergeJavaResForReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="transformClassesWithDexForDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="preDebugAndroidTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="processDebugAndroidTestJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="processReleaseUnitTestJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="uninstallRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileReleaseShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateDebugAndroidTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="prepareDebugAndroidTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="incrementalDebugAndroidTestJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="checkReleaseManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugAndroidTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeReleaseJniLibFolders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="prepareReleaseDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="processReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs instrumentation tests using all Device Providers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="deviceAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeDebugAndroidTestAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="processReleaseManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="uninstallDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in root project 'AndroidJSWebView1'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":dependencyInsight" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
+                <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateReleaseSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="incrementalReleaseUnitTestJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="preReleaseBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all variants of all applications and secondary packages." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="incrementalDebugUnitTestJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="incrementalReleaseJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":help" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
+                <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileReleaseUnitTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="installDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="connectedCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs the tests for debug on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="connectedDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="uninstallAll" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all the Test applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="assembleAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="processDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="transformNative_libsWithMergeJniLibsForDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="packageRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="validateSigningDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Gradle wrapper files. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":wrapper" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
+                <option name="name" value="wrapper" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="preDebugUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileLint" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateDebugAndroidTestResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeReleaseShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the Android dependencies of the project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="androidDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugAndroidTestNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugUnitTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateDebugSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeDebugAndroidTestJniLibFolders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="extractProguardFiles" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="transformClassesWithDexForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="assembleDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="processDebugJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateDebugAndroidTestAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileReleaseJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="jarReleaseClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="transformResourcesWithMergeJavaResForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="prepareReleaseUnitTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="transformNative_libsWithMergeJniLibsForRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateDebugResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="testDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs instrumentation tests for all flavors on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="connectedAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="jarDebugClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="transformClassesWithDexForRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="installDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="preBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="transformResourcesWithMergeJavaResForRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileReleaseSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileReleaseUnitTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="transformResourcesWithMergeJavaResForDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileReleaseAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="lintRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all buildscript dependencies declared in root project 'AndroidJSWebView1'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":buildEnvironment" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
+                <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="checkDebugManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeDebugJniLibFolders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prints out all the source sets defined in this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="sourceSets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="transformResourcesWithMergeJavaResForDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeReleaseAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateReleaseBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="prepareDebugUnitTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on just the fatal issues in the release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="lintVitalRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="uninstallDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the signing info for each variant." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="signingReport" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugAndroidTestAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="mergeDebugAndroidTestShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="preDebugBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateDebugBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all Release builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="assembleRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="compileDebugAndroidTestRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="processDebugManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="packageDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
                 <option name="name" value="generateReleaseResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of root project 'AndroidJSWebView1'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":properties" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1" />
+                <option name="name" value="properties" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -685,607 +747,607 @@
             <list>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:projects" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:validateSigningDebugAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="validateSigningDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:assembleReleaseUnitTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="assembleReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:prepareDebugDependencies" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:processReleaseJavaRes" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="processReleaseJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateReleaseAssets" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateReleaseAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:lintDebug" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="lintDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:assembleDebugUnitTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mockableAndroidJar" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mockableAndroidJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the configuration model of project ':app'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:model" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:tasks" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="tasks" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugSources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:incrementalDebugJavaCompilationSafeguard" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="incrementalDebugJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:deviceCheck" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="deviceCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:dependencies" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:processDebugResources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="processDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:lint" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="lint" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:packageDebug" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="packageDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileReleaseNdk" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileReleaseNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateDebugResources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugJavaWithJavac" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:buildNeeded" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateDebugAndroidTestBuildConfig" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateDebugAndroidTestBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:processDebugUnitTestJavaRes" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="processDebugUnitTestJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:testReleaseUnitTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="testReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugAndroidTestShaders" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugAndroidTestShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeDebugShaders" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeDebugShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:transformNative_libsWithMergeJniLibsForDebugAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="transformNative_libsWithMergeJniLibsForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugAndroidTestJavaWithJavac" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the components produced by project ':app'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:components" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileReleaseRenderscript" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileReleaseRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all Debug builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:assembleDebug" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="assembleDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:processDebugAndroidTestManifest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="processDebugAndroidTestManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugUnitTestJavaWithJavac" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugUnitTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:transformResourcesWithMergeJavaResForReleaseUnitTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="transformResourcesWithMergeJavaResForReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:transformClassesWithDexForDebug" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="transformClassesWithDexForDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:preDebugAndroidTestBuild" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="preDebugAndroidTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:processDebugAndroidTestJavaRes" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="processDebugAndroidTestJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:processReleaseUnitTestJavaRes" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="processReleaseUnitTestJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:uninstallRelease" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="uninstallRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileReleaseShaders" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileReleaseShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeReleaseResources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateDebugAndroidTestSources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateDebugAndroidTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:prepareDebugAndroidTestDependencies" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="prepareDebugAndroidTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:incrementalDebugAndroidTestJavaCompilationSafeguard" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="incrementalDebugAndroidTestJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:checkReleaseManifest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="checkReleaseManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugAndroidTestSources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugAndroidTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeReleaseJniLibFolders" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeReleaseJniLibFolders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:prepareReleaseDependencies" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="prepareReleaseDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:processReleaseResources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="processReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs instrumentation tests using all Device Providers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:deviceAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="deviceAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeDebugAndroidTestAssets" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeDebugAndroidTestAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:processReleaseManifest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="processReleaseManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:uninstallDebugAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="uninstallDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:dependencyInsight" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateReleaseSources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateReleaseSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:incrementalReleaseUnitTestJavaCompilationSafeguard" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="incrementalReleaseUnitTestJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:preReleaseBuild" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="preReleaseBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all variants of all applications and secondary packages." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:assemble" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:incrementalDebugUnitTestJavaCompilationSafeguard" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="incrementalDebugUnitTestJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:incrementalReleaseJavaCompilationSafeguard" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="incrementalReleaseJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:help" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileReleaseUnitTestSources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileReleaseUnitTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:installDebugAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="installDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeDebugAssets" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:connectedCheck" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="connectedCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs the tests for debug on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:connectedDebugAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="connectedDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:uninstallAll" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="uninstallAll" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all the Test applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:assembleAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="assembleAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:processDebugAndroidTestResources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="processDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:transformNative_libsWithMergeJniLibsForDebug" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="transformNative_libsWithMergeJniLibsForDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:packageRelease" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="packageRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:validateSigningDebug" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="validateSigningDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugAidl" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeDebugResources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:preDebugUnitTestBuild" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="preDebugUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileLint" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileLint" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateDebugAndroidTestResValues" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateDebugAndroidTestResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeReleaseShaders" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeReleaseShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the Android dependencies of the project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:androidDependencies" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="androidDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugAndroidTestNdk" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugAndroidTestNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugUnitTestSources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugUnitTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateDebugSources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateDebugSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeDebugAndroidTestJniLibFolders" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeDebugAndroidTestJniLibFolders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:extractProguardFiles" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="extractProguardFiles" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:transformClassesWithDexForDebugAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="transformClassesWithDexForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:assembleDebugAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="assembleDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:processDebugJavaRes" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="processDebugJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateDebugAndroidTestAssets" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateDebugAndroidTestAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileReleaseJavaWithJavac" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileReleaseJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:jarReleaseClasses" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="jarReleaseClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:transformResourcesWithMergeJavaResForDebugAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="transformResourcesWithMergeJavaResForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:prepareReleaseUnitTestDependencies" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="prepareReleaseUnitTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:test" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugNdk" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:transformNative_libsWithMergeJniLibsForRelease" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="transformNative_libsWithMergeJniLibsForRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeDebugAndroidTestResources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:preReleaseUnitTestBuild" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateDebugResValues" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateDebugResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:check" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:testDebugUnitTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="testDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs instrumentation tests for all flavors on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:connectedAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="connectedAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:jarDebugClasses" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="jarDebugClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:transformClassesWithDexForRelease" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="transformClassesWithDexForRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:installDebug" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="installDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:preBuild" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="preBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:transformResourcesWithMergeJavaResForRelease" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="transformResourcesWithMergeJavaResForRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileReleaseSources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileReleaseSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileReleaseUnitTestJavaWithJavac" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileReleaseUnitTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugShaders" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:transformResourcesWithMergeJavaResForDebug" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="transformResourcesWithMergeJavaResForDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileReleaseAidl" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileReleaseAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:lintRelease" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="lintRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:buildDependents" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateDebugAssets" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all buildscript dependencies declared in project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:buildEnvironment" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:checkDebugManifest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="checkDebugManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeDebugJniLibFolders" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeDebugJniLibFolders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prints out all the source sets defined in this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:sourceSets" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="sourceSets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:transformResourcesWithMergeJavaResForDebugUnitTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="transformResourcesWithMergeJavaResForDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeReleaseAssets" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeReleaseAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugRenderscript" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateReleaseBuildConfig" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateReleaseBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:prepareDebugUnitTestDependencies" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="prepareDebugUnitTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateReleaseResources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on just the fatal issues in the release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:lintVitalRelease" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="lintVitalRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:uninstallDebug" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="uninstallDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the signing info for each variant." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:signingReport" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="signingReport" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugAndroidTestAidl" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugAndroidTestAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:mergeDebugAndroidTestShaders" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="mergeDebugAndroidTestShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:clean" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:preDebugBuild" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="preDebugBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateDebugBuildConfig" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateDebugBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:build" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all Release builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:assembleRelease" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="assembleRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:compileDebugAndroidTestRenderscript" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="compileDebugAndroidTestRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateDebugAndroidTestResources" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:processDebugManifest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="processDebugManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:packageDebugAndroidTest" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="packageDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:generateReleaseResValues" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="generateReleaseResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of project ':app'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value=":app:properties" />
+                <option name="linkedExternalProjectPath" value="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app" />
+                <option name="name" value="properties" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -1323,7 +1385,6 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/2.2.2/92ff95aa5667ecd5acc728e5c77241b5495f082e/gradle-api-2.2.2.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/compilerCommon/2.2.2/95bc3744282700b23e9570bd0dae90c0ccc7bf5f/compilerCommon-2.2.2-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/compilerCommon/2.2.2/78660dc872be99956f0383331f6fceec9bfd77a5/compilerCommon-2.2.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.2.1/proguard-gradle-5.2.1.jar" />
@@ -1418,7 +1479,6 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/2.2.2/92ff95aa5667ecd5acc728e5c77241b5495f082e/gradle-api-2.2.2.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/compilerCommon/2.2.2/95bc3744282700b23e9570bd0dae90c0ccc7bf5f/compilerCommon-2.2.2-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.databinding/compilerCommon/2.2.2/78660dc872be99956f0383331f6fceec9bfd77a5/compilerCommon-2.2.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-gradle/5.2.1/proguard-gradle-5.2.1.jar" />
@@ -1514,19 +1574,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="575" />
     <option name="y" value="23" />
-    <option name="width" value="2560" />
-    <option name="height" value="1057" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <option name="width" value="1896" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
@@ -1544,6 +1595,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1551,12 +1603,51 @@
               <option name="myItemId" value="AndroidJSWebView1" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidJSWebView1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidJSWebView1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1564,7 +1655,19 @@
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.2.2" />
-    <property name="device.picker.selection" value="92011d1680ec24d3" />
+    <property name="device.picker.selection" value="Pixel_XL_API_26" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -1598,7 +1701,6 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
-      <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
@@ -1632,13 +1734,62 @@
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
       </Native>
       <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method />
+      <method>
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511638799121" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+      </Profilers>
+      <method>
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511638799121" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -1652,6 +1803,68 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AndroidJSWebView1" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
       <method />
     </configuration>
@@ -1698,7 +1911,6 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
-      <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
@@ -1732,13 +1944,14 @@
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
       </Native>
       <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method />
+      <method>
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511638799122" />
+      </method>
     </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Android App.app" />
@@ -1770,38 +1983,41 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1057" extended-state="6" />
-    <editor active="false" />
+    <frame x="575" y="23" width="1896" height="1053" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23479189" sideWeight="0.49029127" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23479189" sideWeight="0.50970876" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14940669" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1820,5 +2036,82 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/java/com/prgguru/example/AndroidJSWebView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/java/com/prgguru/example/AndroidJSWebView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/java/com/prgguru/example/AndroidJSWebView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/java/com/prgguru/example/AndroidJSWebView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/java/com/prgguru/example/AndroidJSWebView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/java/com/prgguru/example/ChennaiIntent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/AndroidJSWebView1/app/src/main/java/com/prgguru/example/AndroidJSWebView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

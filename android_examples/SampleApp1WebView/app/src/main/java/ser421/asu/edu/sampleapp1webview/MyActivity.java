@@ -17,6 +17,7 @@ public class MyActivity extends Activity {
         browser.setHorizontalScrollBarEnabled(true);
         browser.setVerticalScrollBarEnabled(true);
         browser.setWebContentsDebuggingEnabled(true);
-        browser.loadUrl(getString(R.string.wvURL));
+        //browser.loadUrl(getString(R.string.wvURL));
+        browser.loadUrl("https://en.wikipedia.org/wiki/London");
     }
 }
