@@ -10,20 +10,10 @@ function operate2() {
     for(var j=0; j<nums.length; j++) {
       var f = functions[i];
       var num = nums[j];
-      console.log("Operation on %o is %o.", 
-                  num, f(num));
+      console.log("Operation on " + num + " is " + f(num));
     }
   }
 }
 
 operate2();
 
-// Trick so that the Firebug console.log function will
-// be ignored (instead of crashing) in Internet Explorer.
-// Also see Firebug Lite and Faux Console if you want 
-// logging to actually do something on IE.
-// Firebug Lite: http://www.getfirebug.com/lite.html
-// Faux Console: http://icant.co.uk/sandbox/fauxconsole/
- 
-try { console.log("Loading script"); 
-} catch(e) { console = { log: function() {} }; }

@@ -3,8 +3,7 @@ function convertString(numString, /* Optional */ base) {
     base = 10;
   }
   var num = parseInt(numString, base);
-  console.log("%s base %o equals %o base 10.",
-              numString, base, num);
+  console.log(numString + " base " + base + " equals " + num + " base 10.");
 }
 
 convertString("1010");
