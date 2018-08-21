@@ -1,5 +1,7 @@
+"use strict";
+
 function arrayLoops() {
-  var names = ["Joe", "Jane", "John"];
+  let names = ["Joe", "Jane", "John"];
   printArray1(names);
   printArray2(names);
   names.length = 6;
@@ -8,13 +10,13 @@ function arrayLoops() {
 }
     
 function printArray1(array) {
-  for(var i=0; i<array.length; i++) {
+  for(let i=0; i<array.length; i++) {
     console.log("[printArray1] array[" + i + "] is " + array[i]);
   }
 }
 
 function printArray2(array) {
-  for(var i in array) {
+  for(let i in array) {
     console.log("[printArray2] array[" + i + "] is " + array[i]);
   }
 }

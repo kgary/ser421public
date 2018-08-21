@@ -1,18 +1,18 @@
 "use strict";
 
-class Irate {
+function Irate(cap,rt) {
 
-    constructor(cap, rt) {
+    
         this.cap = cap;
         this.rt = rt;
         this.DEFAULT_RATE = 0.1;
-    }
+    
 
-    computeYield(years, rate) {
+    this.computeYield = function(years, rate) {
         return this.cap * this.yieldRate(years, rate);
-    }
+    };
 
-    yieldRate(years, rate) {
+    this.yieldRate = function(years, rate) {
         if (years <= 1) {
             return 1 + rate;
         } else {
@@ -20,7 +20,7 @@ class Irate {
             let crate = rt + rt * rate;
             return crate;
         }
-    }
+    };
 
 }
 

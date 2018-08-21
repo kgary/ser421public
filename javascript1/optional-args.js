@@ -1,8 +1,10 @@
+"use strict";
+
 function convertString(numString, /* Optional */ base) {
   if (typeof base == "undefined") {
     base = 10;
   }
-  var num = parseInt(numString, base);
+  let num = parseInt(numString, base);
   console.log(numString + " base " + base + " equals " + num + " base 10.");
 }
 
