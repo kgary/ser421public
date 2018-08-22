@@ -28,4 +28,4 @@ let ir = new Irate(10000, 0.1);
 console.log(ir.constructor.name);
 
 console.log("yield: " + ir.computeYield(4, 0.1));
-console.log("yeild rate: " + ir.yieldRate(4, 0.1));
+console.log("yield rate: " + ir.yieldRate(4, 0.1));
