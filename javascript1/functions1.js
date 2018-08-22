@@ -1,3 +1,5 @@
+"use strict";
+
 function third(x) {
   return(x / 3);
 }
@@ -11,9 +13,9 @@ function nineTimes(x) {
 }
 
 function operate(f) {
-  var nums = [1, 2, 3];
-  for(var i=0; i<nums.length; i++) {
-    var num = nums[i];
+  let nums = [1, 2, 3];
+  for(let i=0; i<nums.length; i++) {
+    let num = nums[i];
     console.log("Operation on " + num + " is " + f(num));
   }
 }

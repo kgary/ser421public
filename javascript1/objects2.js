@@ -1,3 +1,5 @@
+"use strict";
+
 function Circle(radius) {
   this.radius = radius;
   
@@ -7,5 +9,5 @@ function Circle(radius) {
     };
 }
 
-var c = new Circle(10);
+let c = new Circle(10);
 c.getArea();         
