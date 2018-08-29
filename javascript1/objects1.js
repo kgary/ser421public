@@ -9,5 +9,5 @@ function Circle(radius) {
     };
 }
 
-let c = new Circle(10);
-c.getArea();         
+let c = new Circle(12);
+console.log(c.getArea());
