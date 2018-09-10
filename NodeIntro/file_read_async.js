@@ -11,7 +11,9 @@ function readFruit(fd, fruits){
         fruits += data;
         readFruit(fd, fruits);
       } else {
-        fs.close(fd);
+        fs.close(fd, (err) => {
+            if (err) throw err;
+        });
         console.log ("Fruits: %s", fruits);
       }
   });
