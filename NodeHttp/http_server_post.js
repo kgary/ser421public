@@ -16,15 +16,15 @@ http.createServer(function (req, res) {
     res.writeHead(200);
     res.end(JSON.stringify(resObj));
   });
-}).listen(8080);
+}).listen(8088);
 
 /* You can comment out the below or use a client like ARC to send the POST 
-
+*/
 var http = require('http');
 var options = {
   host: '127.0.0.1',
   path: '/',
-  port: '8080',
+  port: '8088',
   method: 'POST'
 };
 function readJSONResponse(response) {
@@ -42,4 +42,3 @@ function readJSONResponse(response) {
 var req = http.request(options, readJSONResponse);
 req.write('{"name":"Bilbo", "occupation":"Burglar"}');
 req.end();
-*/

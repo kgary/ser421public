@@ -4,8 +4,7 @@
 var http = require( "http" );
 var url = require( "url" );
 
-var urlstring = "http://localhost:8080/hi.html"; 
-// "http://lead1.poly.asu.edu";
+var urlstring = "http://localhost/hi.html"; 
 var parsedurl = url.parse( urlstring );
 var cookies = [
   "foo=bar",
@@ -14,7 +13,7 @@ var cookies = [
 
 var options = {
   hostname: parsedurl.hostname,
-  port: ( parsedurl.port || 80 ), // 80 by default
+  port: ( parsedurl.port || 8088 ), 
   method: 'GET',
   path: parsedurl.path,
   headers: { },

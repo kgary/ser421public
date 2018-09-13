@@ -20,4 +20,4 @@ http.createServer(function (req, res) {
     res.writeHead(rand, {'Content-type':'text/plain'});
     console.log ("Response payload: " + rand + " " + messages[rand]);
     res.end(rand + " " + messages[rand]);
-}).listen(8080);
+}).listen(8088);
