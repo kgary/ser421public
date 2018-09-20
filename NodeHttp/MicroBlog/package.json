@@ -1,0 +1,16 @@
+{
+  "name": "micro-blog",
+  "private": true,
+  "description": "A bare bones micro blog with no frills nor nonsense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beautifulcoder/MicroBlog.git"
+  },
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "marked": "0.3.6"
+  }
+}
