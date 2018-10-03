@@ -14,7 +14,7 @@ http.createServer(function (req, res) {
     fs.readFile(ROOT_DIR + "template.html", function (err, template) {
 	if (err) {
 	    scode = 500;
-	    theOutput = "<HTML><HEAD><Title>Error!</Title></HEAD><Body>Unable to process the template</Body</HTML>";
+	    theOutput = "<HTML><HEAD><Title>Error!</Title></HEAD><Body>Unable to process the template<br/></br/>" + err + "</Body></HTML>";
 	    res.writeHead(scode, {
 		'Content-Type': 'text/html',
 	    });
@@ -24,7 +24,7 @@ http.createServer(function (req, res) {
 	    fs.readFile(ROOT_DIR + "banner" + qparams.banner + ".html", function (err, banner) {
 		if (err) {
 		    scode = 400;
-		    theOutput = "<HTML><HEAD><Title>Error!</Title></HEAD><Body>Unable to process banner</Body</HTML>";
+		    theOutput = "<HTML><HEAD><Title>Error!</Title></HEAD><Body>Unable to process banner<br/></br/>" + err + "</Body></HTML>";
 		    res.writeHead(scode, {
 			'Content-Type': 'text/html',
 		    });
@@ -34,7 +34,7 @@ http.createServer(function (req, res) {
 		    fs.readFile(ROOT_DIR + "footer" + qparams.footer + ".html", function (err, footer) {
 			if (err) {
 			    scode = 400;
-			    theOutput = "<HTML><HEAD><Title>Error!</Title></HEAD><Body>Unable to process footer</Body</HTML>";
+			    theOutput = "<HTML><HEAD><Title>Error!</Title></HEAD><Body>Unable to process footer<br/></br/>" + err + "</Body></HTML>";
 			    res.writeHead(scode, {
 				'Content-Type': 'text/html',
 			    });
@@ -44,7 +44,7 @@ http.createServer(function (req, res) {
 			    fs.readFile(ROOT_DIR + "left" + qparams.left + ".html", function (err, left) {
 				if (err) {
 				    scode = 400;
-				    theOutput = "<HTML><HEAD><Title>Error!</Title></HEAD><Body>Unable to process left nav</Body</HTML>";
+				    theOutput = "<HTML><HEAD><Title>Error!</Title></HEAD><Body>Unable to process left nav<br/></br/>" + err + "</Body></HTML>";
 				    res.writeHead(scode, {
 					'Content-Type': 'text/html',
 				    });
@@ -54,7 +54,7 @@ http.createServer(function (req, res) {
 				    fs.readFile(ROOT_DIR + "main" + qparams.main + ".html", function (err, main) {
 					if (err) {
 					    scode = 400;
-					    theOutput = "<HTML><HEAD><Title>Error!</Title></HEAD><Body>Unable to process main</Body</HTML>";
+					    theOutput = "<HTML><HEAD><Title>Error!</Title></HEAD><Body>Unable to process main<br/></br/>" + err + "</Body></HTML>";
 					} else {
 					    theOutput = theOutput.replace("MAIN", main.toString());
 					}

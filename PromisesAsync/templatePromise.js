@@ -39,7 +39,7 @@ http.createServer(function (req, res) {
 	res.end(result.theOutput);
     }, function(error) {
 	console.log("Some error in the promise!");
-	res.writeHead(400, { 'Content-type': 'text/html' });
+	res.writeHead(error.status, { 'Content-type': 'text/html' });
 	res.end(error.theOutput);
     });
 }).listen(8088);
