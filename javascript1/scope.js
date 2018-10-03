@@ -1,4 +1,4 @@
-// 'use strict'; 
+'use strict'; 
 // If line above is uncommented, then "2." won't work
 
 // Function expression assigned to a global variable
