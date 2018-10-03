@@ -1,0 +1,30 @@
+{
+  "name": "templates",
+  "version": "1.0.0",
+  "description": "Example EJS and PUG templates in Express",
+  "main": "express_templates.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgary/ser421public.git"
+  },
+  "keywords": [
+    "template",
+    "view",
+    "presentation",
+    "pug",
+    "ejs",
+    "express"
+  ],
+  "author": "Brad Dayley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgary/ser421public/issues"
+  },
+  "homepage": "https://github.com/kgary/ser421public#readme"
+}
