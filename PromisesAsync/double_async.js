@@ -49,7 +49,7 @@ addAsync(15).then((sum) => {
 addAsyncParallel(20).then((sum) => {
   console.log(sum);
 });
-addAsyncParallel(20).then((sum) => {
+addAsyncParallel(25).then((sum) => {
   console.log(sum);
 });
 
