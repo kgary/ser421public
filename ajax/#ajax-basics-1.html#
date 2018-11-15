@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Ajax Basics: Part I</title>
+<script src="./ajax-basics-1.js"
+        type="text/javascript"></script>
+</head>
+<body>
+<div align="center">
+<table border="5">
+  <tr><th class="title">Ajax Basics: Part I</th></tr>
+</table>
+<p>
+<fieldset>
+  <legend>Data from Server, Result Shown in Alert Box</legend>
+    <input type="button" value="Show Server Message in Alert"
+           onclick='ajaxAlert("http://localhost/message-data.html")'/>
+</fieldset>
+</p>
+<p>
+<fieldset>
+  <legend>Data from Server, Result Shown in HTML</legend>
+  <form action="#">
+    <input type="button" value="Show Server Message in DOM"
+           onclick='ajaxResult("http://localhost/message-data.html", "timeResult1")'/>
+  </form>
+  <div id="timeResult1" class="ajaxResult"></div>
+</fieldset>
+</p>
+</div></body></html>

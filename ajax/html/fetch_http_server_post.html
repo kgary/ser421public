@@ -1,0 +1,36 @@
+<!-- This HTML has an AJAX call to http_server_post in the NodeHttp examples dir -->
+<html>
+  <head><title>ajax_http_server_post</title></head>
+  <body>
+    <div id="response"></div>
+    <p>
+    Enter name: <input type="text" id="nameparam" name="name" required /><br/>
+    Anything: <input type="text" id="anyparam"  name="anything" required /><br/>
+    <input type="submit" name="submit" onClick="postToServer()" /><br/>
+    </p>
+  </body>
+  <!-- read the 2 form values, validate, and put in an HTTP request with a JSON payload to the server -->
+  <script>
+    function postToServer() {
+       let name = document.getElementById('nameparam').value;
+       let any  = document.getElementById('anyparam').value;
+       let postData = "name=" + name + "&anything=" + any;
+       fetch("/", {
+       method: "POST",
+       headers: {
+          'Content-type': 'application/x-www-form-urlencoded'
+       },
+       body: postData
+       }).then(response => {
+             if ( response.status === 200 ) {
+               response.text().then(function (text) {
+                  document.getElementById("response").innerHTML = text;
+               });
+             } else {
+               document.getElementById("response").innerHTML = "Error retrieving response from server";
+             }
+          });
+    }
+  </script>
+</html>
+    
