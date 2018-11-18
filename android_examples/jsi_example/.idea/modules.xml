@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/app.iml" filepath="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/app/app.iml" />
-      <module fileurl="file://$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/jsi_example.iml" filepath="$USER_HOME$/work/asu/classes/ser421/fall2016/examples/ser421fall16/android_examples/jsi_example/jsi_example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsi_example.iml" filepath="$PROJECT_DIR$/jsi_example.iml" />
     </modules>
   </component>
 </project>

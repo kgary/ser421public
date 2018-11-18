@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "ser421.asu.edu.sampleapp1ser421"
-        minSdkVersion 19
-        targetSdkVersion 20
+        minSdkVersion 23
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -20,5 +20,5 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
