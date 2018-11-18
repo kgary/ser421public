@@ -1,0 +1,19 @@
+{
+  "name": "send",
+  "version": "0.0.18",
+  "description": "SER421 example express from https://github.com/bwdbooks/nodejs-mongodb-angularjs-web-development",
+  "main": "express_send.js",
+  "scripts": {
+    "start": "node express_send.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.0.0"
+  },
+  "keywords": [
+    "mvc",
+    "express"
+  ],
+  "author": "Brad Dayley",
+  "license": "ISC"
+}

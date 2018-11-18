@@ -8,7 +8,7 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 app.engine('pug', pug.__express);
 app.engine('html', ejs.renderFile);
-app.listen(8080);
+app.listen(8088);
 app.locals.uname = "Brad";
 app.locals.vehicle = "Jeep";
 app.locals.terrain = "Mountains";

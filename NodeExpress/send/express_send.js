@@ -4,7 +4,7 @@
 var express = require('express');
 var url = require('url');
 var app = express();
-app.listen(8082);
+app.listen(8088);
 app.get('/', function (req, res) {
   var response = '<html><head><title>Simple Send</title></head>' +
                  '<body><h1>Hello from Express</h1></body></html>';
@@ -21,4 +21,8 @@ app.get('/', function (req, res) {
 app.get('/error', function (req, res) {
   res.status(400);
   res.send("This is a bad request.");
+});
+app.post('/*', function (req, res) {
+  res.status(405);
+  res.send("POST is not allowed.");
 });
