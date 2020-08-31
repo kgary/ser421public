@@ -1,0 +1,10 @@
+Valid Inputs:
+
+UserName: liNda24
+Password: LinSer421
+Email: 123-456-7890
+GPA:3.1
+Website: http://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
+Search: sdsasd
+IPV4 Address: 121.0.0.0
+
