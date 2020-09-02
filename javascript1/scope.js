@@ -1,14 +1,16 @@
 'use strict'; 
-// If line above is uncommented, then "2." won't work
 
 // Function expression assigned to a global variable
 var calcFunc = function(x) { 
-  tax = x * x;
+  let tax = x * x;
   return tax; 
 }
 console.log("1. " + calcFunc(5)); // 25
-console.log("2. " + tax);         // undefined tax
-
+try {
+  console.log("2. " + tax);         // undefined tax
+} catch (err) {
+  console.log("Caught exception trying to refer to tax");
+}
 function calc2Func(y) {  // function declaration
   var tax2 = y * y;
   console.log("3. " + tax2);

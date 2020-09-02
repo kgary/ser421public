@@ -1,6 +1,6 @@
 "use strict";
 
-let MathUtils = new Object(); 
+var MathUtils = new Object(); 
 // Some people prefer to say "function MathUtils() {};"
 
 MathUtils.fact = function(n) {
