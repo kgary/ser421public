@@ -1,0 +1,145 @@
+{
+	"NEWS_STORIES": {
+		"1": {
+			"title": "Test title 1",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Sat, 31 Oct 2020 05:37:06 GMT",
+			"isPublic": false
+		},
+		"3": {
+			"title": "Test Filter title 1",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Sun, 23 Aug 2020 07:00:00 GMT",
+			"isPublic": false
+		},
+		"4": {
+			"title": "Test Filter title 2",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Mon, 24 Aug 2020 07:00:00 GMT",
+			"isPublic": true
+		},
+		"5": {
+			"title": "Test Filter title 3",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Sun, 23 Aug 2020 07:00:00 GMT",
+			"isPublic": true
+		},
+		"6": {
+			"title": "Test title 1",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Sat, 31 Oct 2020 05:47:56 GMT",
+			"isPublic": false
+		},
+		"8": {
+			"title": "Test Filter title 1",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Sun, 23 Aug 2020 07:00:00 GMT",
+			"isPublic": false
+		},
+		"9": {
+			"title": "Test Filter title 2",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Mon, 24 Aug 2020 07:00:00 GMT",
+			"isPublic": true
+		},
+		"10": {
+			"title": "Test Filter title 3",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Sun, 23 Aug 2020 07:00:00 GMT",
+			"isPublic": true
+		},
+		"11": {
+			"title": "Test title 1",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Sat, 31 Oct 2020 05:48:41 GMT",
+			"isPublic": false
+		},
+		"13": {
+			"title": "Test Filter title 1",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Sun, 23 Aug 2020 07:00:00 GMT",
+			"isPublic": false
+		},
+		"14": {
+			"title": "Test Filter title 2",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Mon, 24 Aug 2020 07:00:00 GMT",
+			"isPublic": true
+		},
+		"15": {
+			"title": "Test Filter title 3",
+			"content": "Content for title 1",
+			"author": "Author1",
+			"date": "Sun, 23 Aug 2020 07:00:00 GMT",
+			"isPublic": true
+		},
+		"16": {
+			"title": "KG1",
+			"content": "Some KG stuff",
+			"author": "KGAuthor1",
+			"date": "Invalid Date",
+			"isPublic": true
+		},
+		"17": {
+			"title": "KGtitle",
+			"content": "Some sample news story content from KG",
+			"author": "KGauthor",
+			"date": "Invalid Date",
+			"isPublic": true
+		},
+		"18": {
+			"title": "Test POST title",
+			"content": "Sample POST content",
+			"author": "Test author title",
+			"date": "Fri, 13 Nov 2020 18:18:13 GMT",
+			"isPublic": false
+		},
+		"19": {
+			"title": "titlenew1",
+			"content": "new content here",
+			"author": "newauthor1",
+			"date": "Invalid Date",
+			"isPublic": false
+		},
+		"20": {
+			"title": "Test POST title KG Video",
+			"content": "Sample POST content",
+			"author": "Test author title",
+			"date": "Fri, 13 Nov 2020 18:18:13 GMT",
+			"isPublic": false
+		},
+		"21": {
+			"title": "Test POST title KG Video",
+			"content": "Sample POST content",
+			"author": "Test author title",
+			"date": "Fri, 13 Nov 2020 18:18:13 GMT",
+			"isPublic": false
+		},
+		"22": {
+			"title": "Test POST title KG Video",
+			"content": "Sample POST content",
+			"author": "Test author title",
+			"date": "Fri, 13 Nov 2020 18:18:13 GMT",
+			"isPublic": false
+		},
+		"23": {
+			"title": "Test POST title KG Video",
+			"content": "Sample POST content",
+			"author": "Test author title",
+			"date": "Fri, 13 Nov 2020 18:18:13 GMT",
+			"isPublic": false
+		}
+	},
+	"LATEST_ID": 23
+}
