@@ -1,6 +1,0 @@
-<resources>
-<item type="id" name="menu_da_clear"/>
-<string name="help">
-This is to test async task.
-</string>
-</resources>
