@@ -2,14 +2,17 @@
 // https://github.com/bwdbooks/nodejs-mongodb-angularjs-web-development
 
 var http = require('http');
-var url = require('url');
+var url  = require('url');
 var messages = ['Hello World', 'From a Node.js server', 'Take Luck'];
+
 http.createServer(function (req, res) {
-    var resBody = '';
-    var resMsg = '';
-    var urlObj = url.parse(req.url, true, false);
-    var qstr = urlObj.query;
-    console.log(urlObj);
+    let resBody = '';
+    let resMsg = '';
+    // This way of parsing a query string is deprecated but I still find it much easier
+    // than trying to use the new WhatWG URL object and trying to parse the searchParams
+    let urlObj = url.parse(req.url, true, false);
+    let qstr = urlObj.query;
+    console.log(qstr);
     if (!qstr.msg) {
         resMsg = '<h2>No msg parameter</h2>\n';
     } else {

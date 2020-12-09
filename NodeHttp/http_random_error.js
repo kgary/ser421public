@@ -17,7 +17,7 @@ http.createServer(function (req, res) {
     } else {
         rand += (500-6);
     }
-    res.writeHead(rand, {'Content-type':'text/plain'});
+    res.writeHead(401, {'Content-type':'text/plain','Location':'/foo'});
     console.log ("Response payload: " + rand + " " + messages[rand]);
     res.end(rand + " " + messages[rand]);
 }).listen(8088);
