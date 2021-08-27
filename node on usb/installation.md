@@ -1,14 +1,25 @@
 
-## Installing on MacOS host ##
+## Installation Guide ##
 
-The steps assume that nodejs installation is absent on the local machine. 
-If it is present locally, the steps could cause conflicts when using node/npm.
+**General Guidelines/Notes:**
+
+1. Please make sure that absolute path to node setup on usb does not include any spaces.
+
+2. Please refer the page https://nodejs.org/en/download/ in case the download url the following steps use, is dead.
+
+3. The path setting step can be excluded if path was already set to point to node/npm on usb before. 
+
+4. The steps should ideally work for any node version. 
+
+    This installation refers to node-v14.17.5-darwin-x64 (MacOS) or node-v14.17.5-win-x64 (Windows 10)
+
+6. The steps assume that nodejs installation is absent on the local machine.
+
+   If it is present locally, the steps could cause conflicts when using node/npm.
+
     - A possible workaround could be to rename usb node binaries/executables: 'node' to 'node-usb' and 'npm' to 'npm-usb' and use the node-usb/npm-usb (Not recommended)
 
-As a general note, please rename your USB drive so that it does not include any spaces.
-Also, please refer the page https://nodejs.org/en/download/ in case the download url is dead.
-
-Please note: The Path setting step can be excluded if path was already set to point to node/npm on usb before. 
+## Installing on MacOS host ##
 
 **Steps:**
 1. cd /path/to/usb
