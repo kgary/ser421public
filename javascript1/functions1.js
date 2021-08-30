@@ -20,6 +20,9 @@ function operate(f) {
   }
 }
 
-operate(third);
-operate(triple);
-operate(nineTimes);
+console.log("operate(third):");
+console.log(operate(third));
+console.log("operate(triple):");
+console.log(operate(triple));
+console.log("operate(nineTimes):");
+console.log(operate(nineTimes));

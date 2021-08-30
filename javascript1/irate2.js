@@ -1,9 +1,9 @@
 "use strict";
 
 function Irate(cap,rt) {
-        this.cap = cap;
-        this.rt = rt;
-        this.DEFAULT_RATE = 0.1;
+    this.cap = cap;
+    this.rt = rt;
+    this.DEFAULT_RATE = 0.1;
 
     this.computeYield = function(years, rate) {
         return this.cap * this.yieldRate(years, rate);
