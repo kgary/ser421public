@@ -11,6 +11,6 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "marked": "0.3.6"
+    "marked": "0.3.18"
   }
 }
