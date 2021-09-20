@@ -8,8 +8,8 @@ var messages = ['Hello World', 'From a Node.js server', 'Take Luck'];
 http.createServer(function (req, res) {
     let resBody = '';
     let resMsg = '';
-    // This way of parsing a query string is deprecated but I still find it much easier
-    // than trying to use the new WhatWG URL object and trying to parse the searchParams
+    // This way of parsing a query string is deprecated but in some ways easier than
+    // trying to use the new WhatWG URL object and trying to parse the searchParams
     let urlObj = url.parse(req.url, true, false);
     let qstr = urlObj.query;
     console.log(qstr);
