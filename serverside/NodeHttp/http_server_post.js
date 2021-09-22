@@ -13,19 +13,22 @@ http.createServer(function (req, res) {
       message: "Hello " + reqObj.name,
       question: "Are you a good " + reqObj.occupation + "?"
     };
-    res.writeHead(200);
+    res.writeHead(200, {'Content-Type': 'application/json', 'x-asu-class': 'SER421' });
     res.end(JSON.stringify(resObj));
   });
 }).listen(8088);
 
 /* You can comment out the below or use a client like ARC to send the POST 
 */
-var http = require('http');
+//var http = require('http');
 var options = {
   host: '127.0.0.1',
   path: '/',
   port: '8088',
-  method: 'POST'
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  }
 };
 function readJSONResponse(response) {
   var responseData = '';
