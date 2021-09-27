@@ -2,6 +2,8 @@
 
 This version of MicroBlog uses Express framework.
 
+To Run, Simply do - node app.js
+
 # Building a Microblog Using Node.js, Git and Markdown
 
 Camilo Reyes shows how to write robust, testable code using SOLID principles by building a small but functional microblog with only minimal dependencies.
