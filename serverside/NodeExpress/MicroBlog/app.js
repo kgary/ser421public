@@ -42,15 +42,14 @@ app.post('/', function(req, res) {
             console.log('Blog exists');
             return res.status(409).send('Blog already exists, upload failed.');
         }
+	uploadFile.mv('./blog/'+fileName, function(err) {
+            if(err) {
+		return res.status(500).send(err);
+            }
+            var html = "Blog uploaded successfully! " + ahref;
+            res.send(html);
+	});
     });
-
-    uploadFile.mv('./blog/'+fileName, function(err) {
-        if(err)
-          return res.status(500).send(err);
-        
-        var html = "Blog uploaded successfully! " + ahref;
-        res.send(html);
-    })
 });
 
 app.put('/', function(req, res) {
