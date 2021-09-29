@@ -2,19 +2,30 @@ var express = require('express');
 var message = require('./message/message');
 
 const fileUpload = require('express-fileupload');
+const cookieParser = require('cookie-parser');
 const fs = require('fs');
 
 var app = express();
 app.use(fileUpload());
+app.use(cookieParser());
 app.listen(1337);
 
 app.get('/', function (req, res){
-  var form = '<html><form method="POST" enctype="multipart/form-data">' +
+    var lastSeenBlogName = "None";
+    if(req.cookies.lastSeenBlog) {
+        lastSeenBlogName = req.cookies.lastSeenBlog;
+    }
+
+    var html = '<html>' +
+        '<h3>A simple micro blog website with no frills nor nonsense.</h3>' +
+        '<h4>Last Seen Blog -> ' + lastSeenBlogName + '</h4>' +
+        '<form method="POST" enctype="multipart/form-data">' +
         '<label for="file_upload">Upload a blog (markdown only):</label> <br><br>' +
         '<input type="file" id="file_upload" name="file_upload" accept=".md"></input><br><br>'+
-        '<button>Submit</button></html>' +
-        '</form>';
-  res.send('A simple micro blog website with no frills nor nonsense.' + form);
+        '<button>Submit</button>' +
+        '</form></html>';
+
+  res.send(html);
 });
 
 app.post('/', function(req, res) {
@@ -79,6 +90,7 @@ app.get('/blog/:file', function (req, res){
             var htmlContent = message.marked(rawContent);
             var responseContent = message.mustacheTemplate(html, {postContent: htmlContent});
 
+            res.cookie('lastSeenBlog', req.params.file);
             res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
             res.end(responseContent);
         });

@@ -1,8 +1,10 @@
 # Originally based on the pure Node.js MicroBlog example
 
 This version of MicroBlog uses Express framework.
-
-To Run, Simply do - node app.js
+1. Run `npm install`
+2. Run `node app.js`
+3. Visit http://localhost:1337/
+4. To access a blog - http://localhost:1337/blog/<blog_name_here>
 
 # Building a Microblog Using Node.js, Git and Markdown
 
