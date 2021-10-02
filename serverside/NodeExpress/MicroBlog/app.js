@@ -16,17 +16,29 @@ app.get('/', function (req, res){
         lastSeenBlogName = req.cookies.lastSeenBlog;
     }
 
-    var html = '<html>' +
-        '<h3>A simple micro blog website with no frills nor nonsense.</h3>' +
-        '<h4>Last Seen Blog -> ' + lastSeenBlogName + '</h4>' +
+    var html = '<html><head><title>Microblog</title></head><body>' +
+        '<h3>A simple micro blog website with no frills nor nonsense.</h3>\n' +
+        '<h4>Last Seen Blog -> ' + lastSeenBlogName + '</h4>\n' +
+	'<em>Current available blogs:</em>\n' + buildFileLinks() + '\n' +
         '<form method="POST" enctype="multipart/form-data">' +
-        '<label for="file_upload">Upload a blog (markdown only):</label> <br><br>' +
-        '<input type="file" id="file_upload" name="file_upload" accept=".md"></input><br><br>'+
-        '<button>Submit</button>' +
-        '</form></html>';
+        '<label for="file_upload">Upload a blog (markdown only):</label> <br><br>\n' +
+        '<input type="file" id="file_upload" name="file_upload" accept=".md"></input><br><br>\n'+
+        '<button>Submit</button>\n' +
+        '</form>\n</body>\n</html>';
 
   res.send(html);
 });
+
+function buildFileLinks() {
+    let files = "<ul>\n";
+
+    fs.readdirSync("./blog/").forEach(file => {
+	fileLink = file.split(" ").join("%20");
+	fileLink = file.split(".")[0];
+	files += "<li><a href=./blog/"+fileLink+"> "+file+"</a></li>\n";
+    });
+    return files + "</ul>\n";
+}
 
 app.post('/', function(req, res) {
     if (!req.files || Object.keys(req.files).length === 0) {
