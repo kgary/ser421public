@@ -24,9 +24,8 @@
 **Steps:**
 1. cd /path/to/usb
 2. curl https://nodejs.org/dist/v14.17.5/node-v14.17.5-darwin-x64.tar.gz --output nodejs.tar.gz
-3. tar -xvzf node-v14.17.5-darwin-x64.tar.gz
-4. export PATH=$PATH:/path/to/usb/node-v14.17.5-darwin-x64/bin
-5. Restart terminal.
+3. tar -xvzf nodejs.tar.gz
+4. export PATH=/path/to/usb/node-v14.17.5-darwin-x64/bin:$PATH
 6. node -v
 7. npm -v
 
