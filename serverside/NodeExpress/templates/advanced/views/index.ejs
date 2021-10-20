@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EJS Template</title>
+</head>
+<body>
+	<table>
+      <tr><th colspan="<%= colors.rgb[0].length %>"> RANDOM COLORS (EJS) </th></tr>
+      <% for(var i=0; i < colors.rgb.length; ++i) { %>
+        <tr>
+        <% for(var j=0; j < colors.rgb[i].length; ++j) { %>
+          <td bgcolor="<%= colors.rgb[i][j] %>"> <font color="<%= colors.altFontColor[i] %>"><b>Color: <%= colors.altFontColor[i] %></font></b></td>
+        <% } %>
+        </tr>
+      <% } %>
+    </table>
+</body>
+</html>

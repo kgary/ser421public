@@ -1,5 +1,6 @@
 // Example from Brad Dayley
 // https://github.com/bwdbooks/nodejs-mongodb-angularjs-web-development
+const { rgb } = require('color-convert');
 var express = require('express'),
     pug = require('pug'),
     ejs = require('ejs');
@@ -12,7 +13,8 @@ app.engine('html', ejs.renderFile);
 app.listen(8088);
 
 app.get('/pug', function (req, res) {
-  res.render('user_pug');
+    payload = getRandomColors();
+    res.render('index.pug', {colors:payload,});
 });
 
 // https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
@@ -48,7 +50,7 @@ function generateRandomHexColor() {
     return '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
 }
 
-app.get('/ejs', function (req, res) {
+function getRandomColors() {
     var rgb = [];
     var altFontColor = [];
     for(var i = 0; i < 10; ++i) {
@@ -60,7 +62,12 @@ app.get('/ejs', function (req, res) {
         }
         rgb.push(shades);
     }
+    return {rgb, altFontColor};
+}
 
+app.get('/ejs', function (req, res) {
+    
+    payload = getRandomColors();
     // Assemble background color and inverted color as fontcolor for the ejs.
-    res.render('index.html', {colors:{rgb, altFontColor},});
+    res.render('index.ejs', {colors:payload,});
 });

@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    title="Pug Template"
+  body
+    table
+      thead
+        tr 
+          th(colspan= colors.rgb[0].length) RANDOM COLORS (PUG)
+      tbody
+      - for (var i=0; i < colors.rgb.length; ++i) {
+        tr
+        - for (var j=0; j < colors.rgb[i].length; ++j) {
+          td(bgcolor = colors.rgb[i][j])
+            font(color = colors.altFontColor[i])
+              b Color: #{colors.altFontColor[i]}
+        - }
+      - }
