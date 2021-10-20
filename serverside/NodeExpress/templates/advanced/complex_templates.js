@@ -50,10 +50,10 @@ function generateRandomHexColor() {
 
 app.get('/ejs', function (req, res) {
     var rgb = [];
-    var fontColor = [];
+    var altFontColor = [];
     for(var i = 0; i < 10; ++i) {
         var color = generateRandomHexColor();
-        fontColor.push(invertHex(color));
+        altFontColor.push(invertHex(color));
         shades = []
         for(var j = 100; j >= -50; j-=10) {
             shades.push(shadeColor(color, j));
@@ -61,5 +61,6 @@ app.get('/ejs', function (req, res) {
         rgb.push(shades);
     }
 
-    res.render('index.ejs', {colors:rgb, fontColor:fontColor});
+    // Assemble background color and inverted color as fontcolor for the ejs.
+    res.render('index.html', {colors:{rgb, altFontColor},});
 });
