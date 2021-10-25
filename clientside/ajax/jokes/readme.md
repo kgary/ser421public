@@ -1,0 +1,1 @@
+The HTML file - simple_fetch_example.html can be directly opened from a browser and used.

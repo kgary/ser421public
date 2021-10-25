@@ -17,7 +17,9 @@ function showCustomersXML(request, resultRegion) {
     console.log("showCustomersXML");
   if ((request.readyState == 4) &&
       (request.status == 200)) {
-      var xmlDocument = request.responseXML;
+      var xmlDocument = ( new window.DOMParser() ).parseFromString(request.responseText, "text/xml");
+      console.log("XML is " + xmlDocument);
+      console.log("request " + request);
       var fnames = xmlDocument.getElementsByTagName("firstName");
       var lnames = xmlDocument.getElementsByTagName("lastName");
       var str = "<p>";
