@@ -28,7 +28,6 @@ http.createServer(function (req, res) {
             reqContent += chunk;
         });
         req.on('end', function (chunk) {
-            reqContent += chunk;
             res.writeHead(200);
             res.end(reqContent);
         });

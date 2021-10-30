@@ -1,3 +1,11 @@
+# Changes from Express version of the MicroBlog
+
+- This version uses AJAX fetch API to get list of available/uploaded blogs.
+- To add a new blog, it again uses POST with AJAX fetch.
+- Please check view/index.html. It has inline javascript, which has Fetch API calls.
+- It also uses DOM and javascript events. For e.g. onLoad event on body element to get list of blogs.
+- Everything else is still the same as Express MicroBlog example.
+
 # Originally based on the pure Node.js MicroBlog example
 
 This version of MicroBlog uses Express framework.
