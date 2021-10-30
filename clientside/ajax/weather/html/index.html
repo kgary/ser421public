@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>External Example</title>
+</head>
+
+<body>
+    <form onsubmit="return getCityWeather(event)">
+        City: <input name="city" id="city"><br>
+        <input type="submit" value="Weather">
+    </form>
+    <div id="cityWeather">
+        <p id="report"></p>
+    </div>
+</body>
+<script type="text/javascript">
+    function getCityWeather(e) {
+        e.preventDefault();
+        var cityName = document.getElementById("city").value;
+        let formData = new FormData();
+        formData.append('city',cityName);
+
+        if(cityName.trim() === "") {
+            return;
+        }
+        fetch("/", {
+            method: "POST",
+            body:new URLSearchParams(formData)
+        }).then(response => {
+            if (response.status === 200) {
+                response.text().then(function (text) {
+                    document.getElementById("report").innerHTML = text;
+                });
+            } else {
+                document.getElementById("report").innerHTML = "Error retrieving response from server";
+            }
+        });
+    }
+</script>
+
+</html>
