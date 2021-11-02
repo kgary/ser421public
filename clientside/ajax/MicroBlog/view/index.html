@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Microblog</title>
+</head>
+
+<body onload="getBlogs()">
+    <h3>Micro Blog - AJAXified </h3>
+    <div style="border-style: groove;">
+        <h4>Current available blogs:</h4>
+        <div id="blogsList"></div>
+    </div>
+    <div style="border-style: groove;">
+        <label for="file_upload"><b>Upload a blog (markdown only): </b></label> <br><br>
+        <input type="file" id="file_upload" name="file_upload" accept=".md"></input><br><br>
+        <button onclick="postBlog()">Submit</button>
+        <br></br>
+        <div id="recentFileUploadStatus"></div>
+    </div>
+</body>
+
+<script>
+    function getBlogs() {
+        fetch("/blogs", {
+            method: "GET",
+        }).then(response => {
+            if (response.status === 200) {
+                response.text().then(function (text) {
+                    document.getElementById("blogsList").innerHTML = text;
+                });
+            } else {
+                document.getElementById("blogsList").innerHTML = "Error retrieving response from server";
+            }
+        });
+    }
+
+    function postBlog() {
+        var input = document.getElementById("file_upload");
+        var data = new FormData()
+        data.append('file', input.files[0])
+
+        fetch("/", {
+            method: "POST",
+            body: data
+        }).then(response => {
+            if (response.status === 201) {
+                getBlogs();
+                document.getElementById("recentFileUploadStatus").innerHTML = "Most Recent Upload: " + input.files[0].name;
+            } else if (response.status === 409) {
+                document.getElementById("recentFileUploadStatus").innerHTML = "Blog with the same filename already exists. Upload failed.";
+            } else {
+                document.getElementById("recentFileUploadStatus").innerHTML = "Unknown error occurred. Please try again."
+            }
+        }).catch(
+            error => console.log(error)
+        );
+    }
+</script>
+
+</html>

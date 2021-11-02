@@ -4,6 +4,8 @@
 var http = require('http');
 var url = require('url');
 var qstring = require('querystring');
+var config = require('./config');
+
 function sendResponse(weatherData, res){
   var page = '<html><head><title>External Example</title></head>' +
     '<body>' +
@@ -30,7 +32,7 @@ function parseWeather(weatherResponse, res) {
 function getWeather(city, res){
   var options = {
     host: 'api.openweathermap.org',
-    path: '/data/2.5/weather?q=' + city + "&APPID=d3772e348ab8cf35f9877845f6942efb"
+      path: '/data/2.5/weather?q=' + city + "&APPID=" + config.APITOKEN
   };
   http.request(options, function(weatherResponse){
     parseWeather(weatherResponse, res);

@@ -5,7 +5,7 @@
 var fs = require('fs');
 var http = require('http');
 var url = require('url');
-var ROOT_DIR = "html/";
+var ROOT_DIR = "resources/";
 http.createServer(function (req, res) {
     var urlObj = url.parse(req.url, true, false);
     if (req.method == "GET") {
@@ -28,7 +28,6 @@ http.createServer(function (req, res) {
             reqContent += chunk;
         });
         req.on('end', function (chunk) {
-            reqContent += chunk;
             res.writeHead(200);
             res.end(reqContent);
         });

@@ -1,0 +1,1 @@
+Simply open the 'promise_example.html' in browser and use it.

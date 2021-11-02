@@ -4,38 +4,43 @@
 var http = require('http');
 var url = require('url');
 var qstring = require('querystring');
-function sendResponse(weatherData, res){
-  var page = '<html><head><title>External Example</title></head>' +
-    '<body>' +
-    '<form method="post">' +
-    'City: <input name="city"><br>' +
-    '<input type="submit" value="Weather">' +
-    '</form>';
-  if(weatherData){
-    page += '<h1>Weather Info</h1><p>' + weatherData +'</p>';
-  }
-  page += '</body></html>';    
-  res.end(page);
+var fs = require('fs');
+var util = require('util');
+var config = require('./config');
+
+function sendHomepage(res){
+  fs.readFile('./html/index.html', function (err, html) {
+    if (err) {
+        throw err; 
+    }       
+    res.writeHeader(200, {"Content-Type": "text/html"});  
+    res.write(html);  
+    res.end();  
+});
 }
+
 function parseWeather(weatherResponse, res) {
   var weatherData = '';
   weatherResponse.on('data', function (chunk) {
     weatherData += chunk;
   });
   weatherResponse.on('end', function () {
-    sendResponse(weatherData, res);
+    res.end(weatherData);
   });
 }
+
 // You will need to go get your own free API key to get this to work
 function getWeather(city, res){
   var options = {
     host: 'api.openweathermap.org',
-    path: '/data/2.5/weather?q=' + city + "&APPID=d3772e348ab8cf35f9877845f6942efb"
+    path: '/data/2.5/weather?q=' + city + "&APPID=" + config.APITOKEN
   };
+
   http.request(options, function(weatherResponse){
     parseWeather(weatherResponse, res);
   }).end();
 }
+
 http.createServer(function (req, res) {
   console.log(req.method);
   if (req.method == "POST"){
@@ -48,6 +53,6 @@ http.createServer(function (req, res) {
       getWeather(postParams.city, res);
     });
   } else{
-    sendResponse(null, res);
+    sendHomepage(res);
   }
 }).listen(8088);

@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>External Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return getCityWeather(event)">
+        City: <input name="city" id="city"><br>
+        <input type="submit" value="Weather">
+    </form>
+    <div id="cityWeather">
+        <p id="report"></p>
+        <table id="weather-reports">
+            <tr>
+                <th>City Name</th>
+                <th>Timestamp<br>(yyyy:mm:dd:hh:mm:ss)</th>
+                <th>Temperature<br>in &#8490;</th>
+                <th>Humidity<br>in %</th>
+                <th>Wind Speed<br>in miles per hour</th>
+                <th>Cloudiness<br>in %</th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script type="text/javascript">
+    function getCityWeather(e) {
+        e.preventDefault();
+        var cityName = encodeURI(document.getElementById("city").value);
+        let formData = new FormData();
+        formData.append('city', cityName);
+
+        if (cityName.trim() === "") {
+            return;
+        }
+        fetch("/", {
+            method: "POST",
+            body: new URLSearchParams(formData)
+        }).then(response => {
+            if (response.status === 200) {
+                response.json().then(function (reportJson) {
+                    if (reportJson.cod == 404) {
+                        document.getElementById("report").innerHTML = "Error retrieving response from server";
+                        return;
+                    }
+                    addRow(reportJson);
+                    document.getElementById("report").innerHTML = "Recently queried city: " + reportJson.name;
+                });
+            }
+        });
+    }
+
+    function addRow(reportJson) {
+        var reportTable = document.getElementById("weather-reports");
+        var city = reportJson.name;
+        var timestamp = epochToMysqlDateTime(reportJson.dt);
+        var temperature = reportJson.main.temp;
+        var humidity = reportJson.main.humidity;
+        var windSpeed = reportJson.wind.speed;
+        var cloudiness = reportJson.clouds.all;
+
+        let rowData = [city, timestamp, temperature, humidity, windSpeed, cloudiness];
+        var row = reportTable.insertRow();
+
+        for (var i = 0; i < rowData.length; ++i) {
+            var cell = row.insertCell();
+            var cell = cell.appendChild(document.createTextNode(rowData[i]));
+        }
+    }
+
+    function epochToMysqlDateTime(epochTime) {
+        // Convert epoch to JS datetime
+        // https://poopcode.com/convert-epoch-timestamp-to-javascript-date/
+        var myDate = new Date(epochTime * 1000);
+        //myDate = myDate.toLocaleString();
+
+        // Convert JS to MySQL style datetime
+        // https://stackoverflow.com/questions/5129624/convert-js-date-time-to-mysql-datetime
+        return myDate.toISOString().slice(0, 19).replace('T', ' ');
+    }
+
+</script>
+
+</html>
