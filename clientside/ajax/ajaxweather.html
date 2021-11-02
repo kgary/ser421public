@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ajax Weather Solution</title>		
+		<style>
+			table, th, td {
+    			border: 1px solid black;
+    			border-collapse: collapse;
+			}
+			th, td {
+    			padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<table id="weatherTable">
+			<tr>
+    			<th>City Name</th>
+    			<th>Timestamp<br>(yyyy:mm:dd:hh:mm:ss)</th>
+    			<th>Temperature<br>in &deg;C</th>
+    			<th>Humidity<br>in &#37;</th>
+    			<th>Wind Speed<br>in miles per hour</th>
+    			<th>Cloudiness<br>in &#37;</th>
+  			</tr>
+		</table>
+		<div>
+			Please select a third city :
+			<select onchange="populateThirdCity(this)">  				
+  				<option value="new york">New York</option>
+  				<option value="frankfurt">Frankfurt</option>
+  				<option value="sydney">Sydney</option>
+  				<option value="new delhi">New Delhi</option>
+  				<option value="shanghai">Shanghai</option>
+			</select>
+		</div>
+		<div>
+			<button onclick="refreshData()">Refresh</button>
+		</div>
+		<div>
+			<span id="lineOne"></span><br>
+			<span id="lineTwo"></span><br>
+			<span id="lineThree"></span><br>
+			<span id="lineFour"></span>
+		</div>
+	</body>
+	<script>
+		function initTable(reqURL, rowid) {
+  			var xhttp = new XMLHttpRequest();
+
+  			xhttp.onreadystatechange = function() {
+
+    			if (xhttp.readyState === 4 && xhttp.status === 200) {
+    				var response = JSON.parse(xhttp.responseText);
+      				var cityName = response.name + "," + response.sys.country;
+      				var timestamp = response.dt;
+      				var temperature = response.main.temp;
+      				var humidity = response.main.humidity;
+      				var windspeed = response.wind.speed;
+      				var cloudiness = response.clouds.all;
+
+      				console.log("Got new API values (city,timestamp,temp,humidity,wind,cloud): "+cityName+","
+                        +timestamp+","+temperature+","+humidity+","+windspeed+","+cloudiness);
+
+      				if(rowid.indexOf("new") > 0) {
+      					if (document.getElementById(rowid) !== null) {
+							document.getElementById(rowid).parentNode.removeChild(document.getElementById(rowid));
+						}
+
+						var parentRowId = rowid.substring(0,rowid.indexOf("new"));
+                        if (compareValues(timestamp, temperature, humidity, windspeed, cloudiness, parentRowId)) {
+
+                            // insert the new Values
+                            insertToTable(cityName, convertTimeStamp(timestamp), convertTemperature(temperature),
+                                humidity, convertwindspeed(windspeed), cloudiness,
+                                document.getElementById(parentRowId).rowIndex+1, rowid);
+                        } else {
+
+                            // insert blank row
+                            insertToTable(cityName, "", "", "", "", "", document.getElementById(parentRowId).rowIndex+1,
+                                rowid);
+                        }
+      				} else {
+      					insertToTable(cityName,convertTimeStamp(timestamp),convertTemperature(temperature),
+                            humidity,convertwindspeed(windspeed), cloudiness, -1, rowid);
+      				}      			      				
+    			}
+  			};
+  			xhttp.open("GET", reqURL, true);
+  			xhttp.send();  			
+		}
+
+        function compareValues(newTimeStamp, newTemperature, newHumidity, newWindSpeed, newCloudiness, parentRowId){
+            var valueChangedStatus = false;
+
+            var newDate = new Date(newTimeStamp * 1000);
+
+            var oldDate = document.getElementById(parentRowId).cells[1].innerHTML.split(":");
+            var convertedOldDate = new Date(oldDate[0], oldDate[1]-1, oldDate[2], oldDate[3], oldDate[4], oldDate[5]);
+
+            var oldTemperature = document.getElementById(parentRowId).cells[2].innerHTML;
+            var oldHumidity = parseInt(document.getElementById(parentRowId).cells[3].innerHTML);
+            var oldWindSpeed = parseFloat(document.getElementById(parentRowId).cells[4].innerHTML);
+            var oldCloudiness = parseInt(document.getElementById(parentRowId).cells[5].innerHTML);
+
+            if ((convertedOldDate.getTime() !== newDate.getTime()) || (oldTemperature !== convertTemperature(newTemperature))
+                || (oldHumidity !== newHumidity) || (oldWindSpeed !== convertwindspeed(newWindSpeed))
+                || (oldCloudiness !== newCloudiness)) {
+
+                // set status to true if any of the value changes
+                valueChangedStatus = true;
+            }
+
+            console.log("status: ", valueChangedStatus);
+
+            return valueChangedStatus;
+        }
+
+		function insertToTable(c1,c2,c3,c4,c5,c6,index,rowid) {
+			var table = document.getElementById("weatherTable");
+			var row = table.insertRow(index);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			var cell4 = row.insertCell(3);
+			var cell5 = row.insertCell(4);
+			var cell6 = row.insertCell(5);
+			row.id = rowid;
+		        var cityString = c1+"|"+c2+"|"+c3+"|"+c4+"|"+c5+"|"+c6;
+			
+		        if ((localStorage.getItem(rowid) === null) || (localStorage.getItem(rowid) !== cityString)) {
+				localStorage.setItem(rowid, cityString);
+			}
+
+			cell1.innerHTML = c1;
+			cell2.innerHTML = c2;
+			cell3.innerHTML = c3;
+			cell4.innerHTML = c4;
+			cell5.innerHTML = c5;
+			cell6.innerHTML = c6;
+			calculateBottomPageValues();
+		}
+
+		function populateThirdCity(that) {
+			if (document.getElementById('thirdcity') != null) {
+				document.getElementById('thirdcity').parentNode.removeChild(document.getElementById('thirdcity'));
+			}
+			if (document.getElementById('thirdcitynewrow') != null) {
+				document.getElementById('thirdcitynewrow').parentNode.removeChild(document.getElementById('thirdcitynewrow'));
+			}
+			initTable("http://api.openweathermap.org/data/2.5/weather?q="+that.value+"&appid=f8067effab2859a4ac1d4f5637dec42b", "thirdcity");			
+		}
+
+		function refreshData() {
+			initTable("http://api.openweathermap.org/data/2.5/weather?q=London&appid=f8067effab2859a4ac1d4f5637dec42b","firstcitynewrow");
+            // initTable("http://localhost:8081?cityName=London","firstcitynewrow");
+
+			initTable("http://api.openweathermap.org/data/2.5/weather?q=Phoenix&appid=f8067effab2859a4ac1d4f5637dec42b", "secondcitynewrow");
+            // initTable("http://localhost:8081?cityName=Phoenix","secondcitynewrow");
+
+			if (document.getElementById('thirdcity') !== null) {
+				initTable("http://api.openweathermap.org/data/2.5/weather?q="+document.getElementById('thirdcity').cells[0].innerHTML+"&appid=f8067effab2859a4ac1d4f5637dec42b", "thirdcitynewrow");
+				// initTable("http://localhost:8081?cityName=" + document.getElementById('thirdcity').cells[0].innerHTML, "thirdcitynewrow");
+			}
+		}		
+
+		function convertTimeStamp(timestamp) {			
+			date = new Date(timestamp * 1000);
+			return date.getFullYear() + ":" + (date.getMonth()+1) + ":" + date.getDate() + ":" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+		}
+
+		function convertTemperature(temperature) {
+			return (parseFloat(temperature) - 273.15).toFixed(2);
+		}
+
+		function convertwindspeed(windspeed) {
+			return Math.round(windspeed * 3600 / 1610.3*1000)/1000;
+		}
+
+		function calculateBottomPageValues() {
+			calculateHottestCity();
+			calculateHumidCity();
+			calculateNicestAndWorstWeather();
+		}
+
+		function calculateHottestCity() {
+			var cityOneTemperature, cityTwoTemperature, cityThreeTemperature,avgTemperature,maxTemperature,hottestCity;			
+			if (document.getElementById('firstcity') != null) {				
+				cityOneTemperature = parseFloat(document.getElementById("firstcity").cells[2].innerHTML);
+			}
+			if (document.getElementById('secondcity') != null) {
+				cityTwoTemperature = parseFloat(document.getElementById("secondcity").cells[2].innerHTML);
+			}
+			if (document.getElementById('thirdcity') != null) { 
+				cityThreeTemperature = parseFloat(document.getElementById("thirdcity").cells[2].innerHTML);
+			}						
+			if(typeof cityOneTemperature == "number" && typeof cityTwoTemperature == "number" && typeof cityThreeTemperature == "number"){
+    			avgTemperature = (cityOneTemperature+cityTwoTemperature+cityThreeTemperature)/3;
+    			maxTemperature = Math.max(cityOneTemperature,cityTwoTemperature,cityThreeTemperature);
+			} else if(typeof cityOneTemperature == "number" && typeof cityTwoTemperature == "number") { 
+    			avgTemperature = (cityOneTemperature+cityTwoTemperature)/2;
+    			maxTemperature = Math.max(cityOneTemperature,cityTwoTemperature);
+			} else if(typeof cityTwoTemperature == "number" && typeof cityThreeTemperature == "number") { 
+    			avgTemperature = (cityTwoTemperature+cityThreeTemperature)/2;
+    			maxTemperature = Math.max(cityTwoTemperature,cityThreeTemperature);
+			} else if(typeof cityOneTemperature == "number" && typeof cityThreeTemperature == "number") { 
+    			avgTemperature = (cityOneTemperature+cityThreeTemperature)/2;
+    			maxTemperature = Math.max(cityOneTemperature,cityThreeTemperature);
+			} else if(typeof cityOneTemperature == "number") {
+				avgTemperature = cityOneTemperature;
+				maxTemperature = cityOneTemperature;
+			} else if(typeof cityTwoTemperature == "number") {
+				avgTemperature = cityTwoTemperature;
+				maxTemperature = cityTwoTemperature;
+			} else if(typeof cityThreeTemperature == "number") {
+				avgTemperature = cityThreeTemperature;
+				maxTemperature = cityThreeTemperature;
+			}
+			if(maxTemperature === cityOneTemperature) {
+				hottestCity = document.getElementById("firstcity").cells[0].innerHTML;
+			} else if (maxTemperature === cityTwoTemperature) {
+				hottestCity = document.getElementById("secondcity").cells[0].innerHTML;
+			} else if (maxTemperature === cityThreeTemperature) {
+				hottestCity = document.getElementById("thirdcity").cells[0].innerHTML;
+			}
+			document.getElementById("lineOne").innerHTML = "Average temperature is " + avgTemperature.toFixed(2) + " and the hottest city is " + hottestCity;
+		}
+
+		function calculateHumidCity() {
+			var cityOneHumidity, cityTwoHumidity, cityThreeHumidity,avgHumidity,maxHumidity,humidCity;			
+			if (document.getElementById('firstcity') != null) {				
+				cityOneHumidity = parseFloat(document.getElementById("firstcity").cells[3].innerHTML);
+			}
+			if (document.getElementById('secondcity') != null) {
+				cityTwoHumidity = parseFloat(document.getElementById("secondcity").cells[3].innerHTML);
+			}
+			if (document.getElementById('thirdcity') != null) { 
+				cityThreeHumidity = parseFloat(document.getElementById("thirdcity").cells[3].innerHTML);
+			}
+			if(typeof cityOneHumidity == "number" && typeof cityTwoHumidity == "number" && typeof cityThreeHumidity == "number"){
+    			avgHumidity = (cityOneHumidity+cityTwoHumidity+cityThreeHumidity)/3;
+    			maxHumidity = Math.max(cityOneHumidity,cityTwoHumidity,cityThreeHumidity);
+			} else if(typeof cityOneHumidity == "number" && typeof cityTwoHumidity == "number") { 
+    			avgHumidity = (cityOneHumidity+cityTwoHumidity)/2;
+    			maxHumidity = Math.max(cityOneHumidity,cityTwoHumidity);
+			} else if(typeof cityTwoHumidity == "number" && typeof cityThreeHumidity == "number") { 
+    			avgHumidity = (cityTwoHumidity+cityThreeHumidity)/2;
+    			maxHumidity = Math.max(cityTwoHumidity,cityThreeHumidity);
+			} else if(typeof cityOneHumidity == "number" && typeof cityThreeHumidity == "number") { 
+    			avgHumidity = (cityOneHumidity+cityThreeHumidity)/2;
+    			maxHumidity = Math.max(cityOneHumidity,cityThreeHumidity);
+			} else if(typeof cityOneHumidity == "number") {
+				avgHumidity = cityOneHumidity;
+				maxHumidity = cityOneHumidity;
+			} else if(typeof cityTwoHumidity == "number") {
+				avgHumidity = cityTwoHumidity;
+				maxHumidity = cityTwoHumidity;
+			} else if(typeof cityThreeHumidity == "number") {
+				avgHumidity = cityThreeHumidity;
+				maxHumidity = cityThreeHumidity;
+			}
+			if(maxHumidity === cityOneHumidity) {
+				humidCity = document.getElementById("firstcity").cells[0].innerHTML;
+			} else if (maxHumidity === cityTwoHumidity) {
+				humidCity = document.getElementById("secondcity").cells[0].innerHTML;
+			} else if (maxHumidity === cityThreeHumidity) {
+				humidCity = document.getElementById("thirdcity").cells[0].innerHTML;
+			}
+			document.getElementById("lineTwo").innerHTML = "Average humidity is " + avgHumidity.toFixed(2) + " and the most humid city is " + humidCity;
+		}
+
+		function calculateNicestAndWorstWeather() {
+			var cityOneScore,cityTwoScore,cityThreeScore,best,worst;
+			if (document.getElementById('firstcity') != null) {
+				var firstcity = document.getElementById("firstcity");
+				var temperature = parseFloat(firstcity.cells[2].innerHTML);
+				var humidity = parseFloat(firstcity.cells[3].innerHTML);
+				var windspeed = parseFloat(firstcity.cells[4].innerHTML);
+				var cloudiness = parseFloat(firstcity.cells[5].innerHTML);
+				cityOneScore = calculateCityScore(temperature,humidity,windspeed,cloudiness);
+			}
+			if (document.getElementById('secondcity') != null) {
+				var secondcity = document.getElementById("secondcity");
+				var temperature = parseFloat(secondcity.cells[2].innerHTML);
+				var humidity = parseFloat(secondcity.cells[3].innerHTML);
+				var windspeed = parseFloat(secondcity.cells[4].innerHTML);
+				var cloudiness = parseFloat(secondcity.cells[5].innerHTML);
+				cityTwoScore = calculateCityScore(temperature,humidity,windspeed,cloudiness);
+			}
+			if (document.getElementById('thirdcity') != null) { 
+				var thirdcity = document.getElementById("thirdcity");
+				var temperature = parseFloat(thirdcity.cells[2].innerHTML);
+				var humidity = parseFloat(thirdcity.cells[3].innerHTML);
+				var windspeed = parseFloat(thirdcity.cells[4].innerHTML);
+				var cloudiness = parseFloat(thirdcity.cells[5].innerHTML);
+				cityThreeScore = calculateCityScore(temperature,humidity,windspeed,cloudiness);
+			}			
+			if(typeof cityOneScore == "number" && typeof cityTwoScore == "number" && typeof cityThreeScore == "number"){
+    			best = Math.max(cityOneScore, cityTwoScore, cityThreeScore);
+    			worst = Math.min(cityOneScore, cityTwoScore, cityThreeScore);
+			} else if(typeof cityOneScore == "number" && typeof cityTwoScore == "number") { 
+    			best = Math.max(cityOneScore, cityTwoScore);
+    			worst = Math.min(cityOneScore, cityTwoScore);
+			} else if(typeof cityTwoScore == "number" && typeof cityThreeScore == "number") { 
+    			best = Math.max(cityTwoScore, cityThreeScore);
+    			worst = Math.min(cityTwoScore, cityThreeScore);
+			} else if(typeof cityOneScore == "number" && typeof cityThreeScore == "number") { 
+    			best = Math.max(cityOneScore, cityThreeScore);
+    			worst = Math.min(cityOneScore, cityThreeScore);
+			} else if(typeof cityOneScore == "number") {
+				best = cityOneScore;
+    			worst = cityOneScore;
+			} else if(typeof cityTwoScore == "number") {
+				best = cityTwoScore;
+    			worst = cityTwoScore;
+			} else if(typeof cityThreeScore == "number") {
+				best = cityThreeScore;
+    			worst = cityThreeScore;
+			}			
+
+			if(best == cityOneScore) {
+				document.getElementById("lineThree").innerHTML = "The city with the nicest weather is " + document.getElementById("firstcity").cells[0].innerHTML;
+			} else if(best == cityTwoScore) {
+				document.getElementById("lineThree").innerHTML = "The city with the nicest weather is " + document.getElementById("secondcity").cells[0].innerHTML;
+			} else {
+				document.getElementById("lineThree").innerHTML = "The city with the nicest weather is " + document.getElementById("thirdcity").cells[0].innerHTML;
+			}
+
+			if(worst == cityOneScore) {
+				document.getElementById("lineFour").innerHTML = "The city with the worst weather is " + document.getElementById("firstcity").cells[0].innerHTML;
+			} else if(worst == cityTwoScore) {
+				document.getElementById("lineFour").innerHTML = "The city with the worst weather is " + document.getElementById("secondcity").cells[0].innerHTML;
+			} else {
+				document.getElementById("lineFour").innerHTML = "The city with the worst weather is " + document.getElementById("thirdcity").cells[0].innerHTML;
+			}
+		}
+
+		function calculateCityScore(t,h,w,c) {
+			var score = 0;
+			if(t < 30 && t > 15)
+				score++;
+			if(h < 50)
+				score++;
+			if(w < 15)
+				score++;
+			if(c < 60 && c > 30)
+				score++;
+			return score;
+		}		
+
+		if (localStorage.getItem("firstcity") === null) {
+			initTable("http://api.openweathermap.org/data/2.5/weather?q=London&appid=f8067effab2859a4ac1d4f5637dec42b","firstcity");
+			// initTable("http://localhost:8081?cityName=London","firstcity");
+		} else {
+		    console.log('fetching from localstorage');
+			var firstCityData = localStorage.getItem("firstcity").split("|");
+			insertToTable(firstCityData[0],firstCityData[1],firstCityData[2],firstCityData[3],firstCityData[4],firstCityData[5],-1,"firstcity");
+		}
+
+		if  (localStorage.getItem("secondcity") === null) {
+			initTable("http://api.openweathermap.org/data/2.5/weather?q=Phoenix&appid=f8067effab2859a4ac1d4f5637dec42b","secondcity");
+            // initTable("http://localhost:8081?cityName=Phoenix","secondcity");
+		} else {
+			var secondCityData = localStorage.getItem("secondcity").split("|");
+			insertToTable(secondCityData[0],secondCityData[1],secondCityData[2],secondCityData[3],secondCityData[4],secondCityData[5],-1,"secondcity");
+		}
+	</script>
+</html>		
