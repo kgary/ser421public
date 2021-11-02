@@ -6,6 +6,7 @@ var url = require('url');
 var qstring = require('querystring');
 var fs = require('fs');
 var util = require('util');
+var config = require('./config');
 
 function sendHomepage(res){
   fs.readFile('./html/index.html', function (err, html) {
@@ -32,7 +33,7 @@ function parseWeather(weatherResponse, res) {
 function getWeather(city, res){
   var options = {
     host: 'api.openweathermap.org',
-    path: '/data/2.5/weather?q=' + city + "&APPID=d3772e348ab8cf35f9877845f6942efb"
+    path: '/data/2.5/weather?q=' + city + "&APPID=" + config.APITOKEN
   };
 
   http.request(options, function(weatherResponse){
