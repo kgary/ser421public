@@ -147,12 +147,12 @@
 			if (document.getElementById('thirdcitynewrow') != null) {
 				document.getElementById('thirdcitynewrow').parentNode.removeChild(document.getElementById('thirdcitynewrow'));
 			}
-			//initTable("http://api.openweathermap.org/data/2.5/weather?q="+that.value+"&appid=f8067effab2859a4ac1d4f5637dec42b", "thirdcity");
+			//initTable("http://api.openweathermap.org/data/2.5/weather?q="+that.value+"&appid=APITOKEN", "thirdcity");
             // Use JSONP
             let script = document.createElement("script");
             script.id = "myjsonp";
             script.type = "text/javascript";
-            script.src = "http://api.openweathermap.org/data/2.5/weather?q="+that.value+"&appid=f8067effab2859a4ac1d4f5637dec42b&callback=jsonpInitTable";
+            script.src = "http://api.openweathermap.org/data/2.5/weather?q="+that.value+"&appid=APITOKEN&callback=jsonpInitTable";
             console.log("CREATING JSONP: " + script);
             document.body.appendChild(script);
 		}
@@ -162,14 +162,14 @@
         }
 
 		function refreshData() {
-			initTable("http://api.openweathermap.org/data/2.5/weather?q=London&appid=f8067effab2859a4ac1d4f5637dec42b","firstcitynewrow");
+			initTable("http://api.openweathermap.org/data/2.5/weather?q=London&appid=APITOKEN","firstcitynewrow");
             // initTable("http://localhost:8081?cityName=London","firstcitynewrow");
 
-			initTable("http://api.openweathermap.org/data/2.5/weather?q=Phoenix&appid=f8067effab2859a4ac1d4f5637dec42b", "secondcitynewrow");
+			initTable("http://api.openweathermap.org/data/2.5/weather?q=Phoenix&appid=APITOKEN", "secondcitynewrow");
             // initTable("http://localhost:8081?cityName=Phoenix","secondcitynewrow");
 
 			if (document.getElementById('thirdcity') !== null) {
-				initTable("http://api.openweathermap.org/data/2.5/weather?q="+document.getElementById('thirdcity').cells[0].innerHTML+"&appid=f8067effab2859a4ac1d4f5637dec42b", "thirdcitynewrow");
+				initTable("http://api.openweathermap.org/data/2.5/weather?q="+document.getElementById('thirdcity').cells[0].innerHTML+"&appid=APITOKEN", "thirdcitynewrow");
 				// initTable("http://localhost:8081?cityName=" + document.getElementById('thirdcity').cells[0].innerHTML, "thirdcitynewrow");
 			}
 		}		
@@ -359,7 +359,7 @@
 		}		
 
 		if (localStorage.getItem("firstcity") === null) {
-			initTable("http://api.openweathermap.org/data/2.5/weather?q=London&appid=f8067effab2859a4ac1d4f5637dec42b","firstcity");
+			initTable("http://api.openweathermap.org/data/2.5/weather?q=London&appid=APITOKEN","firstcity");
 			// initTable("http://localhost:8081?cityName=London","firstcity");
 		} else {
 		    console.log('fetching from localstorage');
@@ -368,7 +368,7 @@
 		}
 
 		if  (localStorage.getItem("secondcity") === null) {
-			initTable("http://api.openweathermap.org/data/2.5/weather?q=Phoenix&appid=f8067effab2859a4ac1d4f5637dec42b","secondcity");
+			initTable("http://api.openweathermap.org/data/2.5/weather?q=Phoenix&appid=APITOKEN","secondcity");
             // initTable("http://localhost:8081?cityName=Phoenix","secondcity");
 		} else {
 			var secondCityData = localStorage.getItem("secondcity").split("|");
