@@ -31,6 +31,7 @@ function printMenu() {
     console.log("##########################");
     console.log("1. Add a string");
     console.log("2. Get all strings");
+    console.log("Hit Ctrl-D to exit");
     console.log("##########################");
     
     rl.question("Make a choice: ", function(choice) {
