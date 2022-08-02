@@ -16,6 +16,7 @@
     nav li a { color: #fff; }
   </style>
 -->
+<title>SER421 HTML5 Example</title>
 </head>
 
 <body>
@@ -32,23 +33,32 @@
     </nav>
     <!-- header is different from h# tags, represents introductory content -->
     <header>
-        <p>Posted by: KG</p>
-        <!-- Note the new time tag -->
-        <p><time pubdate datetime="2021-09-13"></time></p>
+        Posted by: KG
     </header>
+    <!-- Note the new time tag -->
+    <div id="div1">This time tag identifies our <time pubdate datetime="2022-08-21">1st day of class</time>, which runs from <span id="t1" style="color:maroon"><time>noon</time> to <time>1:15</time></span>. This block was wrapped in a div and the <span style="color:maroon">maroon font</span> on the time by a span tag with a style attribute.</div>
 
-    <!-- the generically weak "section" tag describes an, umm, er, 
-         section of a document -->
-    <section>
-        <h1>WWF <em>section</em></h1>
-        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
-    </section>
-
-    <section align="right" bgcolor="cyan">
+    <!-- A blockquote is used when you cite a source -->
+    <blockquote cite="https://search.asu.edu/profile/55544">
+        Kevin A. Gary is an Associate Professor of Software Engineering at Arizona State University.
+    </blockquote> 
+    <pre>The pre tag is used for preformatting, so content in here is not parsed.
+        You could put in html like <em>stuff here</em> and nothing happens.
+        Historically it was used for code, but now there is a code tag
+    </pre>
+    <code>
+        // This is a code tag. I don't really like it as it does not preserve newlines or tab indents <br/>
+        class Foo { <br/>
+            bar: int;
+        }
+    </code>
+    <!-- the generically weak "section" tag describes an, umm, er, section of a document -->
+    <section title="Panda">
         <h1>WWF's Panda symbol</h1>
+        <em>This block uses a section tag and an embedded article tag</em>
         <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
         <article>
-            <h1>Internet Explorer 9</h1>(article)
+            <h2>Internet Explorer 9</h2>(article)
             <p>Windows Internet Explorer 9 (abbreviated as IE9) was released to the public on March 14, 2011 at 21:00 PDT.....</p>
         </article>
     </section>
@@ -64,7 +74,7 @@
         <figcaption>Fig1. - Fenway Park.</figcaption>
     </figure>
     <!-- Visible heading for a details elements -->
-    <summary>The history of Fenway Park from Wikiepedia</summary>
+    <summary>The history of Fenway Park from Wikipedia</summary>
     <!-- details a user can view or hide -->
     <details>Fenway Park was built in 1912. Fenway Park is a baseball park located in Boston, Massachusetts, near Kenmore Square. Since 1912, it has been the home for the Boston Red Sox, the city's American League baseball team, and since 1953, its only Major League Baseball franchise.<br/>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/xvFZjo5PgG0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -72,34 +82,74 @@
 
     <mark>This should be highlighted</mark><br/>
 
+    <h3> Lists of stuff:</h3>
+    <p> My favorite movies (in no particular order):</p>
+    <ul>
+        <li>The Godfather Parts I & II</li>
+        <li>Goodfellas</li>
+        <li>Braveheart</li>
+        <li>The Matrix</li>
+        <li>Shawshank Redemption</li>
+    </ul>
+    <p>My favorite bands in order (yes I am this old):</p>
+    <ol>
+        <li>The Who</li>
+        <li>Rush</li>
+        <li>Stevie Ray Vaughn</li>
+        <li>The Jimi Hendrix Experience</li>
+        <li>The Dave Matthews Band</li>
+    </ol>
+    <p>A definition list creates a categorical outline style. Some programming language categories:</p>
+    <dl>
+        <dt>Declarative</dt>
+        <dd>Prolog</dd>
+        <dd>SQL</dd>
+        <dd>CSS</dd>
+        <dt>Object-Oriented</dt>
+        <dd>Java</dd>
+        <dd>Python</dd>
+        <dd>Smalltalk</dd>
+    </dl>
+
+    <h3>A table</h3>
+    <table style="width:50%">
+        <tr>
+            <th>Declarative</th>
+            <th>Object-Oriented</th>
+        </tr>
+        <tr>
+            <td style="text-align:right;width:70%">Prolog</td><td style="background-color:#00FF00">Java</td>
+        </tr>
+            <td style="text-align:right;width:70%">SQL</td><td style="background-color:#FFFF0F">Python</td>
+        </tr>
+            <td style="text-align:right;width:70%">CSS</td><td style="background-color:#00FFFF">Smalltalk</td>
+        </tr>
+    </table>
     <!-- Now for some media types -->
+    <h2>Media experiments</h2>
     <p>Spinning Wheels</p>
     <audio controls>
-  <source src="http://www.public.asu.edu/~kgary/ser421/176239__klankbeeld__spinning-car-wheels.wav"/>
-    <!-- fallback content: -->
-    Download <a href="http://www.public.asu.edu/~kgary/ser421/176239__klankbeeld__spinning-car-wheels.wav">
-    the WAV file</a> for yourself.
-</audio>
-    <p>Spooky!></p>
-    <audio controls>
-  <source src="./alien-spaceship_daniel_simion.mp3"/>
-    <!-- fallback content: -->
-    Bummer! You can't play this mp3!
-</audio>
+        <source src="./176239__klankbeeld__spinning-car-wheels.wav"/>
+        <!-- fallback content: -->
+        Download <a href="./176239__klankbeeld__spinning-car-wheels.wav"> the WAV file</a> for yourself.
+    </audio>
     <br/>
-    <video controls>
-  <source src="RP.mp4#t=1,5" />
-  Your browser does not support the video tag.
-</video>
+    <p>Using the video tag with controls specified</p>
+    <video controls width="200" height="150">
+        <source src="./RP.mp4#t=1,5" />
+        <!-- fallback content: -->
+        Your browser does not support the video tag.
+    </video>
 
     <!-- from https://www.w3schools.com/html/html5_svg.asp -->
     <p align="center">
         This is an SVG<br/>
         <svg width="300" height="200">
-  <polygon points="100,10 40,198 190,78 10,78 160,198"
-  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
-</svg><br/> And this is a simple Canvas (you need JS to do something interesting with it)<br/>
-        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #0000ff;"></canvas>
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+        </svg>
+        <p> And this is a simple Canvas with a 5 pixel blue border (you need JS to do something interesting with it)</p>
+        <canvas id="myCanvas" width="200" height="100" style="border:5px solid #0000ff;"></canvas>
 
     </p>
 
@@ -119,7 +169,7 @@ Gasston, Peter (2013-04-22). The Modern Web: Multi-Device Web Development with H
     <!-- opposite of header! -->
     <footer>
         <p>Posted by: Kevin Gary</p>
-        <p><time pubdate datetime="2021-09-13"></time></p>
+        <p><time pubdate datetime="2022-08-02">Copyright &copy; Kevin A. Gary, 2022</time></p>
     </footer>
 </body>
 
