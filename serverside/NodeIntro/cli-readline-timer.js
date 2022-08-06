@@ -15,6 +15,7 @@ function getMessages() {
 
 // Submenu to add a new string to the file
 function subMenuAddMessage() {
+    try {
     // This is adapted from the NodeJS API documentation on readline events
     const ac = new AbortController();
     const signal = ac.signal;
@@ -35,6 +36,9 @@ function subMenuAddMessage() {
         addMessage(str + "\n");
         printMenu();
     });
+    } catch(e) {
+	console.log(e.stack);
+    }
 }
 
 function addMessage(line) {
@@ -44,6 +48,7 @@ function addMessage(line) {
 
 // Menu function
 function printMenu() {
+    try {
     console.log("##########################");
     console.log("1. Add a string");
     console.log("2. Get all strings");
@@ -61,6 +66,9 @@ function printMenu() {
             break;
         }
     });
+    } catch(e) {
+	console.log(e.stack);
+    }
 }
 
 // This is called after pressing Ctrl+C
