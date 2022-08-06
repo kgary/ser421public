@@ -1,0 +1,255 @@
+  {
+    "type": "instruction",
+    "title": "How to play",
+    "text": "Parity is a numbers puzzle game.\nThe aim of the game is to get each number on a 3x3 board of numbers to be exactly the same.",
+    "button": "okay..."
+  }
+  {
+    "type": "instruction",
+    "title": "How to play",
+    "text": "One of the numbers is always selected. This number can be moved by using the arrow keys",
+    "button": "sounds easy"
+  }
+  {
+    "type": "instruction",
+    "title": "How to play",
+    "text": "Each time you move the selector, the number you select will increase in number by one.",
+    "button": "I got this!"
+  }
+  {
+    "type": "level",
+    "number": 1,
+    "mode": "vanilla",
+    "contents": [ 1,0,0,1,1,0,1,1,0 ],
+    "initialSelected": { "x":0, "y":0 }
+  }
+  {
+    "type": "level",
+    "number": 2,
+    "mode": "vanilla",
+    "contents": [ 1,0,1,0,0,0,0,0,0 ],
+    "initialSelected": { "x":0, "y":0 }
+  }
+  {
+    "type": "level",
+    "number": 4,
+    "mode": "vanilla",
+    "contents": [ 3,4,3,1,3,2,1,1,2 ],
+    "initialSelected": { "x":0, "y":0 }
+  }
+  {
+    "type": "level",
+    "number": 6,
+    "mode": "vanilla",
+    "contents": [ 2,0,1,2,-3,-2,2,1,2 ],
+    "initialSelected": { "x":1, "y":2 }
+  }
+  {
+    "type": "level",
+    "number": 7,
+    "mode": "vanilla",
+    "contents": [ 4,3,3,3,1,2,5,3,5 ],
+    "initialSelected": { "x":0, "y":2 }
+  }
+  {
+    "type": "level",
+    "number": 8,
+    "mode": "vanilla",
+    "contents": [ -7,-9,-7,-8,-12,-9,-6,-7,-7 ],
+    "initialSelected": { "x":1, "y":2 }
+  }
+  {
+    "type": "level",
+    "number": 9,
+    "mode": "vanilla",
+    "contents": [ 6,4,5,5,3,4,5,4,5 ],
+    "initialSelected": { "x":2, "y":1 }
+  }
+  {
+    "type": "level",
+    "number": 10,
+    "mode": "vanilla",
+    "contents": [ 9,7,8,8,5,6,9,8,7 ],
+    "initialSelected": { "x":0, "y":1 }
+  }
+  {
+    "type": "level",
+    "number": 11,
+    "mode": "vanilla",
+    "contents": [ 5,4,6,3,0,4,4,4,6 ],
+    "initialSelected": { "x":2, "y":0 }
+  }
+  {
+    "type": "level",
+    "number": 13,
+    "mode": "vanilla",
+    "contents": [-4,-5,-4,-5,-6,-4,-8,-9,-5],
+    "initialSelected": { "x": 1, "y": 2 },
+    "solution": [ "l","r","l","r","r","l","u","d","l","r","l","u","r","u" ]
+  }
+  {
+    "type": "level",
+    "number": 14,
+    "mode": "vanilla",
+    "contents": [7,6,8,8,7,7,9,8,8],
+    "initialSelected": { "x": 2, "y": 0 },
+    "solution": [ "l","l","d","d","u","u","r","d","d","r","u","d","u","u","l","r","d","l","d","u","u","l" ]
+  }
+  {
+    "type": "level",
+    "number": 15,
+    "mode": "vanilla",
+    "contents": [9,11,13,9,11,13,12,12,12],
+    "initialSelected": { "x": 1, "y": 0 },
+    "solution": [ "d","l","u","d","r","l","u","r","l","r","l","d","d","r","r" ]
+  }
+  {
+    "type": "level",
+    "number": 16,
+    "mode": "vanilla",
+    "contents": [-5,-3,0,-4,-1,0,-4,-2,0],
+    "initialSelected": { "x": 0, "y": 1 },
+    "solution": [ "u","d","u","r","l","r","l","d","r","u","l","d","d","r","l","r","l","u","d" ]
+  }
+  {
+    "type": "level",
+    "number": 17,
+    "mode": "vanilla",
+    "contents": [2,0,3,0,-4,1,0,1,3],
+    "initialSelected": { "x": 0, "y": 1 },
+    "solution": [ "r","r","l","r","l","d","l","r","l","u","u","d","r","u","d","u","d","u","d","l","d" ]
+  }
+  {
+    "type": "level",
+    "number": 18,
+    "mode": "vanilla",
+    "contents": [9,9,10,4,7,10,8,10,11],
+    "initialSelected": { "x": 0, "y": 2 },
+    "solution": [ "u","d","u","d","u","u","d","r","l","d","u","r","d","u","l","r","r","u","l","l","r" ]
+  }
+  {
+    "type": "level",
+    "number": 19,
+    "mode": "vanilla",
+    "contents": [-2,-1,1,0,2,2,3,3,3],
+    "initialSelected": { "x": 0, "y": 2 },
+    "solution": [ "u","u","d","u","r","l","d","u","r","r","d","u","l","l","r","d" ]
+  }
+  {
+    "type": "level",
+    "number": 20,
+    "mode": "vanilla",
+    "contents": [-4,-7,-7,-4,-9,-9,-3,-3,-4],
+    "initialSelected": { "x": 1, "y": 2 },
+    "solution": [ "u","r","l","r","l","u","r","l","d","r","l","r","u","l","l","d","r","r","u","l","r","d","d" ]
+  }
+  {
+    "type": "level",
+    "number": 21,
+    "mode": "vanilla",
+    "contents": [4,1,1,2,-1,-1,2,0,1],
+    "initialSelected": { "x": 2, "y": 2 },
+    "solution": [ "u","l","r","l","r","d","l","r","u","u","l","r","l","d","d","r","l","l","u","d","r","u","l","r","u","r","d" ]
+  }
+  {
+    "type": "level",
+    "number": 22,
+    "mode": "vanilla",
+    "contents": [-6,-6,-5,-6,-9,-10,-5,-6,-8],
+    "initialSelected": { "x": 2, "y": 2 },
+    "solution": [ "u","l","u","d","d","r","u","d","u","d","u","l","r","l","l","u" ]
+  }
+  {
+    "type": "level",
+    "number": 23,
+    "mode": "vanilla",
+    "contents": [6,6,4,6,4,1,6,3,2],
+    "initialSelected": { "x": 1, "y": 2 },
+    "solution": [ "u","r","d","l","r","l","r","u","l","r","u","d","u","d","d","l" ]
+  }
+  {
+    "type": "level",
+    "number": 24,
+    "mode": "vanilla",
+    "contents": [6,5,7,5,2,7,5,4,7],
+    "initialSelected": { "x": 1, "y": 0 },
+    "solution": [ "d","u","l","r","d","d","l","u","d","r","u","d","u","l","r" ]
+  }
+  {
+    "type": "level",
+    "number": 93,
+    "mode": "b&w",
+    "contents": [-5,-8,-2,-5,-1,-9,-5,-4,-6],
+    "colors": ["w","w","b","w","b","w","w","b","w"],
+    "initialSelected": { "x": 2, "y": 2 },
+    "solution": [ "l","u","u","r","d","u","l","d","r","l","r","d","u","l","u","r" ]
+  }
+  {
+    "type": "level",
+    "number": 94,
+    "mode": "b&w",
+    "contents": [-9,-9,-10,-14,-10,-7,-3,-6,-6],
+    "colors": ["w","w","w","w","w","b","b","b","b"],
+    "initialSelected": { "x": 1, "y": 0 },
+    "solution": [ "r","d","d","u","d","l","l","u","d","u","d","u","d","u","d","r","u","l","d","r","r" ]
+  }
+  {
+    "type": "level",
+    "number": 95,
+    "mode": "b&w",
+    "contents": [0,1,-2,4,-7,1,3,-6,0],
+    "colors": ["b","b","w","b","w","b","b","w","b"],
+    "initialSelected": { "x": 1, "y": 1 },
+    "solution": [ "l","u","r","d","l","d","r","u","d","l","r","l","u","d","u","r","r","d","l","u","d","u","r","u","l","d","l" ]
+  }
+  {
+    "type": "level",
+    "number": 96,
+    "mode": "b&w",
+    "contents": [9,11,12,8,4,2,9,8,5],
+    "colors": ["b","b","b","w","w","w","w","w","w"],
+    "initialSelected": { "x": 1, "y": 0 },
+    "solution": [ "r","d","l","r","l","r","u","d","d","u","u","l","d","l","r","u","d","r","d","l","r","u","d" ]
+  }
+  {
+    "type": "level",
+    "number": 97,
+    "mode": "b&w",
+    "contents": [11,20,13,13,12,11,17,11,11],
+    "colors": ["w","b","w","w","w","w","b","w","w"],
+    "initialSelected": { "x": 2, "y": 1 },
+    "solution": [ "l","l","u","r","l","r","l","d","d","r","r","u","d","u","l","d","l","r","r","u","d","l","u","r","u","l","r","l","l","r" ]
+  }
+  {
+    "type": "level",
+    "number": 98,
+    "mode": "b&w",
+    "contents": [15,12,13,11,13,12,10,16,16],
+    "colors": ["b","w","w","w","w","w","w","b","b"],
+    "initialSelected": { "x": 1, "y": 0 },
+    "solution": [ "l","r","l","d","d","r","r","u","d","l","l","u","d","r","r" ]
+  }
+  {
+    "type": "level",
+    "number": 99,
+    "mode": "b&w",
+    "contents": [11,11,10,16,6,8,5,17,8],
+    "colors": ["b","b","w","b","w","w","w","b","w"],
+    "initialSelected": { "x": 1, "y": 0 },
+    "solution": [ "d","r","l","l","d","u","d","u","d","r","u","d","l","r","l","u","d","r","u","l","r","r","u","d","d","l","r","l","r" ]
+  }
+  {
+    "type": "level",
+    "number": 100,
+    "mode": "b&w",
+    "contents": [4,2,8,10,11,6,7,4,6],
+    "colors": ["w","w","b","b","b","w","b","w","w"],
+    "initialSelected": { "x": 2, "y": 1 },
+    "solution": [ "l","u","l","d","u","d","r","l","d","r","u","l","r","u","r","l","r","l","d","d" ]
+  }
+  {
+    "type": "instruction",
+    "title": "The End!",
+    "text": "You've successfully completed all of the levels Parity currently has to offer. If you enjoyed the challenge, please make sure to like Parity on Facebook!",
+    "button": "%fb%"
+  }

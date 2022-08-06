@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT person (name, (address)+, (email)+)>
+<!ELEMENT name (first, last)>
+<!ELEMENT address (street, city, state, zip)>
+<!ATTLIST address location (home | work) #IMPLIED>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT last (#PCDATA)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email primary (true | false) #IMPLIED>

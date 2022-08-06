@@ -1,0 +1,4 @@
+person { background-color: #cccccc; border: none; width: 300;}
+name { display: block; font-size: 20pt; margin-left: 0; }
+address { display: block; margin-left: 20pt;}
+email { display: block; font-family: monospace; margin-left: 20pt;} phone { display: block; margin-left: 20pt;}

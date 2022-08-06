@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="person">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="name"/>
+        <xsd:element ref="address" minOccurs="1" maxOccurs="unbounded"/>
+        <xsd:element ref="email"   minOccurs="1" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>  
+  <xsd:element name="name">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="first"/>
+        <xsd:element ref="last"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="address">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="street"/>
+        <xsd:element ref="city"/>
+        <xsd:element ref="state"/>
+        <xsd:element ref="zip"/>
+      </xsd:sequence>
+    </xsd:complexType>
+    <xsd:attribute name="location">
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+	  <xsd:enumeration value="home"/>
+	  <xsd:enumeration value="work"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+  </xsd:element>
+  <xsd:element name="first" type="xsd:string"/>
+  <xsd:element name="last" type="xsd:string"/>
+  <xsd:element name="street" type="xsd:string"/>
+  <xsd:element name="city" type="xsd:string"/>
+  <xsd:element name="state" type="xsd:string"/>
+  <xsd:element name="zip" type="xsd:string"/>
+  <xsd:element name="email" type="xsd:string">
+    <xsd:attribute name="primary" type="xsd:boolean"/>
+  </xsd:element>
+</xsd:schema>

@@ -1,0 +1,203 @@
+<!--
+********************************************************************************
+
+Scrumwise XML Export DTD - Version 1.6.
+
+This is version 1.6 of the DTD for data exported from Scrumwise in XML format.
+
+********************************************************************************
+-->
+
+<!-- ******************** Basic information ******************** -->
+
+<!ELEMENT scrumwise-export (export-date, data-version, data)>
+
+<!ELEMENT export-date (#PCDATA)>
+<!ELEMENT data-version (#PCDATA)>
+<!ELEMENT data (account | person | project| team | backlog-item | task | sprint | team-sprint-participation | attachment | comment)*>
+
+<!-- ******************** Scrumwise account ******************** -->
+
+<!ELEMENT account (id, company-name, country, phone, website, contact-person-id, persons, projects)>
+
+<!ELEMENT company-name (#PCDATA)>
+<!ELEMENT country  (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+<!ELEMENT contact-person-id (#PCDATA)>
+
+<!ELEMENT persons (person*)>
+<!ELEMENT projects (project*)>
+
+<!-- ******************** Person ******************** -->
+
+<!ELEMENT person (id, first-name, last-name, nickname, email-address, phone, im, description, photo, is-activated, is-administrator, creator-id)>
+
+<!ELEMENT first-name (#PCDATA)>
+<!ELEMENT last-name (#PCDATA)>
+<!ELEMENT nickname (#PCDATA)>
+<!ELEMENT email-address (#PCDATA)>
+<!ELEMENT im (#PCDATA)>
+<!ELEMENT photo (resource?)>
+<!ELEMENT is-activated (#PCDATA)>
+<!ELEMENT is-administrator (#PCDATA)>
+
+<!-- ******************** Project ******************** -->
+
+<!ELEMENT project (id, name, description, external-link, rough-effort-unit, detailed-effort-unit, comments, attachments, people, tag-definitions, backlog, releases, sprints)>
+
+<!ELEMENT rough-effort-unit (#PCDATA)>
+<!ELEMENT detailed-effort-unit (#PCDATA)>
+
+<!ELEMENT people (roles, teams)>
+<!ELEMENT roles (product-owners, stakeholders)>
+<!ELEMENT product-owners (role*)>
+<!ELEMENT stakeholders (role*)>
+
+<!ELEMENT backlog (backlog-items)>
+
+<!-- ******************** Role ******************** -->
+
+<!ELEMENT role (id, person-id, role-type)>
+
+<!ELEMENT role-type (#PCDATA)>
+
+<!-- ******************** Team ******************** -->
+
+<!ELEMENT teams (team*)>
+
+<!ELEMENT team (id, name, description, team-memberships)>
+
+<!-- ******************** Team membership ******************** -->
+
+<!ELEMENT team-memberships (team-membership*)>
+
+<!ELEMENT team-membership (id, person-id)>
+
+<!-- ******************** Backlog item ******************** -->
+
+<!ELEMENT backlog-items (backlog-item*)>
+
+<!ELEMENT backlog-item (id, simple-id, name, description, external-link, priority, type, creator-id, release-id, status, rough-estimate, estimate, used-effort, remaining-effort,
+    sprint-id, team-id, assigned-persons, tags, comments, attachments, time-entries, commits, tasks)>
+
+<!ELEMENT rough-estimate (#PCDATA)>
+
+<!-- ******************** Task ******************** -->
+
+<!ELEMENT tasks (task*)>
+
+<!ELEMENT task (id, simple-id, name, description, external-link, status, estimate, used-effort, remaining-effort, assigned-persons, tags, comments,
+    attachments, time-entries, commits)>
+
+<!-- ******************** Release ******************** -->
+
+<!ELEMENT releases (release*)>
+
+<!ELEMENT release (id, name, description, external-link, start-date, release-date, status, best-case-velocity-per-week, expected-velocity-per-week, worst-case-velocity-per-week, tags, comments, attachments, assigned-backlog-items)>
+
+<!ELEMENT release-date (#PCDATA)>
+
+<!ELEMENT best-case-velocity-per-week (#PCDATA)>
+<!ELEMENT expected-velocity-per-week (#PCDATA)>
+<!ELEMENT worst-case-velocity-per-week (#PCDATA)>
+
+<!-- ******************** Sprint ******************** -->
+
+<!ELEMENT sprints (sprint*)>
+
+<!ELEMENT sprint (id, name, description, external-link, start-date, end-date, status, tags, comments, attachments, team-sprint-participations)>
+
+<!-- ******************** Team sprint participation ******************** -->
+
+<!ELEMENT team-sprint-participations (team-sprint-participation*)>
+
+<!ELEMENT team-sprint-participation (id, team-id, available-effort, assigned-backlog-items)> 
+
+<!ELEMENT available-effort (#PCDATA)>
+
+<!-- ******************** Attachment ******************** -->
+
+<!ELEMENT attachments (attachment*)>
+
+<!ELEMENT attachment (id, name, description, resource)>
+
+<!-- ******************** Comment ******************** -->
+
+<!ELEMENT comments (comment*)>
+
+<!ELEMENT comment (id, creator-id, creation-date, text, replies)>
+
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT replies (comment*)>
+
+<!-- ******************** Tag definition ******************** -->
+
+<!ELEMENT tag-definitions (tag-definition*)>
+
+<!ELEMENT tag-definition (id, name, description)>
+
+<!-- ******************** Tag ******************** -->
+
+<!ELEMENT tags (tag*)>
+
+<!ELEMENT tag (tag-definition-id)>
+
+<!-- ******************** Time entry ******************** -->
+
+<!ELEMENT time-entries (time-entry*)>
+
+<!ELEMENT time-entry (date, person-id, used-time, description)>
+
+<!-- ******************** Commit ******************** -->
+
+<!ELEMENT commits (commit*)>
+
+<!ELEMENT commit (date, person-id, revision, message, commit-url, repository-name, repository-url)>
+
+<!ELEMENT revision (#PCDATA)>
+<!ELEMENT message (#PCDATA)>
+<!ELEMENT commit-url (#PCDATA)>
+<!ELEMENT repository-name (#PCDATA)>
+<!ELEMENT repository-url (#PCDATA)>
+
+<!-- ******************** Resource ******************** -->
+
+<!ELEMENT resource (id, file-name, url)>
+
+<!ELEMENT file-name (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+
+<!-- ******************** Common elements ******************** -->
+
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT simple-id (#PCDATA)>
+<!ELEMENT person-id (#PCDATA)>
+<!ELEMENT creator-id (#PCDATA)>
+<!ELEMENT team-id (#PCDATA)>
+<!ELEMENT backlog-item-id (#PCDATA)>
+<!ELEMENT release-id (#PCDATA)>
+<!ELEMENT sprint-id (#PCDATA)>
+<!ELEMENT tag-definition-id (#PCDATA)>
+
+<!ELEMENT assigned-persons (person-id*)>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT external-link (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT creation-date (#PCDATA)>
+<!ELEMENT priority (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+
+<!ELEMENT start-date (#PCDATA)>
+<!ELEMENT end-date (#PCDATA)>
+
+<!ELEMENT estimate (#PCDATA)>
+<!ELEMENT remaining-effort (#PCDATA)>
+<!ELEMENT used-effort (#PCDATA)>
+<!ELEMENT used-time (#PCDATA)>
+
+<!ELEMENT phone (#PCDATA)>
+
+<!ELEMENT assigned-backlog-items (backlog-item-id*)>

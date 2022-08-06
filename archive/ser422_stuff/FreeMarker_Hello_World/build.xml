@@ -1,0 +1,73 @@
+<!--
+   Copyright 2014 Kevin A. Gary for SER422
+   
+   This Freemarker example taken from 
+   http://viralpatel.net/blogs/freemarker-servlet-tutorial-example/
+-->
+
+<project name="SER422 MVC Freemarker Example" default="compile" basedir=".">
+  <property file="build.properties"/>
+
+  <!-- init target makes the directory structure. You may not
+       require this if you set your environment up by hand. -->
+  <target name="init">
+    <tstamp/>
+    <mkdir dir="${classes.dir}"/>
+  </target>
+
+  <!-- Compiles your java files and puts the classes in classes.dir -->
+  <target name="compile" depends="init">
+    <javac
+      srcdir="${src.dir}"
+      destdir="${classes.dir}">
+      <!-- Make sure you set your classpath! -->
+      <classpath>
+        <fileset dir="${tomcat.home}/lib" includes="servlet-api.jar"/>
+      	<fileset dir="${lib.dir}" includes="*.jar"/>
+        <pathelement path="${classes.dir}" />
+      </classpath>
+    </javac>
+  </target>
+
+  <!-- The deploy target will be highly dependent on your deployed app.
+       For example, if you are building a web-app, you should include
+       commands to copy files over to your deploy directory according
+       to the servlet specification, or create a .war file (via dist)
+       and copy it over. If you are creating a standalone app (like this
+       example does), you can create it in a given directory, or create
+       your dist jar first that can be run using java -jar. -->
+  <target name="deploy" depends="dist">
+    <copy file="${dist.jar}" todir="${tomcat.home}/webapps" overwrite="yes"/>
+  </target>
+      
+  <target name="build" depends="compile">
+    <mkdir dir="${build.home}"/>
+    <mkdir dir="${build.home}/WEB-INF"/>
+    <copy todir="${build.home}/WEB-INF">
+      <fileset dir="." includes="${classes.dir}/**,${lib.dir}/**"/>
+    </copy>
+    <copy todir="${build.home}">
+      <fileset dir="${resources.dir}" includes="*.html, *.jsp, *.ftl"/>
+    </copy>
+    <copy file="web.xml" tofile="${build.home}/WEB-INF/web.xml"/>
+  </target>
+    
+  <!-- This example dist target merely jars up the webapp files. -->
+  <target name="dist" depends="build">
+    <jar destfile="${dist.jar}" basedir="${build.home}">
+    </jar>
+  </target>
+
+  <!-- Clean -->
+  <!-- NOTE: This needs some work, we really need to undeploy the app in TC -->
+  <target name="clean">
+    <delete file="${dist.jar}"/>
+    <delete dir="${tomcat.home}/webapps/${app.name}"/>
+    <delete file="${tomcat.home}/webapps/${dist.jar}"/>
+    <delete dir="${build.home}"/>
+	<delete dir="${classes.dir}"/>
+  </target>
+
+</project>
+  
+

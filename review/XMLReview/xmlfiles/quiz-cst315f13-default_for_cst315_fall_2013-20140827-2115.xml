@@ -1,0 +1,6454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quiz>
+  <!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$system$/Default for System</text>
+    </category>
+  </question>
+  <!-- question: 262  -->
+  <question type="essay">
+    <name>
+      <text>CM: libraries</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Briefly explain why you don't always need the same set of libraries at run-time that you need at compile-time, and why this impacts the build management process.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 81  -->
+  <question type="essay">
+    <name>
+      <text>Refactoring: speculative design</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>
+        <![CDATA[Explain the difference between refactoring as "just-in-time" design versus "speculative design"]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 42  -->
+  <question type="essay">
+    <name>
+      <text>Reviews: one-on-one or group</text>
+    </name>
+    <questiontext format="html">
+      <text>Suppose you are working in a team of 4, and you ask for your code to be reviewed by your team members. Given what you have read about code reviews, do you think it is better to conduct 3 one-on-one reviews or one review with all team members present? Explain your answer.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text>
+        <![CDATA[The correct answer is that generally it is better to review as a group. The &quot;sum is greater than its parts&quot; logic applies, in that 1) you save team time (which is money), and 2) you tend to find more defects and educate each other more in a group. However, there could be reasons the team reviews backfire. Maybe your team doesn't communicate well or has aggrandizing personalities. Maybe it is too hard to schedule the whole team. So individual circumstances may mean &quot;it depends&quot;.]]>
+</text>
+    </generalfeedback>
+    <defaultgrade>12</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 358  -->
+  <question type="matching">
+    <name>
+      <text>316.ScrumGuide.Artifacts</text>
+    </name>
+    <questiontext format="html">
+      <text>Connect the description to the term it best describes</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>Tasks the Team performs to deliver an increment</text>
+      <answer>
+        <text>Sprint Backlog</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>The amount of work remaining in a Sprint</text>
+      <answer>
+        <text>Sprint Burndown</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>The requirements for the product</text>
+      <answer>
+        <text>Product Backlog</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>Release Burndown</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 350  -->
+  <question type="matching">
+    <name>
+      <text>316.ScrumGuide.Teams3</text>
+    </name>
+    <questiontext format="html">
+      <text>Connect the Scrum role with the description that best matches the role.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>Manages the Product Backlog</text>
+      <answer>
+        <text>Product Owner</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Turns the Product Backlog into increments of shippable functionality</text>
+      <answer>
+        <text>Team</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Facilitates Scrum adoption, productivity, and quality</text>
+      <answer>
+        <text>Scrum Master</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>Developer</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>Quality Assurance (tester)</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>Project Manager</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 263  -->
+  <question type="matching">
+    <name>
+      <text>CM: Best Practices</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Match the best practice with the general area it applies to</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>Check in often</text>
+      <answer>
+        <text>Workspaces</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Give each a (quality) policy</text>
+      <answer>
+        <text>Codelines</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Do this only when necessary</text>
+      <answer>
+        <text>Branch</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Get the right person to do the merge</text>
+      <answer>
+        <text>Change propagation</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Keep log and output from this process</text>
+      <answer>
+        <text>Builds</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Give everything an owner</text>
+      <answer>
+        <text>Process</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 261  -->
+  <question type="matching">
+    <name>
+      <text>CM: Glossary1</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Match the terms with the definition best-suited to that term</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>converting code from high-level abstract language to machine-level language</text>
+      <answer>
+        <text>compilation</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>combining machine-level code into one large object level executable or library</text>
+      <answer>
+        <text>linking</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>combining object level code modules at run-time (during program execution)</text>
+      <answer>
+        <text>dynamic linking</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Compiling, assembling and packaging source artifacts into deployable resources</text>
+      <answer>
+        <text>build</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Moving a set of deployable resources (a build) to a target environment.</text>
+      <answer>
+        <text>deployment</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>An incremental modification to already deployed software typically to correct a priority defect.</text>
+      <answer>
+        <text>patch</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>
+        <![CDATA[The ability to deploy new software "in place"; that is, without restarting the system/application.]]>
+</text>
+      <answer>
+        <text>hot deployment</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Modifying existing software post-release without fundamentally changing the intent, or business purpose, of the software</text>
+      <answer>
+        <text>maintenance</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Deploying software in multiple steps, with each step addressing a quality requirement on the way to a production environment.</text>
+      <answer>
+        <text>staging</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>A combination of software artifacts used to build a target release</text>
+      <answer>
+        <text>configuration</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>software ready to be used by a target set of customers</text>
+      <answer>
+        <text>release</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>a deployed environment ready for use by your customers</text>
+      <answer>
+        <text>production</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 294  -->
+  <question type="matching">
+    <name>
+      <text>EGRDesProc2</text>
+    </name>
+    <questiontext format="html">
+      <text>Match the terms with the best available description.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>Modifying or enhancing an existing product or process.</text>
+      <answer>
+        <text>incremental design</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Process by which an object or structure is created.</text>
+      <answer>
+        <text>design process</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Someone who pays for the product.</text>
+      <answer>
+        <text>customer</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Someone who has an interest in the product.</text>
+      <answer>
+        <text>stakeholder</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>viable design</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>engineered products</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 295  -->
+  <question type="matching">
+    <name>
+      <text>EGRDesProc3</text>
+    </name>
+    <questiontext format="html">
+      <text>Match the phrase with the best description.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text>See p. 92</text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>Needs of potential customers are investigated</text>
+      <answer>
+        <text>Define the Problem</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Evaluate the quality of a design</text>
+      <answer>
+        <text>Identify Criteria and Constraints</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Use brainstorming, market research, or other creative activities to produce a conceptual design.</text>
+      <answer>
+        <text>Generate ideas</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Understand idea characteristics and their advantages and disadvantages.</text>
+      <answer>
+        <text>Explore possibilities</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Evaluate and select potential designs based on Criteria and Constraints.</text>
+      <answer>
+        <text>Select a design concept</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Develop the design in enough detail to allow working on a prototype.</text>
+      <answer>
+        <text>Develop a detailed design</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Implement to characterize various aspects of design.</text>
+      <answer>
+        <text>Create models and prototypes</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>See whether the design meets all constraints and performs acceptably relative to criteria.</text>
+      <answer>
+        <text>Test and evaluate</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>If testing and evaluation reveal a design weakness, then this may need to be done.</text>
+      <answer>
+        <text>Refine the design</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Produce or construct the design.</text>
+      <answer>
+        <text>Implementation</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>The activities and results of the design process are documented and communicated to relevant stakeholders.</text>
+      <answer>
+        <text>Communicate process and results</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>Quality Assurance Review</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 301  -->
+  <question type="matching">
+    <name>
+      <text>IntDes2Principles</text>
+    </name>
+    <questiontext format="html">
+      <text>Select the answer that best matches the phrase</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>Users should not be forced to adapt to an interface that is easy to implement</text>
+      <answer>
+        <text>User familiarity</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Commands and menus should have a common format, parameters should be passed in the same way, and punctuation should be similar</text>
+      <answer>
+        <text>User consistency</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Recognizing there may be different types of users</text>
+      <answer>
+        <text>User diversity</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Recognizing that users will always make mistakes</text>
+      <answer>
+        <text>Recoverability</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>Availability</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>Reliability</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 305  -->
+  <question type="matching">
+    <name>
+      <text>IntDes4Styles</text>
+    </name>
+    <questiontext format="html">
+      <text>Match the 5 styles of interaction (according to Shneiderman) with the best description</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>Directly interacting with objects on the screen</text>
+      <answer>
+        <text>Direct manipulation</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>Object orientation</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Select a command from a list of possibilities</text>
+      <answer>
+        <text>Menu selection</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>Gesture-oriented computing</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Input of information followed by a special user interaction to initiate the action</text>
+      <answer>
+        <text>Form fill-in</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 285  -->
+  <question type="matching">
+    <name>
+      <text>METRICS: Match Definitions</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Match the metric category with the best definition for that metric</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>Count of the linearly independent paths through a block of source code</text>
+      <answer>
+        <text>Cyclomatic Complexity</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>how strongly focused the responsibilities of a single module are</text>
+      <answer>
+        <text>Cohesion</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>dependency; the extent to which one module relies on the existing of another module.</text>
+      <answer>
+        <text>Coupling</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Count of the number of textual lines of code in a program</text>
+      <answer>
+        <text>SLOC</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Measurement expressing the amount of business functionality a unit supplies to the user</text>
+      <answer>
+        <text>Function Points</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 52  -->
+  <question type="matching">
+    <name>
+      <text>METRICS: Matching Concepts</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Select the concept that is naturally related to the target concept.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>Cohesion</text>
+      <answer>
+        <text>Coupling</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Cyclomatic Complexity</text>
+      <answer>
+        <text>Code Coverage</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Function Points</text>
+      <answer>
+        <text>Source Lines of Code</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 38  -->
+  <question type="matching">
+    <name>
+      <text>Reviews: definition of terms</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Match the type of review with the most accurate description</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>The most formal type of review</text>
+      <answer>
+        <text>Inspections</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Less formal than an inspection, this approach omits or combines some roles and activities.</text>
+      <answer>
+        <text>Team Reviews</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>The author leads the discussion among a group of colleagues and does not have to report data to management.</text>
+      <answer>
+        <text>Walkthrough</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>One other person reviews the author's work, but may vary in level of formality.</text>
+      <answer>
+        <text>Peer Deskcheck</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>No actual review meeting takes place.</text>
+      <answer>
+        <text>Passaround</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>Quality review</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 362  -->
+  <question type="matching">
+    <name>
+      <text>Sm_Ch5_model3</text>
+    </name>
+    <questiontext format="html">
+      <text>Match the perspective with its description</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>model the context or environment of the system</text>
+      <answer>
+        <text>external</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>model the interaction between a system and its environment</text>
+      <answer>
+        <text>interaction</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>model the organization of the system</text>
+      <answer>
+        <text>structural</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>model the dynamic behavior of a system and how it responds</text>
+      <answer>
+        <text>behavioral</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>logical</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>physical</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 344  -->
+  <question type="matching">
+    <name>
+      <text>UnitTestInterface.Som9th813</text>
+    </name>
+    <questiontext format="html">
+      <text>Match the interface error type with its best description</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <subquestion>
+      <text>Parameter defects, such as using the wrong number or type of parameters in the call, is the most common form of this error.</text>
+      <answer>
+        <text>Interface misuse</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>The caller does not understand the specification of the interface, such as its return type, parameter semantics, or behavior.</text>
+      <answer>
+        <text>Interface misunderstanding</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text>Different processes operating at different speeds, and the interface between them does not mediate access properly.</text>
+      <answer>
+        <text>Timing errors</text>
+      </answer>
+    </subquestion>
+    <subquestion>
+      <text></text>
+      <answer>
+        <text>Documentation errors</text>
+      </answer>
+    </subquestion>
+  </question>
+  <!-- question: 296  -->
+  <question type="cloze">
+    <name>
+      <text>EGRDesProc4</text>
+    </name>
+    <questiontext>
+      <text>In a spiral design process, after completing the {1:SHORTANSWER:=refine the design} phase, you may have to go back to the {2:SHORTANSWER:=select a design} phase if the original design will not work.</text>
+    </questiontext>
+    <generalfeedback>
+      <text>Use all lowercase on your short answers! p. 93</text>
+    </generalfeedback>
+    <shuffleanswers>0</shuffleanswers>
+  </question>
+  <!-- question: 302  -->
+  <question type="cloze">
+    <name>
+      <text>IntDes3Coherent</text>
+    </name>
+    <questiontext>
+      <text>A coherent user interface must integrate {1:MULTICHOICE:Mouse#~Keyboard#~=user interaction~%50%information presentation} and {2:MULTICHOICE:Mouse#~Keyboard#~%50%user interaction~=information presentation}</text>
+    </questiontext>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <shuffleanswers>0</shuffleanswers>
+  </question>
+  <!-- question: 307  -->
+  <question type="cloze">
+    <name>
+      <text>InteractionDesign1</text>
+    </name>
+    <questiontext>
+      <text>
+        <![CDATA[Interaction design is an {1:MULTICHOICE:incremental~waterfall~interactive~=iterative} process where {2:MULTICHOICE:managers~customers~=users} interact with {3:MULTICHOICE:managers~=designers~programmers} and {4:MULTICHOICE:programmers~graphic designers~=interface prototypes} to decide on the features, organization, and look and feel of the user interface.<br />]]>
+</text>
+    </questiontext>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <shuffleanswers>0</shuffleanswers>
+  </question>
+  <!-- question: 277  -->
+  <question type="cloze">
+    <name>
+      <text>SA: precision and recall</text>
+    </name>
+    <questiontext>
+      <text>{1:SHORTANSWER:%100%precision} is the ability of a static analyzer to exclude false positives. {2:SHORTANSWER:%100%recall} is the percentage of flaws the static analyzer found versus all flaws that are present in the code.</text>
+    </questiontext>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <shuffleanswers>0</shuffleanswers>
+  </question>
+  <!-- question: 371  -->
+  <question type="cloze">
+    <name>
+      <text>UML_CH5_4_sc1</text>
+    </name>
+    <questiontext>
+      <text>Behavioral models capture what happens when a system responds to a {1:SA:=stimulus}</text>
+    </questiontext>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <shuffleanswers>0</shuffleanswers>
+  </question>
+  <!-- question: 337  -->
+  <question type="cloze">
+    <name>
+      <text>UnitTestStrategies.Som9th812</text>
+    </name>
+    <questiontext>
+      <text>{1:SA:=partition~50%} and {2:SA:=guideline~50%}-based testing are recommended strategies for choosing effective unit test cases.</text>
+    </questiontext>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <shuffleanswers>0</shuffleanswers>
+  </question>
+  <!-- question: 340  -->
+  <question type="cloze">
+    <name>
+      <text>UnitTestWhiteBlackBox.Som9th812</text>
+    </name>
+    <questiontext>
+      <text>{1:SA:=white~50%} box testing requires one to review the structure of the code, {2:SA:=black~50%} box testing only requires one to run the code with different equivalence partitions.</text>
+    </questiontext>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <shuffleanswers>0</shuffleanswers>
+  </question>
+  <!-- question: 356  -->
+  <question type="multichoice">
+    <name>
+      <text>316.ScrumGuide.Daily1</text>
+    </name>
+    <questiontext format="html">
+      <text>During the Daily Scrum the following questions are asked of each team member:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>What he or she has accomplished since the last meeting</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>What he or she is going to do before the next meeting</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>What obstacles are in his or her way</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Are you a chicken or a pig?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Who broke the build?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 348  -->
+  <question type="multichoice">
+    <name>
+      <text>316.ScrumGuide.Teams1</text>
+    </name>
+    <questiontext format="html">
+      <text>Roles on Scrum teams include</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>Scrum Master</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Product Owner</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Team</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Quality Assurance (tester)</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Project Manager</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 352  -->
+  <question type="multichoice">
+    <name>
+      <text>316.ScrumGuide.TimeBox2</text>
+    </name>
+    <questiontext format="html">
+      <text>The parts of a Sprint include</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="25">
+      <text>Sprint planning meeting</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Development</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Sprint Review</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Sprint Retrospective</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Testing</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 353  -->
+  <question type="multichoice">
+    <name>
+      <text>316.ScrumGuide.TimeBox3</text>
+    </name>
+    <questiontext format="html">
+      <text>A statement on why the Team is building an increment of shippable functionality is called the</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Sprint Goal</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Release Plan</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Sprint Backlog</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Sprint</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Business plan</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 354  -->
+  <question type="multichoice">
+    <name>
+      <text>316.ScrumGuide.TimeBox4</text>
+    </name>
+    <questiontext format="html">
+      <text>A meeting with the Product Owner to demo the increment to see what has (not) been done is called the</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Sprint Review</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Sprint Planning Meeting</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Sprint Retrospective</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Release Planning Meeting</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Epic</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 355  -->
+  <question type="multichoice">
+    <name>
+      <text>316.ScrumGuide.TimeBox5</text>
+    </name>
+    <questiontext format="html">
+      <text>A meeting where the Team reviews its processes and makes revisions to improve it is called the</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+      <text>Sprint Review</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Sprint Planning Meeting</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>Sprint Retrospective</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Release Planning Meeting</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Epic</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 331  -->
+  <question type="multichoice">
+    <name>
+      <text>CBSE1</text>
+    </name>
+    <questiontext format="html">
+      <text>Sound design principles around Component-base software engineering (CBSE) include (select all that apply):</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>Components are independent and do not interfere with each other's implementation</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Components communicate through well-defined interfaces</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Component infrastructures offer standard services to facilitate reuse</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25">
+      <text>Components are best programmed in Java or .NET</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 332  -->
+  <question type="multichoice">
+    <name>
+      <text>CBSE2</text>
+    </name>
+    <questiontext format="html">
+      <text>The textbook author's suggests which of the following as essential component characteristics?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="20">
+      <text>Deployable</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Independent</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Standardized</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Composable</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Documented</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 268  -->
+  <question type="multichoice">
+    <name>
+      <text>CM: builds</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>You have a friend who compiles his Java .class files into the same directory as his/her .java files. What build best practice does this violate?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+      <text>Source+tools=product</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Check in all original source</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>Segregate built objects from original source</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Use common build tools</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Build often</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Keep build logs and outputs</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 265  -->
+  <question type="multichoice">
+    <name>
+      <text>CM: codelines</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>
+        <![CDATA["Do not check-in unless your unit tests exhibit 90% statement (node) code coverage"
+
+"Do not check in unless the code has been code reviewed"
+
+'Checkins are not allowed if the cyclomatic complexity is over 5"
+
+These are all examples of what?]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Codeline quality policies</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Build processes</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Microsoft standards</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Questions on the software engineering certification exam</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 269  -->
+  <question type="multichoice">
+    <name>
+      <text>CM: process</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>
+        <![CDATA[Often when implementing a new feature or fixing a defect (bug), you have to change multiple files. The SCm should help you manage all the files changed as part of one "job" or "transaction." A collection of files that have changed because of a particular change event is called a]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Change package</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Change request</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Branch</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Codeline</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Change document</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 264  -->
+  <question type="multichoice">
+    <name>
+      <text>CM: workspaces</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Why is it important to not share workspaces or work outside workspaces in your SCM system? Choose all that apply.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>Each workspace should have a single purpose</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Sharing workspaces or working outside them means the SCM can't help you track changes</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Workspaces facilitate communication and collaboration among developers</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Workspaces make it easier to use your IDE</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Workspaces take up too much disk space to be bothered with</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 125  -->
+  <question type="multichoice">
+    <name>
+      <text>DbC: analogy</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>In business, a contract has obligations and benefits. In DbC a class has _______, _________, and ____________</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>preconditions, postconditions, and invariants</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>properties, behaviors, and objects</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>properties, attributes, and class member variables</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>formal verification, formal specification, and Hoare logic</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 126  -->
+  <question type="multichoice">
+    <name>
+      <text>DbC: Questions</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Questions a designer might ask when designing according to contract are?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>What does it expect?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>What does it guarantee?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>What does it maintain?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>What does it service?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Who is calling it?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 127  -->
+  <question type="multichoice">
+    <name>
+      <text>DbC: techniques</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Techniques we have learned this semester that the article says can help with Design by Contract include:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Unit tests</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Code reviews</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Static analysis</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Dynamic analysis</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Refactoring</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 121  -->
+  <question type="multichoice">
+    <name>
+      <text>DP: Existing</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Existing techniques we have learned already this semester that may be useful in a defensive programming approach include:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="50">
+      <text>Defect reduction</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50">
+      <text>Code reviews</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25">
+      <text>Configuration Management</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25">
+      <text>Release Management</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 123  -->
+  <question type="multichoice">
+    <name>
+      <text>DP: Language</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Which are the following are programming language-level mechanisms that can be used in defensive programming practices?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="50">
+      <text>Assertions</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50">
+      <text>Exceptions</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25">
+      <text>Gotos</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25">
+      <text>Classes and objects</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 293  -->
+  <question type="multichoice">
+    <name>
+      <text>EGRDesProc1</text>
+    </name>
+    <questiontext format="html">
+      <text>Select all of the following phrases that describe the meaning of design:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text>See p. 89</text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="50">
+      <text>an arrangement of lines or shapes to form a pattern or decoration</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>a picture that captures the essence of the thing being designed</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50">
+      <text>a plan or drawing that shows the look and function of an object or structure before it is made</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>a more specialized knowledge of technology, math, or science</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>choosing from a vast number of solutions</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 299  -->
+  <question type="multichoice">
+    <name>
+      <text>EGRDesProc5</text>
+    </name>
+    <questiontext format="html">
+      <text>In a structured process for generating design concepts, many different processes could be used. In the reading, the following steps were given for a structured design process:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text>p. 99</text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="25">
+      <text>problem decomposition</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>search externally for ideas, like on the WWW</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>search internally for ideas with techniques like brainstorming</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>explore systematically, such as using a concept combination table</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>consult with domain experts</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 300  -->
+  <question type="multichoice">
+    <name>
+      <text>IntDes1HumanIssues</text>
+    </name>
+    <questiontext format="html">
+      <text>Important human issues to consider in interaction design include</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="-20">
+      <text>What operating system the end user uses</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>The fact that some like to work with text, others with pictures</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>How much information you are presenting to the user at once</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>How many warnings and alarms to present</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>The range of physical capabilities of the end users</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 312  -->
+  <question type="multichoice">
+    <name>
+      <text>InteractionDesign2</text>
+    </name>
+    <questiontext format="html">
+      <text>The 3 core activities of the interaction design process are</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="-20">
+      <text>unit testing</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>user analysis</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>system prototyping</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>color matching</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>interface evaluation</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 314  -->
+  <question type="multichoice">
+    <name>
+      <text>InteractionDesign4analysistechniques</text>
+    </name>
+    <questiontext format="html">
+      <text>3 basic user analysis techniques are</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>task analysis</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>personas</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>prototyping</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>interview and questionnaires</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>ethnography</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 316  -->
+  <question type="multichoice">
+    <name>
+      <text>InteractionDesign6Interfaceevaluation</text>
+    </name>
+    <questiontext format="html">
+      <text>Less expensive techniques for user interface evaluation include</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="25">
+      <text>Questionnaires</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Observation of users at work with the system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Video snapshots of typical system use</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>have code that collects information about common uses and errors</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Group discussions about the pros and cons of the interface</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 51  -->
+  <question type="multichoice">
+    <name>
+      <text>METRICS: Cohesion cons</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Which of the following are disadvantages of low cohesion?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>Increased difficulty in maintaining a system, because changes in one module require changes in related modules.</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Increased difficulty in understanding modules</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Increased difficulty in reusing a module because most applications won’t need the random set of operations provided by a module</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>It may make it so the code cannot compile</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>It is impossible to do in non object-oriented languages</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 53  -->
+  <question type="multichoice">
+    <name>
+      <text>METRICS: Coupling and Cohesion</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>In a well-design class in object-oriented programming, it will exhibit _____ cohesion and ____ coupling.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>high, loose</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>loose, high</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>tight, strong</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>strong, tight</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 54  -->
+  <question type="multichoice">
+    <name>
+      <text>METRICS: Cyclomatic Complexity and testing</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Testers pay particular attention to the cyclomatic complexity metric because</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>This value relates to the number of test cases needed to fully test a unit</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>It produces a number that testers can use to rate the goodness of a module</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>It doesn't matter to testers at all</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>It is related to the number of use cases they need to test</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 55  -->
+  <question type="multichoice">
+    <name>
+      <text>METRICS: SLOC issues</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>What are some of the issues with counting source lines of code?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="25">
+      <text>blank lines</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>comments</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>curly braces</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>different language syntax</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>number of files</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 75  -->
+  <question type="multichoice">
+    <name>
+      <text>Refactoring: future user</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>According to Fowler, the most important, yet usually forgotten, user of your code is the</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>future developer</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>end user</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>customer</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>application support person</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>the computer</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 74  -->
+  <question type="multichoice">
+    <name>
+      <text>Refactoring: improve design</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>In what ways does refactoring improve the design of software?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>it improves its structure</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>helps code retain its shape</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>helps you automatically generate UML diagrams</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>helps eliminate duplicate code</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>helps the code run faster</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 80  -->
+  <question type="multichoice">
+    <name>
+      <text>Refactoring: manager</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>The best thing to tell your manager about your refactoring intentions:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Nothing!</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>that it will take a fixed percentage of your team each sprint</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>you will only do it when adding functionality</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>you will do it as part of code reviews</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>that s/he wouldn't understand and you should be left alone.</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 82  -->
+  <question type="multichoice">
+    <name>
+      <text>Refactoring: not</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>You should not refactor when:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="50">
+      <text>you are close to a deadline</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50">
+      <text>when the code is not functionally correct</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.333">
+      <text>when the code has a lot of bugs</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.333">
+      <text>when it is not your code</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.333">
+      <text>when the code has no defects in the defect tracking tool</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 76  -->
+  <question type="multichoice">
+    <name>
+      <text>Refactoring: understanding</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>According to Fowler, Refactoring helps you find bugs and helps you code faster because</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>you develop a deeper understanding of the code</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>it is supported by modern tools</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>it goes hand-in-hand with unit testing</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>it goes hand-in-hand with code reviews</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 73  -->
+  <question type="multichoice">
+    <name>
+      <text>Refactoring: which are true</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Which of the following accurately describe refactoring?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>is usually a small change</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>makes software easier to understand and modify</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>changes the observable behavior of the software</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>include only changes made to make the software easier to understand</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>improves the performance of the software</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 41  -->
+  <question type="multichoice">
+    <name>
+      <text>Reviews: Barriers</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Select ALL of the following statements that are barriers to conducting good reviews:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="16.666">
+      <text>Egos get in the way</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="16.666">
+      <text>Participants have varying skillsets</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="16.666">
+      <text>Some people consider them a waste of time</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="16.666">
+      <text>Reviews turn into problem-solving discussions</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="16.666">
+      <text>They are difficult to schedule</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="16.666">
+      <text>They add overhead to the software process</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-12.5">
+      <text>Unit tests have been shown to be better at finding defects</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-12.5">
+      <text>International law prohibits review overseas work</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 40  -->
+  <question type="multichoice">
+    <name>
+      <text>Reviews: benefits</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Select ALL of the TRUE statements below about the benefits of peer reviews:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="20">
+      <text>Reviews are a productivity enhancement for a team</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-14.2857">
+      <text>Reviews are faster to do than running unit tests</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Reviews reveal defects early in the software process</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Overall quality is improved, not just defects removed</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Educates the whole team on the codebase</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Provides mentoring opportunities</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-14.2857">
+      <text>should be used as a grounds for employment termination</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 37  -->
+  <question type="multichoice">
+    <name>
+      <text>Reviews: Formal review activities</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Select all of the following that are part of a formal review process:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="14.2857">
+      <text>Recording of process and quality data</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="14.2857">
+      <text>Tracking defects to closure</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="14.2857">
+      <text>Reporting results to management</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-11.111">
+      <text>Firing the author after a poor review</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="14.2857">
+      <text>a documented process</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="14.2857">
+      <text>defined review objectives</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="14.2857">
+      <text>Team members are trained, moderator specially trained</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="14.2857">
+      <text>Team members have specific role for the review</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-11.111">
+      <text>Customer representatives are present</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 39  -->
+  <question type="multichoice">
+    <name>
+      <text>Reviews: informal benefits</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Select all of the following that are benefits of performing INFORMAL reviews:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>quick</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>inexpensive</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>require organizational infrastructure</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>require advanced planning</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>help the author improve to a better path of action</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 36  -->
+  <question type="multichoice">
+    <name>
+      <text>Reviews: What gets reviewed</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Select all of the following that may get reviewed on a software project:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="-20">
+      <text>peers</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>source code</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>requirements documents</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>designs</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>quality assurance plans</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 276  -->
+  <question type="multichoice">
+    <name>
+      <text>SA: abstract model</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Abstract representations of source code structures created by static analyzers include</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>call graphs</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>control flow graphs</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>symbol information</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>model checkers</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>object code</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 284  -->
+  <question type="multichoice">
+    <name>
+      <text>SA: coverage</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>How can static analysis help with improving unit test code coverage?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+      <text>It can automatically generate all the paths for you</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>It can't!</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>It can help the test implementer be more efficient by finding path-related flaws early</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 273  -->
+  <question type="multichoice">
+    <name>
+      <text>SA: examples</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Examples of problems modern static analysis tools can find are</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="25">
+      <text>buffer overruns</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>null pointer dereferencing</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>resource leaks</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>race conditions</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>type casting</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 283  -->
+  <question type="multichoice">
+    <name>
+      <text>SA: missing code</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>What can you do if you do not have the original source code to analyze?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="50">
+      <text>Try to use or reverse engineer object code</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50">
+      <text>Stub out the missing code</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Give up</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Ignore the missing code</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Refactor</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 282  -->
+  <question type="multichoice">
+    <name>
+      <text>SA: partitioning</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>The paper spends a whole column talking about the abstract domain. It suggests reducing complexity by having abstract values represent a large number of concrete values. This is exactly like which concept we talked about in unit testing?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Equivalence Partitioning</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Boundary Class Analysis</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Negative Testing</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Branch Coverage</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Test-Driven Development</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 281  -->
+  <question type="multichoice">
+    <name>
+      <text>SA: paths</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>The paper explores why it is too hard to test or static analyze all possible paths through source code. What are some of the ways it suggests restricting the number of paths that can be explored by these tools:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="50">
+      <text>Only execute a fixed number of small iterations of loops</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50">
+      <text>Put an upper bound on the number of paths that can be tried.</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Perform a random walk, arbitrarily choosing paths to explore</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Let the user or tester choose the paths to analyze</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Only test the first, middle, and last path you encounter</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 360  -->
+  <question type="multichoice">
+    <name>
+      <text>Sm_Ch5_model1</text>
+    </name>
+    <questiontext format="html">
+      <text>Models of an existing system</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>clarify what the existing system does</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>are used to discuss the exeisting system's strengths and weaknesses</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>can lead to requireemnts for a new system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>are used to explain proposed requirements to stakeholders</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>are used to document the system for implementation</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 361  -->
+  <question type="multichoice">
+    <name>
+      <text>Sm_Ch5_model2</text>
+    </name>
+    <questiontext format="html">
+      <text>Models of a new system</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="-20">
+      <text>clarify what the existing system does</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>are used to discuss the existing system's strengths and weaknesses</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>explain proposed requirements to stakeholders</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>are used to automatically generate implementations</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>are used to document the system for implementation</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 363  -->
+  <question type="multichoice">
+    <name>
+      <text>Sm_Ch5_model4</text>
+    </name>
+    <questiontext format="html">
+      <text>Ways that graphical models are used</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>facilitating discussion about a proposed system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>documenting a system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>providing a detailed system description</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>to support requirements traceability</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>to derive testing procedures</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 365  -->
+  <question type="multichoice">
+    <name>
+      <text>Sm_Ch5_structural2</text>
+    </name>
+    <questiontext format="html">
+      <text>
+        <![CDATA[Your book says &quot;When you are developing a model, the 1st stage is to usually look at the world, identify the essential objects, and represent these as classes&quot;. Which of the techniques I talked about in class Tuesday is Sommerville talking about?]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Domain Modeling</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>UML Analysis Class Modeling</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>CRC Modeling</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>MVC Pattern</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Applying Prior Knowledge (Patterns)</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 366  -->
+  <question type="multichoice">
+    <name>
+      <text>Sm_Ch5_structural3</text>
+    </name>
+    <questiontext format="html">
+      <text>Notational elements in UML class diagrams include:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="20">
+      <text>Associations</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Cardinalities</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Attributes</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Operations</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>Labels (relationship types)</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-12.5">
+      <text>Circles</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-12.5">
+      <text>Triangles</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-12.5">
+      <text>Parallelograms</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 367  -->
+  <question type="multichoice">
+    <name>
+      <text>Sm_Ch5_structural4</text>
+    </name>
+    <questiontext format="html">
+      <text>A generalization is a type of</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Association</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Attribute</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Operation</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Class</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Data</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 72  -->
+  <question type="multichoice">
+    <name>
+      <text>Static Analysis: AuthorsConclude</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>The authors of the paper motivate the need for a tool like FindBugs by concluding that</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="50">
+      <text>well-tested code written by experts still has a lot of defects</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50">
+      <text>Java and similar languages are prone to misuse</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Eclipse needs a tool like this since Visual Studio has one built in</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Java does not have any decent metrics tools</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>open source is the best business model</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 65  -->
+  <question type="multichoice">
+    <name>
+      <text>Static Analysis: auto code inspect</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>The authors' say that using static analysis to find bugs is like _____________________</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>an automatic code inspection</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>testing</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>gathering raw measures</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>running a profiler</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>compiling the code with all warnings enabled</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 64  -->
+  <question type="multichoice">
+    <name>
+      <text>Static Analysis: Code Idiom</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>
+        <![CDATA["A bug pattern is a _______________ that is likely to be an error."]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>code idiom</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>defect</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>metric</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>test</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>module</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 66  -->
+  <question type="multichoice">
+    <name>
+      <text>Static Analysis: code inspect flaws</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>The authors' suggest that code inspections to find bugs are flawed because:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="50">
+      <text>it is manually intensive to do</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50">
+      <text>humans may be biased by what they think the software is intended to do</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>they are not supported by tools</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>you can only do them on Java code</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>they find more than run-time defects</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 67  -->
+  <question type="multichoice">
+    <name>
+      <text>Static Analysis: dynamic analysis flaws</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>The authors' suggest that using dynamic analysis to find bugs is flawed because</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>it is limited to executed paths in the software</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>it is difficult to achieve high code coverage</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>may take to long to setup an environment to run such tests</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>can only be done on Java bytecode</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>intractable because there are too many paths to check</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 71  -->
+  <question type="multichoice">
+    <name>
+      <text>Static Analysis: FindBugsDA</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>How is FindBugs like a dynamic analysis tool?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>it finds types of defects similar to what a dynamic analysis tool would find</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>it operates on Java bytecode</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>it has a profiler</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>you run tests with it</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>it will plot memory management statistics for you</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 70  -->
+  <question type="multichoice">
+    <name>
+      <text>Static Analysis: FindBugsSA</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>How is FindBugs like a static analysis tool?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>it parses and analyzes code, not an executing system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>it analyzes running code</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>it has a code syntax highlighter</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>it checks for problems in comments and curly braces</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>it computes metrics</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 69  -->
+  <question type="multichoice">
+    <name>
+      <text>Static Analysis: Historical</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>
+        <![CDATA[On page 93 in the bottom right, the paper talks about 4 implementation strategies. Which strategy does not equate to one of the "Historical View Static Analysis Stages" described on page 5 of your notes?]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Class Structure and Inheritance Hierarchy Only</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Linear Code Scan</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Control Sensitive</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Dataflow</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 68  -->
+  <question type="multichoice">
+    <name>
+      <text>Static Analysis: unsound</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>When a static analysis technique finds probable defects but may also miss some bugs, they we say it is</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+      <text>partial verification</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>a formal proof of correctness</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>unsound</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>incomplete</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>complete</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 325  -->
+  <question type="multichoice">
+    <name>
+      <text>SwDesCh7OO1</text>
+    </name>
+    <questiontext format="html">
+      <text>To develop a system design from conceptual to detailed, you need to do (choose all that are relevant):</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="25">
+      <text>Understand the context of the external interactions with the system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Identify the main objects of the system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Create design models</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Specify the interfaces</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Create a use case model</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 327  -->
+  <question type="multichoice">
+    <name>
+      <text>SwDesCh7OO3</text>
+    </name>
+    <questiontext format="html">
+      <text>The following are some ways suggested to help identify objects (select all that apply):</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>Analyze the natural language description of the system looking for nouns and verbs</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Use tangible things in the application domain</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Analyze various scenarios in which the system is used</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Google information on the domain</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Create a persona for each use case</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 328  -->
+  <question type="multichoice">
+    <name>
+      <text>SwDesCh7OO4</text>
+    </name>
+    <questiontext format="html">
+      <text>The textbook suggests there are 2 kinds of UML models you will use to create a design, which 2?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="50">
+      <text>Structural models</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50">
+      <text>Dynamic models</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Identity models</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Static models</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Flow models</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 329  -->
+  <question type="multichoice">
+    <name>
+      <text>SwDesCh7OO5</text>
+    </name>
+    <questiontext format="html">
+      <text>The textbook suggests 3 specific UML models useful for architectural models:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>Subsystem models (class and package)</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Sequence models</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>State diagrams</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Use case models</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Activity diagrams</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 318  -->
+  <question type="multichoice">
+    <name>
+      <text>UIDesign2</text>
+    </name>
+    <questiontext format="html">
+      <text>You should keep the following questions in mind when deciding how to present information</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="25">
+      <text>Is the user interested in precise information or in the relationships between data values?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>How quickly do the information values change?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Must the user take some action in response to a change in information?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Is the information to be displayed textual or numeric?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Did the end user authenticate (provide a username and password)?</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 321  -->
+  <question type="multichoice">
+    <name>
+      <text>UIDesign5</text>
+    </name>
+    <questiontext format="html">
+      <text>Abstract visualizations linking related data items may be useful when:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>large amounts of infomation has to be presented.</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>presenting personalized search engine results</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>interacting with social networks</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>presenting weather information</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 322  -->
+  <question type="multichoice">
+    <name>
+      <text>UIDesign6</text>
+    </name>
+    <questiontext format="html">
+      <text>The most common use of visualization in user interfaces is to</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>represent some physical structure</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>
+        <![CDATA[to help "see" complex math equations]]>
+</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>to process statistics</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>emoticons</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>to display animations</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 323  -->
+  <question type="multichoice">
+    <name>
+      <text>UIDesign7</text>
+    </name>
+    <questiontext format="html">
+      <text>Shneiderman's color guidelines include</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="25">
+      <text>limiting the number of colors and being conservative in how they are used</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>using color to indicate system status</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>using colors to support the task the user is trying to do</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>being careful about color pairings</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>avoiding red colors as they indicate an error</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 368  -->
+  <question type="multichoice">
+    <name>
+      <text>UML_CH5_2_interaction</text>
+    </name>
+    <questiontext format="html">
+      <text>Interaction models capture interactions between</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>A user and a system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>A user and a user</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>A system and a system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>components of a system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>a student and teacher</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 369  -->
+  <question type="multichoice">
+    <name>
+      <text>UML_CH5_2_seq1</text>
+    </name>
+    <questiontext format="html">
+      <text>UML sequence diagrams model the interactions between</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="50">
+      <text>actors and objects in a system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50">
+      <text>objects and other objects in the system</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>actors and other actors</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>people and other people</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>students and teachers</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 373  -->
+  <question type="multichoice">
+    <name>
+      <text>UML_CH5_4_sc2</text>
+    </name>
+    <questiontext format="html">
+      <text>Event-driven models are appropriate for</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+      <text>data processing systems</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>real-time systems</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>ATM systems</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Healthcare systems</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 374  -->
+  <question type="multichoice">
+    <name>
+      <text>UML_CH5_4_sc3</text>
+    </name>
+    <questiontext format="html">
+      <text>The main challenge with state-based modeling is</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+      <text>the diagrams are hard to understand</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Few good tools exist for drawing the diagrams</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>They look too much like activity diagrams</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>the number of states increases to quickly</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 404  -->
+  <question type="multichoice">
+    <name>
+      <text>UnitTest.XP.SomCh331</text>
+    </name>
+    <questiontext format="html">
+      <text>Features of XP testing include</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="25">
+      <text>Test-driven development</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Scenario-driven incremental tests</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>User involvement in test development</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="25">
+      <text>Automated testing</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Full regression testing</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 336  -->
+  <question type="multichoice">
+    <name>
+      <text>UnitTestAutomated.Som9th811</text>
+    </name>
+    <questiontext format="html">
+      <text>Sommerville recommends automating unit tests as much as possible, an idea shared by the greater software development community. Which of the following are reasons for automating unit tests?</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>tests can be run faster, often in seconds</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>tests results are easily aggregated and reported in a GUI</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>test automation frameworks provide support for rapidly implementing unit tests</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25">
+      <text>as a developer, you can offload unit testing to a testing staff person</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 343  -->
+  <question type="multichoice">
+    <name>
+      <text>UnitTestEquiv.Som9th812</text>
+    </name>
+    <questiontext format="html">
+      <text>Guidelines for revealing defects with equivalence partitions include</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>use sequences with only one value</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>use sequences of varying sizes in different tests</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>test the 1st, last, and middle elements of a sequence</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>test with random sequences</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>test with linearly ordered sequences, e.g. 1, 2, 3...</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 335  -->
+  <question type="multichoice">
+    <name>
+      <text>UnitTestFeatures.Som9th811</text>
+    </name>
+    <questiontext format="html">
+      <text>When unit testing objects, you should check:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>operations</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>attribute values</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>states and events</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>dependencies</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>calling functions</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 334  -->
+  <question type="multichoice">
+    <name>
+      <text>UnitTestGranularity.Som9th81</text>
+    </name>
+    <questiontext format="html">
+      <text>During development, testing may be carried out at these levels of granularity:</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="33.333">
+      <text>Objects or functions or methods</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>Components</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.333">
+      <text>System</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Library</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-20">
+      <text>Package or Namespace</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 402  -->
+  <question type="multichoice">
+    <name>
+      <text>UnitTestStrategiesV2.Som9th.Ch8</text>
+    </name>
+    <questiontext format="html">
+      <text>
+        <![CDATA[________ and __________-based testing are recommended strategies for choosing effective unit test cases. (choose 2 answers from below)<br />]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="50">
+      <text>guideline</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50">
+      <text>partitioning</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.333">
+      <text>white-box</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.333">
+      <text>black-box</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.333">
+      <text>negative</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 347  -->
+  <question type="multichoice">
+    <name>
+      <text>UnitTestTDDBenefits.Som9th82</text>
+    </name>
+    <questiontext format="html">
+      <text>Benefits to test-driven development (TDD) are that it</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="20">
+      <text>reduces the costs of regression tests</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>is easily automated</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>helps the developer understand the problem better</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>results in better code coverage</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="20">
+      <text>makes debugging easier</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 403  -->
+  <question type="multichoice">
+    <name>
+      <text>UnitTestValidation.Som9th.Ch8intro</text>
+    </name>
+    <questiontext format="html">
+      <text>The process by which we check that delivered software meets customer expectations is called</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback>
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text></text>
+    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>validation</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>verification</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>testing</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>inspections</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>requirements review</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 349  -->
+  <question type="shortanswer">
+    <name>
+      <text>316.ScrumGuide.Teams2</text>
+    </name>
+    <questiontext format="html">
+      <text>
+        <![CDATA[Team members are also known as ____. Chickens cannot tell ______ how to do their work. _____ are committed to project success.(Note the blanks all refer to the same word).<br />]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <usecase>0</usecase>
+    <answer fraction="100">
+      <text>pigs</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 351  -->
+  <question type="shortanswer">
+    <name>
+      <text>316.ScrumGuide.TimeBox1</text>
+    </name>
+    <questiontext format="html">
+      <text>An iteration in Scrum is called a ______________</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <usecase>0</usecase>
+    <answer fraction="100">
+      <text>sprint</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 267  -->
+  <question type="shortanswer">
+    <name>
+      <text>CM: propagation</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>
+        <![CDATA[Postponing change propagation can lead to "stunningly complex" what?]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <usecase>0</usecase>
+    <answer fraction="100">
+      <text>file merges</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 124  -->
+  <question type="shortanswer">
+    <name>
+      <text>DbC: contract</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>In Design By Contract, the contract is a s_____</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <usecase>0</usecase>
+    <answer fraction="100">
+      <text>*pecific*</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 56  -->
+  <question type="shortanswer">
+    <name>
+      <text>METRICS: SLOC and FP</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Source Lines Of Code (SLOC) and Function Points (FP) are similar in that both are measures of _____ (one word)</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <usecase>0</usecase>
+    <answer fraction="100">
+      <text>size</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 83  -->
+  <question type="shortanswer">
+    <name>
+      <text>Refactoring: build simple</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>You should always build the ________ thing that can possibly work.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <usecase>0</usecase>
+    <answer fraction="100">
+      <text>simpl*</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 77  -->
+  <question type="shortanswer">
+    <name>
+      <text>Refactoring: strikes</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>_____ strikes and you refactor</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <usecase>0</usecase>
+    <answer fraction="100">
+      <text>3</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>three</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 275  -->
+  <question type="shortanswer">
+    <name>
+      <text>SA: symbolic</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>
+        <![CDATA[The "simulation of a real execution" of a program is called]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <usecase>0</usecase>
+    <answer fraction="100">
+      <text>symbolic*</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 357  -->
+  <question type="truefalse">
+    <name>
+      <text>316.ScrumGuide.Daily2</text>
+    </name>
+    <questiontext format="html">
+      <text>Chickens are not allowed to talk in Daily Scrums.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="100">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 359  -->
+  <question type="truefalse">
+    <name>
+      <text>316.ScrumGuide.Done</text>
+    </name>
+    <questiontext format="html">
+      <text>In Scrum, saying that an increment of functionality is Done at the end of a Sprint means that it has been designed, coded, fully tested and packaged for use for the Product Owner.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 333  -->
+  <question type="truefalse">
+    <name>
+      <text>CBSE3</text>
+    </name>
+    <questiontext format="html">
+      <text>Component interfaces come in two types: required and provides. Provided interfaces are the ones provided by an outside service to be used by this component. Required interfaces are the ones specified by the component and must be implemented by its subclasses.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 266  -->
+  <question type="truefalse">
+    <name>
+      <text>CM: branching</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Branching too often means you have too many concurrent lines of development in which to manage changes. It is more work.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="100">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 122  -->
+  <question type="truefalse">
+    <name>
+      <text>DP: Popularity</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Defensive Programming has renewed popularity due to the increase in interest in writing more secure software</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="100">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 120  -->
+  <question type="truefalse">
+    <name>
+      <text>DP: Unforeseeable</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>The intent of defensive programming is to ensure the resulting software continues to function (correctly) in spite of being used in unanticipated ways.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="100">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 306  -->
+  <question type="truefalse">
+    <name>
+      <text>IntDes5Seperate</text>
+    </name>
+    <questiontext format="html">
+      <text>In principle, one should couple (tie together) the desired interaction with an underlying entity so manipulation through the user interface goes smoothly.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 313  -->
+  <question type="truefalse">
+    <name>
+      <text>InteractionDesign3</text>
+    </name>
+    <questiontext format="html">
+      <text>Due to the difficulty in communication the essence of tasks to designers and end users, a notation like UML sequence diagrams should be used.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 315  -->
+  <question type="truefalse">
+    <name>
+      <text>InteractionDesign5Prototyping</text>
+    </name>
+    <questiontext format="html">
+      <text>When prototyping, you should adopt a 2-stage process where early in the process you develop paper prototypes to walk through in end users, and then refine the design with increasingly sophisticated automated prototypes that users can use for testing.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="100">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 78  -->
+  <question type="truefalse">
+    <name>
+      <text>Refactoring: behavior</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>When you refactor, you may end up changing a program's observable behavior</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 79  -->
+  <question type="truefalse">
+    <name>
+      <text>Refactoring: nonfunctional</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>When you refactor, you may end up changing a program's nonfunctional characteristics.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="100">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 35  -->
+  <question type="truefalse">
+    <name>
+      <text>Reviews: Review Author?</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>In a code review, the author of the code is reviewed as well as the source code.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 274  -->
+  <question type="truefalse">
+    <name>
+      <text>SA: flaws</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Static analysis can prove a body of source code is free of flaws (errors).</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 280  -->
+  <question type="truefalse">
+    <name>
+      <text>SA: motivation</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>In class I describe one of the motivations for using static analysis to be a cost savings when compared to traditional code reviews. The paper describes the same motivation.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 364  -->
+  <question type="truefalse">
+    <name>
+      <text>Sm_Ch5_structural1</text>
+    </name>
+    <questiontext format="html">
+      <text>Structural models may be static, showing the state of the system when it is executing.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 326  -->
+  <question type="truefalse">
+    <name>
+      <text>SwDesCh7OO2</text>
+    </name>
+    <questiontext format="html">
+      <text>A system context model is a structural model showing how the system interacts with its environment as it is used.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 330  -->
+  <question type="truefalse">
+    <name>
+      <text>SwDesCh7OO6</text>
+    </name>
+    <questiontext format="html">
+      <text>There is not a simple one-to-one relationship between objects and interfaces.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="100">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 317  -->
+  <question type="truefalse">
+    <name>
+      <text>UIDesign1</text>
+    </name>
+    <questiontext format="html">
+      <text>A good information design guideline is to keep the code for information and information presentation tightly mingled so its works efficiently.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 319  -->
+  <question type="truefalse">
+    <name>
+      <text>UIDesign3</text>
+    </name>
+    <questiontext format="html">
+      <text>Graphics make your display more interesting, and therefore is better for your User Interface</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 320  -->
+  <question type="truefalse">
+    <name>
+      <text>UIDesign4</text>
+    </name>
+    <questiontext format="html">
+      <text>If data is numeric, changes often, or if relationships are more important that precision, then you should display information graphically.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="100">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 324  -->
+  <question type="truefalse">
+    <name>
+      <text>UIDesign8</text>
+    </name>
+    <questiontext format="html">
+      <text>You should consider the user's background and experience when designing error messages.</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="100">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 370  -->
+  <question type="truefalse">
+    <name>
+      <text>UML_CH5_2_seq2</text>
+    </name>
+    <questiontext format="html">
+      <text>Sequence diagrams defined by the UML need to express implementation level details even at the early stages of the design process</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 345  -->
+  <question type="truefalse">
+    <name>
+      <text>UnitTestSysTest.Som9th814</text>
+    </name>
+    <questiontext format="html">
+      <text>
+        <![CDATA[One difference between <i>Component</i> and <i>System</i> testing is that System testing is a collaborative process that may involve more people and roles than just the original developer.<br />]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="100">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  <!-- question: 346  -->
+  <question type="truefalse">
+    <name>
+      <text>UnitTestTDD.Som9th82</text>
+    </name>
+    <questiontext format="html">
+      <text>
+        <![CDATA[Test-driven development(TDD) means the testers, as caretakers of the requirements, indicate what code should be written first.<br />]]>
+</text>
+    </questiontext>
+    <image></image>
+    <generalfeedback>
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+</quiz>
