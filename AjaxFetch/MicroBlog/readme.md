@@ -1,4 +1,7 @@
-# Changes from Express version of the MicroBlog
+# MicroBlog example
+
+This example was inspired by an article by C. Reyes on creating a server-side version of a Microblog using NodeJS and Express.
+https://www.sitepoint.com/build-microblog-node-js-git-markdown
 
 - This version uses AJAX fetch API to get list of available/uploaded blogs.
 - To add a new blog, it again uses POST with AJAX fetch.
@@ -14,26 +17,8 @@ This version of MicroBlog uses Express framework.
 3. Visit http://localhost:1337/
 4. To access a blog - http://localhost:1337/blog/<blog_name_here>
 
-# Building a Microblog Using Node.js, Git and Markdown
 
-Camilo Reyes shows how to write robust, testable code using SOLID principles by building a small but functional microblog with only minimal dependencies.
-
-This code accompanies the SitePoint article:
-https://www.sitepoint.com/build-microblog-node-js-git-markdown
-
-## Requirements
-
-* [Node.js](http://nodejs.org/)
-* [Git](https://git-scm.com/)
-
-## Installation Steps
-
-1. Clone repo
-2. Run `npm install`
-3. Run `npm run start`
-4. Visit http://localhost:1337/
-
-## License
+## License (for original code on Sitepoint)
 
 The MIT License (MIT)
 
