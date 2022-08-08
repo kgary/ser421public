@@ -1,5 +1,5 @@
-// Do some of the same type triks as funwithtypes on Irate and IrateSub
-// .load irate.js, then 
+// Do some of the same type tricks as funwithtypes on Irate and IrateSub
+// .load irate.js, load iratesub.js, then funwithtypes.js, then this
 getAllMethods(Irate.prototype);
 //[ 'constructor', 'computeYield', 'yieldRate' ]
 getAllMethods(IrateSub.prototype);

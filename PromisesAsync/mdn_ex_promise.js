@@ -1,4 +1,3 @@
- 
   function doOperation() {
     doStep1(0, 1).then(function doStep2(v) {
         return v+2;
@@ -12,4 +11,4 @@
     });
   }
 
-  doOperation();
+doOperation();
