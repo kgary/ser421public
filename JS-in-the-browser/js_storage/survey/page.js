@@ -108,11 +108,6 @@ function chkAnswers() {
     if (resultHTML == '') {
         // All questions were answered, instead show the PIN
         resultHTML += 'Thank you for completing the questions. Please enter your PIN and press submit<br/>\n';
-	// We don't do anything for real in this app, so shipping it off to a snoop for echo purposes
-//        resultHTML += '<form method="POST" action="http://lead2.poly.asu.edu:8081/examples/snoop.jsp">\n';
-//      for(var i = 0; i < qorderarr.length; i++) {
-//        		resultHTML += '<input type="hidden" name="'+qorderarr[i]+'" value="'+sessionStorage.getItem(qorderarr[i]+'Ans')+'/>';
-//        }
         resultHTML += '<input type="password" size="5" name="passwd" maxLength="5" onkeyup="checkPIN(this)" />';
         resultHTML += '<div id="PINcheck"></div>'
 
