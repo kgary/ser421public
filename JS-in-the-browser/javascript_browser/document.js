@@ -1,11 +1,8 @@
 function getXmlDoc(xmlString) {
-  var parser = new DOMParser();
-  var xmlDocument =
-    parser.parseFromString(xmlString, "application/xml");
-  return(xmlDocument);
+  return (new DOMParser().parseFromString(xmlString, "application/xml"));
 }
 
-var test =
+const test =
   "<customers rating='vip'>" +
     "<customer id='a1234'>" +
       "<firstName>Rafael</firstName>" +
@@ -17,14 +14,14 @@ var test =
     "</customer>" +
   "</customers>";
   
-var testDoc = getXmlDoc(test);
+let testDoc = getXmlDoc(test);
 
 testDoc.documentElement.nodeName;
 testDoc.documentElement.getAttribute("rating");
 
 testDoc.getElementsByTagName("lastName")[1].firstChild.nodeValue;
 
-var rafie = testDoc.getElementsByTagName("customer")[0];
+let rafie = testDoc.getElementsByTagName("customer")[0];
 rafie.getAttribute("id");
 testDoc.getElementById("a1234");
 

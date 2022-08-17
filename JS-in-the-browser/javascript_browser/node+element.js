@@ -5,7 +5,7 @@ function showInfo(node, indent) {
   } else if (node.nodeType == Node.ELEMENT_NODE) {
     console.log("%s Found element '%s'.", 
                 spaces(indent), node.nodeName);
-    var children = node.childNodes;
+    let children = node.childNodes;
     for(var i=0; i<children.length; i++) {
       showInfo(children[i], indent+1);
     }
@@ -13,8 +13,8 @@ function showInfo(node, indent) {
 }
 
 function spaces(n) {
-  var indentString = "  ";
-  var result = "";
+  let indentString = "  ";
+  let result = "";
   for(var i=0; i<n; i++) {
     result = result.concat(indentString);
   }
@@ -22,7 +22,7 @@ function spaces(n) {
 }
 
 // we saw this in document.js
-var test =
+const test2 =
   "<customers rating='vip'>" +
     "<customer id='a1234'>" +
       "<firstName>Rafael</firstName>" +
@@ -33,7 +33,7 @@ var test =
       "<lastName>Federer</lastName>" +
     "</customer>" +
     "</customers>";
-var testDoc = new DOMParser().parseFromString(test, "application/xml");
+var testDoc2 = new DOMParser().parseFromString(test2, "application/xml");
 
-testDoc.documentElement.normalize();
-showInfo(testDoc.documentElement, 0);
+testDoc2.documentElement.normalize();
+showInfo(testDoc2.documentElement, 0);

@@ -1,6 +1,5 @@
 console.log(document.cookie.split(';'));
 console.log(document.body);
-console.log(document.anchors[0]);
 console.log(document.domain);
 console.log(document.URL);
 console.log(document.title);
