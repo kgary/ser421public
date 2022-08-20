@@ -69,8 +69,11 @@ let irect2: IRectangle = {
     length: 10,
     width: 20
 }
-irect2 = rect2
-rect2 = irect2
+rect2 = {
+    length: 15,
+    width: 25
+}
+rect2 = irect2;  // assignable!
 
 // what is the difference then between types and interfaces? typed object literals are just 
 // that - literals. They cannot be merged, used to check class declarations, etc. while interfaces can
@@ -79,12 +82,15 @@ rect2 = irect2
 // interfaces can have read-only values
 // interfaces can have typed functions as interface members
 interface IRectangle2 {
-    length: number,
-    width: number,
-    getArea: (length: number, width: number) => number;
+    length: number;
+    width: number;
+    // two ways of declaring a method
+    getArea: () => number;
+    getArea2(): number;
 }
-const ir2: IRectangle2 {
+const ir2: IRectangle2 = {
     length: 90,
     width: 89,
-    getArea: () => { return length * width }
+    getArea: () => { return ir2.length * ir2.length },
+    getArea2() { return this.length * this.length }
 }

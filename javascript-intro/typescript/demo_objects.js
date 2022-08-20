@@ -38,5 +38,14 @@ var irect2 = {
     length: 10,
     width: 20
 };
-irect2 = rect2;
-rect2 = irect2;
+rect2 = {
+    length: 15,
+    width: 25
+};
+rect2 = irect2; // assignable!
+var ir2 = {
+    length: 90,
+    width: 89,
+    getArea: function () { return ir2.length * ir2.length; },
+    getArea2: function () { return this.length * this.length; }
+};
