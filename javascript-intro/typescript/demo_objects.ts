@@ -1,3 +1,5 @@
+import { getAxesPermutation } from "@tensorflow/tfjs-core/dist/ops/axis_util"
+
 // we can specify object literals with implicit types
 let rect1 = {
     length: 10,
@@ -91,6 +93,21 @@ interface IRectangle2 {
 const ir2: IRectangle2 = {
     length: 90,
     width: 89,
-    getArea: () => { return ir2.length * ir2.length },
-    getArea2() { return this.length * this.length }
+    getArea: () => { return ir2.length * ir2.width },
+    getArea2() { return this.length * this.width }
+}
+
+interface CuboidFromRectangle2 extends IRectangle2 {
+    depth: number;
+    getVolume(): number;
+}
+// Note that we do not "inherit" implementations, only interfaces. So when we provide
+// an implementation we need everything
+const cfr2: CuboidFromRectangle2 = {
+    length: 20,
+    width: 30,
+    depth: 10,
+    getArea: () => { return cfr2.length * cfr2.width },
+    getArea2() { return this.length * this.width },
+    getVolume() { return this.depth * this.getArea2() }
 }
