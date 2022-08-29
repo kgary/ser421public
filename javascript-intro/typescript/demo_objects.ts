@@ -1,5 +1,3 @@
-import { getAxesPermutation } from "@tensorflow/tfjs-core/dist/ops/axis_util"
-
 // we can specify object literals with implicit types
 let rect1 = {
     length: 10,
