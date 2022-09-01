@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>helloworldvue2</title>
+    </head>
+    <body>
+        <h2>A self-contained no build tools Vue 3 Hello World app with 2 components</h2>
+        <div id="app">{{msg}}</div>
+        <div id="component2">{{msg}}</div>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script>
+            let app = Vue.createApp({
+                data () {
+                    return { 
+                        msg: "Hello World!"
+                    }
+                }
+            }).mount('#app')
+        </script>
+        <script>
+            let component2 = Vue.createApp({
+                data () {
+                    return { 
+                        msg: "Goodbye World!"
+                    }
+                }
+            }).mount('#component2')
+        </script>
+    </body>
+</html>
