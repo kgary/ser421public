@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Vue3 no build file local</title>
+    </head>
+    <body>
+        <h2>A self-contained no build tools Vue 3 Hello World app</h2>
+        <div id="app">{{msg}}</div>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script>
+            let app = Vue.createApp({
+                data () {
+                    return { 
+                        msg: "Hello World!"
+                    }
+                }
+            }).mount('#app')
+        </script>
+    </body>
+</html>

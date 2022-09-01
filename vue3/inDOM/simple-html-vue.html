@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Vue3 no build file using remote Vue3 dev lib.</title>
+  </head>
+  <body>
+    <h2>This is an example of a self-contained, no build tools Vue 3 Options page.</h2>
+    <h3>You can load with file://</h3>
+    <h4>This demo shows the v-if, v-else, and v-for directives plus simple lists and templating, also computed and methods on our component</h4>
+    <div id="app">
+      <p v-if="msg">Hello to </p>
+      <p v-else>Goodbye to </p>
+      <ul>
+        <li v-for="name in names">{{name}}</li>
+      </ul>
+      <p>Three-letter names:</p>
+      <ol>
+        <li v-for="n2 in threeLetterNames">{{n2}}</li>
+      </ol>
+      <p> Non 3-letter names</p>
+      <dl>
+        <li v-for="n3 in nonThreeLetters(names)">{{n3}}</li>
+      </dl>
+      <button @click="msg = !msg">toggle me</button>
+    </div>
+    <script src="js/vue.global.js"></script>
+    <script>
+      let app = Vue.createApp({
+        data() {
+          return {
+            msg: true,
+            names: ["Joe", "Sue", "Carol"]
+          }
+        },
+        computed: {
+          threeLetterNames() {
+            return this.names.filter(n => n.length == 3)
+          }
+        },
+        methods: {
+          nonThreeLetters(theNames) {
+            return theNames.filter(n => n.length != 3)
+          }
+        }
+      }).mount('#app')
+    </script>
+  </body>
+</html>
