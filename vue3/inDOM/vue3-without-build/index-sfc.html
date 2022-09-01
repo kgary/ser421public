@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>title</title>
+        <link rel="icon" href="data:;base64,=">
+    </head>
+    <body>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue3-sfc-loader/dist/vue3-sfc-loader.js"></script>
+        <div id="app">
+            <h1>People!</h1>
+        </div>
+        <script>
+            const options = {
+                moduleCache: {
+                    vue: Vue
+                },
+                async getFile(url) {
+                    const res = await fetch(url);
+                    if ( !res.ok )
+                        throw Object.assign(new Error(res.statusText + ' ' + url), { res });
+                    return {
+                        getContentData: asBinary => asBinary ? res.arrayBuffer() : res.text(),
+                    }
+                },
+                addStyle(textContent) {
+                    const style = Object.assign(document.createElement('style'), { textContent });
+                    const ref = document.head.getElementsByTagName('style')[0] || null;
+                    document.head.insertBefore(style, ref);
+                },
+            }
+
+            const { loadModule } = window['vue3-sfc-loader'];
+
+            Vue.createApp({
+                data() {
+                    return {
+                        headers: [],
+                        workers: [],
+                    }
+                },
+                components: {
+                    'Table': Vue.defineAsyncComponent( () => loadModule('./table.vue', options) )
+                },
+                template: `<Table :headers="headers" :workers="workers"></Table>`,
+                methods: {
+                    async getWorkers() {
+                        const workers = [
+                            { name: "Airi Satou", position: "Accountant", office: "Tokyo", age: 33},
+                            { name: "Angelica Ramos", position: "Chief Executive Officer (CEO)", office: "London", age: 47 },
+                            { name: "Cedric Kelly", position: "Senior Javascript Developer", office: "Edinburgh", age: 22 },
+                            { name: "Jennifer Chang", position: "Regional Director", office: "Singapore", age: 28 },
+                        ];
+
+                        const headers = [
+                            { key: "name", value: "Name" },
+                            { key: "position", value: "Position" },
+                            { key: "office", value: "Office" },
+                            { key: "age", value: "Age" },
+                        ];
+
+                        this.headers = headers;
+                        this.workers = workers;
+                    }
+                },
+                mounted() {
+                    this.getWorkers();
+                }
+            }).mount('#app')
+        </script>
+    </body>
+</html>

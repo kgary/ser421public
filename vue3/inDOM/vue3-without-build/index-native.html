@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>title</title>
+        <link rel="icon" href="data:;base64,=">
+    </head>
+    <body>
+        <script src="https://unpkg.com/vue@3"></script>
+<style>
+    th { cursor: pointer; }
+    .arrow { color: gray; }
+    .active { color: black; }
+</style>
+
+        <div id="app">
+            <h1>People!</h1>
+        </div>
+        <script>
+            Vue.createApp({
+                data() {
+                    return {
+                        headers: [],
+                        workers: [],
+                    }
+                },
+                components: {
+                    'Table': Vue.defineAsyncComponent( () => import('./table.js'))
+                },
+                template: `<Table :headers="headers" :workers="workers"></Table>`,
+                methods: {
+                    async getWorkers() {
+                        const workers = [
+                            { name: "Airi Satou", position: "Accountant", office: "Tokyo", age: 33},
+                            { name: "Angelica Ramos", position: "Chief Executive Officer (CEO)", office: "London", age: 47 },
+                            { name: "Cedric Kelly", position: "Senior Javascript Developer", office: "Edinburgh", age: 22 },
+                            { name: "Jennifer Chang", position: "Regional Director", office: "Singapore", age: 28 },
+                        ];
+
+                        const headers = [
+                            { key: "name", value: "Name" },
+                            { key: "position", value: "Position" },
+                            { key: "office", value: "Office" },
+                            { key: "age", value: "Age" },
+                        ];
+
+                        this.headers = headers;
+                        this.workers = workers;
+                    }
+                },
+                mounted() {
+                    this.getWorkers();
+                }
+            }).mount('#app')
+        </script>
+    </body>
+</html>
