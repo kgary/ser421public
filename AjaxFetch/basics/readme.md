@@ -6,4 +6,4 @@
 1. node http_server.js
 2. open in browser: http://localhost:8008/ajax-basics-1c.html
 
-There are a few other files as well that can be used: ajax-basics-1.html
+There are a few other files as well that can be used: ajax-basics-1.html, show-message.html
