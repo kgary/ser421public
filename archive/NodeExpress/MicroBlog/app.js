@@ -98,7 +98,7 @@ app.get('/blog/:file', function (req, res){
                 return;
             }
 
-            var htmlContent = message.marked(rawContent);
+            var htmlContent = message.marked.parse(rawContent);
             var responseContent = message.mustacheTemplate(html, {postContent: htmlContent});
 
             res.cookie('lastSeenBlog', req.params.file);
