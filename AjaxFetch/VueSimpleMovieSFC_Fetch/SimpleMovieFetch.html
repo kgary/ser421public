@@ -28,7 +28,7 @@
         },
         methods: {
           async getMovie() {
-            const res = await fetch("https://www.omdbapi.com/?i="+this.movieId+"&apikey=YOUR KEY HERE");
+            const res = await fetch("https://www.omdbapi.com/?i="+this.movieId+"&apikey=591413f8");
             const data = await res.json(); 
             this.src = data;
           }
