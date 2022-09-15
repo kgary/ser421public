@@ -1,0 +1,17 @@
+What is your name?
+Lancelot
+Arthur
+Guineviere
+
+What is your quest?
+To find the Grail
+To slay the rabbit
+To find the Knights who say Ni!
+
+What is your favorite color?
+Blue
+Red
+I don't know
+
+What is the capital of Assyria?
+I don't know that!

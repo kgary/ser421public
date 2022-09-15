@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <display-name>SER422 State Examples</display-name>
+  <description>State Samples for SER422</description>
+
+    <servlet>
+        <servlet-name>SessionServlet</servlet-name>
+        <servlet-class>Session1</servlet-class>
+    </servlet>
+   <servlet>
+        <servlet-name>SessionServlet2</servlet-name>
+        <servlet-class>Session2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SessionServlet3</servlet-name>
+        <servlet-class>Session3</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SimpleSession</servlet-name>
+        <servlet-class>SimpleSession</servlet-class>
+    </servlet>
+  
+  <servlet>
+    <servlet-name>CookieExample</servlet-name>
+    <servlet-class>ShoppingCartViewerCookie</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>HiddenExample</servlet-name>
+    <servlet-class>ShoppingCartViewerHidden</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>HiddenClientExample</servlet-name>
+    <servlet-class>ShoppingCartViewerHiddenClient</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieClientExample</servlet-name>
+    <servlet-class>ShoppingCartViewerCookieClient</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>RewriteExample</servlet-name>
+    <servlet-class>ShoppingCartViewerRewrite</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>RewriteClientExample</servlet-name>
+    <servlet-class>ShoppingCartViewerRewriteClient</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>SessionExample</servlet-name>
+    <servlet-class>ShoppingCartViewerSession</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CookieExample</servlet-name>
+    <url-pattern>/cookie/*</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>HiddenExample</servlet-name>
+    <url-pattern>/hidden/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HiddenClientExample</servlet-name>
+    <url-pattern>/hiddenclient/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieClientExample</servlet-name>
+    <url-pattern>/cookieclient/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RewriteExample</servlet-name>
+    <url-pattern>/rewrite/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionExample</servlet-name>
+    <url-pattern>/cart/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RewriteClientExample</servlet-name>
+    <url-pattern>/rewriteclient/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionServlet</servlet-name>
+    <url-pattern>/session</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionServlet2</servlet-name>
+    <url-pattern>/Session2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionServlet3</servlet-name>
+    <url-pattern>/Session3</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SimpleSession</servlet-name>
+    <url-pattern>/simple</url-pattern>
+  </servlet-mapping>
+
+  <!-- Session Listener declarations -->
+  <listener>
+	<description>sessionListener</description>
+	<listener-class>SessionListen</listener-class>
+  </listener>
+
+  <!-- This says what file to serve at the root URL of your context --> 
+  <welcome-file-list>
+  	<welcome-file>/index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
