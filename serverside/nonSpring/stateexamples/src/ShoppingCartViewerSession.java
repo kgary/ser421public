@@ -1,11 +1,11 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -18,6 +18,7 @@ public class ShoppingCartViewerSession extends HttpServlet {
 
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		HttpSession session = req.getSession(true);  // create a session if we do not have one
+		@SuppressWarnings("unchecked")
 		List<String> items = (List<String>)session.getAttribute("cart");
 
 		res.setContentType("text/html");
@@ -58,6 +59,7 @@ public class ShoppingCartViewerSession extends HttpServlet {
 		PrintWriter out = res.getWriter();
 
 		HttpSession session = req.getSession();
+		@SuppressWarnings("unchecked")
 		List<String> items = (List<String>)session.getAttribute("cart");
 
 		__printPage(req.getRequestURI(), items, out);

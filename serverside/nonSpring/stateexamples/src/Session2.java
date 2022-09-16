@@ -1,11 +1,11 @@
 import java.io.*;
-import javax.servlet.http.*;
+import jakarta.servlet.http.*;
 
 @SuppressWarnings("serial")
 public class Session2 extends HttpServlet {
 
     public void doGet (HttpServletRequest req, HttpServletResponse res)
-        throws javax.servlet.ServletException, java.io.IOException {
+        throws jakarta.servlet.ServletException, java.io.IOException {
 
     	//String url = null;
         HttpSession sess = req.getSession();
@@ -25,7 +25,7 @@ System.out.println("Got " + name + " and " + count + " from session");
         //out.println("<a href=\"Session3\">Click to Next Servlet (Session3)</a>");
         //out.println("</body></html>");
 
-        sess.setAttribute("count", new Integer(count+1));
+        sess.setAttribute("count", count+1);
         sess.setAttribute("id", "XX$$YY");
     }
 }

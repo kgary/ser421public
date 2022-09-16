@@ -1,6 +1,6 @@
 <!--
-   build.xml file for SER422 Spring 2018
-   Copyright 2018 Kevin A. Gary
+   build.xml file for SER421
+   Copyright 2022 Kevin A. Gary
 
    This build.xml does most of the things asked of you in the
    submission guidelines document. However, you may need to 
@@ -30,7 +30,7 @@
       <!-- Make sure you set your classpath! -->
       <classpath>
         <fileset dir="${lib.dir}" includes="*.jar"/>
-        <fileset dir="${tomcat.home}-${tomcat.port1}/lib" includes="servlet-api.jar"/>
+        <fileset dir="${tomcat.home}/lib" includes="servlet-api.jar"/>
         <pathelement path="${classes.dir}" />
       </classpath>
     </javac>
@@ -43,24 +43,9 @@
        and copy it over. If you are creating a standalone app (like this
        example does), you can create it in a given directory, or create
        your dist jar first that can be run using java -jar. -->
-  <target name="__deploy" depends="dist">
-    <echo message="Deploying to tomcat at ${tomcat.home}-${port}"/>
-    <copy file="${dist.jar}" todir="${tomcat.home}-${port}/webapps" overwrite="yes"/>
-  </target>
-
-  <target name="deploy-port1" depends="dist">
-    <antcall target="__deploy">
-      <param name="port" value="${tomcat.port1}"/>
-    </antcall>
-  </target>
-  <target name="deploy-port2" depends="dist">
-    <antcall target="__deploy">
-      <param name="port" value="${tomcat.port2}"/>
-    </antcall>
-  </target>
   <target name="deploy" depends="dist">
-    <antcall target="deploy-port1"/>
-    <antcall target="deploy-port2"/>
+    <echo message="Deploying to tomcat at ${tomcat.home}"/>
+    <copy file="${dist.jar}" todir="${tomcat.home}/webapps" overwrite="yes"/>
   </target>
   
   <target name="build" depends="compile">
@@ -82,40 +67,12 @@
     </jar>
   </target>
 
-  <!-- submit creates a single jarfile that you will upload to the
-       Gradebook channel on the class portal. -->
-  <target name="submit" depends="dist,javadoc">
-    <jar destfile="${submit.jar}" basedir="." includes="README.txt,build.properties,build.xml,web.xml,${src.dir}/**,${docs.dir}/**,${javadoc.dir}/**,${properties.dir}/**,${lib.dir}/**,${classes.dir}/**">
-     </jar>
-  </target>
-
-  <!-- Run javadoc on your java source code -->
-  <target name="javadoc" depends="init">
-    <javadoc packagenames="*"
-             sourcepath="src/java"
-             destdir="javadoc"
-             author="true"
-             version="true"
-             windowtitle="Example Servlets"
-             doctitle="InClass"
-             bottom="Copyright 2018 Kevin Gary" />
-  </target>
-
   <!-- Clean -->
   <target name="clean">
     <delete file="${dist.jar}"/>
-    <delete dir="${tomcat.home}-${tomcat-port1}/webapps/${app.name}"/>
-    <delete dir="${tomcat.home}-${tomcat-port2}/webapps/${app.name}"/>
-    <delete file="${tomcat.home}-${tomcat-port1}/webapps/${dist.jar}"/>
-    <delete file="${tomcat.home}-${tomcat.port2}/webapps/${dist.jar}"/>
+    <delete dir="${tomcat.home}/webapps/${app.name}"/>
+    <delete file="${tomcat.home}/webapps/${dist.jar}"/>
     <delete dir="${build.home}"/>
     <delete dir="${classes.dir}"/>
   </target>
-
-  <!-- Clean all -->
-  <target name="cleanall" depends="clean">
-    <delete dir="${javadoc.dir}"/>
-    <delete file="${submit.jar}"/>
-  </target>
-
 </project>

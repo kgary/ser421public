@@ -1,11 +1,11 @@
 import java.io.*;
-import javax.servlet.http.*;
+import jakarta.servlet.http.*;
 
 @SuppressWarnings("serial")
 public class Session3 extends HttpServlet {
 
     public void doGet (HttpServletRequest req, HttpServletResponse res)
-        throws javax.servlet.ServletException, java.io.IOException {
+        throws jakarta.servlet.ServletException, java.io.IOException {
 
         HttpSession sess = req.getSession();
 

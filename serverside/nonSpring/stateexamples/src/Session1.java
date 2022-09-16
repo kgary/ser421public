@@ -1,15 +1,15 @@
 import java.io.*;
-import javax.servlet.http.*;
+import jakarta.servlet.http.*;
 
 @SuppressWarnings("serial")
 public class Session1 extends HttpServlet {
 
     public void doGet (HttpServletRequest req, HttpServletResponse res)
-        throws javax.servlet.ServletException, IOException {
+        throws jakarta.servlet.ServletException, IOException {
 
         HttpSession sess = req.getSession(true);    // create the session
         sess.setAttribute("name", "Bob");
-        sess.setAttribute("count", new Integer(123));
+        sess.setAttribute("count", 123);
 
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
