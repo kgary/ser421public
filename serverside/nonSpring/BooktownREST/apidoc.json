@@ -1,0 +1,7 @@
+{
+  "name": "BooktownREST-example",
+  "version": "0.1.0",
+  "description": "SER422 REST example project",
+  "title": "Booktown REST API",
+  "url" : "https://localhost:8080/RestExampleAPI/rest/"
+}

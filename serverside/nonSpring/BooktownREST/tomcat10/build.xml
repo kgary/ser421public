@@ -1,0 +1,77 @@
+<project name="RestExampleAPI" default="deploy">
+
+  <property file="build.properties" />
+
+  <path id="classpath">
+		<fileset dir="./">
+			<include name="${srclib}/*.jar" />
+		</fileset>
+  </path>
+
+  <target name="compile">
+    <mkdir dir="${destdir}/WEB-INF/classes"/>
+    <mkdir dir="${destdir}/WEB-INF/lib/"/>
+    <copy todir="${destdir}/WEB-INF/lib">
+      <fileset dir="${srclib}"/>
+    </copy>
+    <javac classpathref="classpath" srcdir="src" destdir="${destdir}/WEB-INF/classes/" />
+    <copy file="${properties}/booktown.properties" todir="${destdir}/WEB-INF/classes/"/>
+  	<copy file="${properties}/rdbm.properties" todir="${destdir}/WEB-INF/classes/"/>
+  </target>
+
+  <target name="build" depends="compile,apidoc">
+    <copy file="web.xml" todir="${destdir}/WEB-INF"/>
+  	<copy todir="${destdir}/${apidocdir}">
+  		<fileset dir="${apidocdir}"/>
+  	</copy>
+    <war destfile="${warfile}" basedir="${destdir}" needxmlfile="false"/>
+  </target>
+
+  <target name="buildWin" depends="compile,apidocWin">
+    <copy file="web.xml" todir="${destdir}/WEB-INF"/>
+  	<copy todir="${destdir}/${apidocdir}">
+  		<fileset dir="${apidocdir}"/>
+  	</copy>
+    <war destfile="${warfile}" basedir="${destdir}" needxmlfile="false"/>
+  </target>
+
+  <target name="apidoc">
+	  <mkdir dir="${apidocdir}"/>
+  	<exec dir="." executable="apidoc">
+  		<arg line="-i ./${srcdir} -o ./${apidocdir}"/>
+  	</exec>
+  </target>
+
+  <target name="apidocWin">
+	  <mkdir dir="${apidocdir}"/>
+    <!-- For Windows, executable="apidoc.cmd" -->
+  	<exec dir="." executable="apidoc.cmd">
+  		<arg line="-i ./${srcdir} -o ./${apidocdir}"/>
+  	</exec>
+  </target>
+
+  <target name="deploy" depends="build">
+    <copy file="${warfile}" todir="${tomcat_webapps}" />
+  </target>
+
+  <target name="deployWin" depends="buildWin">
+    <copy file="${warfile}" todir="${tomcat_webapps}" />
+  </target>
+
+  <!-- This example dist target merely jars up the webapp files. -->
+  <target name="submit" depends="clean">
+    <jar destfile="${submit.jar}" basedir="." excludes="bin/**,${srclib}/**,classes/**,build/**">
+    </jar>
+  </target>
+
+  <target name="clean">
+    <delete file="${warfile}" />
+  	<delete file="${submit.jar}" />
+    <delete dir="${destdir}"/>
+  	<delete dir="${apidocdir}"/>
+  </target>
+
+  <target name="undeploy">
+    <delete file="${tomcat_webapps}/${warfile}" />
+  </target>
+</project>
