@@ -16,7 +16,10 @@ This is a basic REST API example using the Jersey framework and optionally Jacks
 
 ### Installing
 
-Simply unzip to get the source tree. The tomcat10 has a complete replica intended for tomcat10, with the only changes being the use of jakarta servlet libraries and upgrades to the jersey libraries to use 3.0 (The tomcat 9 version uses Jersey 2.2.7)
+Simply unzip to get the source tree. The tomcat10 has a complete replica intended for tomcat10, with the only changes being the use of jakarta servlet libraries and upgrades to the jersey libraries to use 3.0 (The tomcat 9 version uses Jersey 2.2.7).
+
+Edit the build.properties to set the location of tomcat 9 (or 10). Do an 'ant clean' and then an 'ant deploy'.
+The app by default is named RestExampleAPI and the base URL is /RestExampleAPI/rest/...
 
 ### Executing program
 
