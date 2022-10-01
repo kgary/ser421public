@@ -7,7 +7,6 @@ import java.util.List;
 import edu.asu.ser421.booktown.model.Author;
 import edu.asu.ser421.booktown.model.Book;
 import edu.asu.ser421.booktown.model.exceptions.BooktownInternalException;
-import edu.asu.ser421.booktown.model.exceptions.BooktownNotImplementedException;
 import edu.asu.ser421.booktown.model.exceptions.BooktownEntityNotFoundException;
 import edu.asu.ser421.booktown.services.BooktownService;
 
@@ -34,15 +33,9 @@ public class MockBooktownServiceImpl implements BooktownService {
 		));
 	}
 	
-	@SuppressWarnings("unchecked")
 	@Override
 	public List<Author> getAuthors() {
-		try {
-			// should do a deep clone - Author needs a clone method
-			return (List<Author>) dummyAuthors.clone();
-		} catch (Throwable t) {
-			throw new BooktownInternalException();
-		}
+		return dummyAuthors;
 	}
 	@Override
 	public Author getAuthor(int id) throws BooktownEntityNotFoundException {
@@ -133,13 +126,43 @@ public class MockBooktownServiceImpl implements BooktownService {
 	}
 	
 	// Book methods
-	public List<Book> getBooks() throws BooktownNotImplementedException {
-		throw new BooktownNotImplementedException();
+	public List<Book> getBooks() {
+		// We don't store Books separately so we have to go through all of the Authors
+		List<Book> rval = new ArrayList<Book>();
+		for (Author a : dummyAuthors) {
+			rval.addAll(a.getBooks());
+		}
+		return rval;
 	}
-	public Book getBook(int id) throws BooktownNotImplementedException {
-		throw new BooktownNotImplementedException();
+	public Book getBook(String isbn) throws BooktownEntityNotFoundException  {
+		// We don't store Books separately so we have to go through all of the Authors and find ours
+		for (Author a : dummyAuthors) {
+			for (Book b : a.getBooks()) {
+				if (b.getIsbn().equals(isbn)) {
+					return b;
+				}
+			}
+		}
+		throw new BooktownEntityNotFoundException("No Book found with ISBN " + isbn);
 	}
-	public Book deleteBook(String isbn) throws BooktownNotImplementedException {
-		throw new BooktownNotImplementedException();
+	
+	public Book deleteBook(String isbn) throws BooktownEntityNotFoundException {
+		// We don't store Books separately so we have to go through all of the Authors and find ours
+		AuthorLoop:
+		for (Author a : dummyAuthors) {
+			for (Book b : a.getBooks()) {
+				if (b.getIsbn().equals(isbn)) {
+					// now that we found it we have to delete it from Author
+					if (a.removeBook(b)) {
+						System.out.println("Found Book with ISBN " + isbn + ", removing it!");
+						return b;
+					} else {
+						break AuthorLoop;  // This is so bad, I am so lazy.
+					}
+				}
+			}
+		}
+		// if we made it here we never found the Book or we had an error removing
+		throw new BooktownEntityNotFoundException("No Book found with ISBN " + isbn);
 	}
 }

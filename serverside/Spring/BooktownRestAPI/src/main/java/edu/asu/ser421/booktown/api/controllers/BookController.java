@@ -29,9 +29,9 @@ public class BookController {
 	}
 	
 	//second endpoint, return a specific Book by id
-	@GetMapping("/{id}")
-	public ResponseEntity<BookResponse> returnBook(@PathVariable Integer id) {
-		return new ResponseEntity<BookResponse>(new BookResponse(__booktownService.getBook(id)), HttpStatus.OK);
+	@GetMapping("/{isbn}")
+	public ResponseEntity<BookResponse> returnBook(@PathVariable String isbn) {
+		return new ResponseEntity<BookResponse>(new BookResponse(__booktownService.getBook(isbn)), HttpStatus.OK);
 	}
 	
 	// Book does not support POST, PUT, or PATCH. If you want to fix a Book, delete it and re-add it through Author

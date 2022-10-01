@@ -43,6 +43,11 @@ public class Author {
 	public void setBooks(List<Book> titles) {
 		__books = titles;
 	}
+	public boolean removeBook(Book b) {
+		return __books.remove(b);
+	}
+	
+	
 	
 	// Best practices - implement from java.lang.Object
 	@Override

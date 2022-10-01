@@ -7,7 +7,7 @@ import edu.asu.ser421.booktown.model.Book;
 
 public class BookResponse {
 	private String __url;
-	private AuthorLink __authorLink;
+	private String __authorLink;
 	private Book __book;
 	
 	public BookResponse() {
@@ -16,8 +16,8 @@ public class BookResponse {
 
 	public BookResponse(Book book) {
 		__book = book;
-		// we need to get the Author Link.XXX
-		__authorLink = null; // XXX
+		// the author link will be injected at render time
+		__authorLink = null;
 	}
 
 	// These are bookResponse-specific properties
@@ -28,15 +28,21 @@ public class BookResponse {
 		this.__url = url;
 	}
 	
-	public AuthorLink getAuthorLink() {
+	public String getAuthorLink() {
 		return __authorLink;
 	}
 
-	public void setBookLinks(AuthorLink __authorLink) {
+	public void setAuthorLink(String __authorLink) {
 		this.__authorLink = __authorLink;
 	}
 	
 	// These are shadowed from Book
+	public String getIsbn() {
+		return __book.getIsbn();
+	}
+	public void setIsbn(String isbn) {
+		__book.setIsbn(isbn);
+	}
 	public String getTitle() {
 		return __book.getTitle();
 	}

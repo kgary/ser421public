@@ -25,6 +25,6 @@ public interface BooktownService {
 	
 	// Book related
 	public List<Book> getBooks();
-	public Book getBook(int id) throws BooktownEntityNotFoundException;
+	public Book getBook(String isbn) throws BooktownEntityNotFoundException;
 	public Book deleteBook(String isbn) throws BooktownEntityNotFoundException;
 }
