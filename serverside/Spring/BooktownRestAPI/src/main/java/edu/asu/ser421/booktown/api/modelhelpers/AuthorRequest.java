@@ -1,6 +1,5 @@
 package edu.asu.ser421.booktown.api.modelhelpers;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import edu.asu.ser421.booktown.model.Book;
@@ -35,5 +34,5 @@ public class AuthorRequest {
 	
 	private String __lastName;
 	private String __firstName;
-	private List<Book> __books = new ArrayList<Book>();
+	private List<Book> __books;
 }

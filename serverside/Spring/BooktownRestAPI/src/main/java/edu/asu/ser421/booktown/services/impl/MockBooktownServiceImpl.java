@@ -155,6 +155,7 @@ public class MockBooktownServiceImpl implements BooktownService {
 					// now that we found it we have to delete it from Author
 					if (a.removeBook(b)) {
 						System.out.println("Found Book with ISBN " + isbn + ", removing it!");
+						b.setAuthorId(-1);
 						return b;
 					} else {
 						break AuthorLoop;  // This is so bad, I am so lazy.

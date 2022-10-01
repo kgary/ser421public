@@ -38,7 +38,7 @@ public class BookController {
 	
 	// Sixth endpoint: DELETE
 	@DeleteMapping("/{isbn}")
-	public ResponseEntity<BookResponse> deleteAuthor(@PathVariable String isbn) {
+	public ResponseEntity<BookResponse> deleteBook(@PathVariable String isbn) {
 		return new ResponseEntity<BookResponse>(new BookResponse(__booktownService.deleteBook(isbn)), HttpStatus.NO_CONTENT);
 	}
 	
