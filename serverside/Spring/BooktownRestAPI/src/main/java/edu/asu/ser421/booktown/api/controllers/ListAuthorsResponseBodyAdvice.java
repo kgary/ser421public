@@ -11,28 +11,39 @@ import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
-import edu.asu.ser421.booktown.api.modelhelpers.AuthorLink;
+import edu.asu.ser421.booktown.api.modelhelpers.AuthorResponse;
+import edu.asu.ser421.booktown.api.modelhelpers.BookLink;
 
 @RestControllerAdvice
-public class ListAuthorsResponseBodyAdvice implements ResponseBodyAdvice<List<AuthorLink>> {
+public class ListAuthorsResponseBodyAdvice implements ResponseBodyAdvice<List<AuthorResponse>> {
 
 	@Override
 	public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> converterType) {
 		String controllerClassName = returnType.getContainingClass().toString();
 		String returnTypeName = returnType.getMethod().getGenericReturnType().getTypeName();
 		System.out.println("Controller Class: " + controllerClassName + ", Return Type Class: " + returnTypeName);
-        return returnTypeName.contains("java.util.List") && returnTypeName.contains("AuthorLink");
+        return returnTypeName.contains("java.util.List") && returnTypeName.contains("AuthorResponse");
 	}
 
 	@Override
-	public List<AuthorLink> beforeBodyWrite(List<AuthorLink> body, MethodParameter returnType,
+	public List<AuthorResponse> beforeBodyWrite(List<AuthorResponse> body, MethodParameter returnType,
 			MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType,
 			ServerHttpRequest request, ServerHttpResponse response) {
 		
 		WebMvcLinkBuilder authorLink;
-		for (AuthorLink a : body) {
+		for (AuthorResponse a : body) {
 			 authorLink = WebMvcLinkBuilder.linkTo(AuthorController.class).slash(a.getAuthorID());
 			 a.setLink(authorLink.toString());
+			 
+			 // this section gets us links to the Books, which go in Authors
+			 List<BookLink> bookLinks = a.getBookLinks();
+			 for (BookLink bl : bookLinks) {
+				 // the difference here is nobody has set the URL links yet, we need to do that now
+				 String s = WebMvcLinkBuilder.linkTo(BookController.class).slash(bl.getIsbn()).toString();
+				 System.out.println("BL ISBN: " + bl.getIsbn() + " Creating Book Link " + s + " for Author: " + a.getAuthorID());
+				 bl.setLink(s);
+			 }
+			 a.setBookLinks(bookLinks);
 		}
 		return body;
 	}

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,23 +16,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import edu.asu.ser421.booktown.api.model.Author;
-import edu.asu.ser421.booktown.api.model.exceptions.AuthorInternalException;
-import edu.asu.ser421.booktown.api.model.exceptions.AuthorNotFoundException;
-import edu.asu.ser421.booktown.api.modelhelpers.AuthorLink;
 import edu.asu.ser421.booktown.api.modelhelpers.AuthorRequest;
 import edu.asu.ser421.booktown.api.modelhelpers.AuthorResponse;
-import edu.asu.ser421.booktown.services.AuthorService;
+import edu.asu.ser421.booktown.model.Author;
+import edu.asu.ser421.booktown.model.exceptions.BooktownInternalException;
+import edu.asu.ser421.booktown.model.exceptions.BooktownNotImplementedException;
+import edu.asu.ser421.booktown.model.exceptions.BooktownEntityNotFoundException;
+import edu.asu.ser421.booktown.services.BooktownService;
 
 @RequestMapping("/authors")
 @RestController
 public class AuthorController {
-	private AuthorService __authorService = AuthorService.getInstance();
+	private BooktownService __authorService = BooktownService.getInstance();
 	
 	//first endpoint, return a collection of authors
 	@GetMapping
-	public ResponseEntity<List<AuthorLink>> returnAuthors() throws Throwable {
-		return new ResponseEntity<List<AuthorLink>>(AuthorLink.convertAuthorsToLinks(__authorService.getAuthors()), HttpStatus.OK);
+	public ResponseEntity<List<AuthorResponse>> returnAuthors() throws Throwable {
+		return new ResponseEntity<List<AuthorResponse>>(AuthorResponse.convertAuthorsToResponses(__authorService.getAuthors()), HttpStatus.OK);
 	}
 	
 	//second endpoint, return a specific Author by id
@@ -75,19 +76,31 @@ public class AuthorController {
 	}
 	
 	// Class-level Exception Handling methods
+	// Always handle 405s. Spring default is ugly and insecure JSON. Really 405 should be handled globally
+	// Here we add a 405 handler as we are not supporting all HTTP methods
+	@ExceptionHandler(value = HttpRequestMethodNotSupportedException.class)
+	public ResponseEntity<?> handleMethodNotSupportedException(HttpRequestMethodNotSupportedException exc) {
+		return new ResponseEntity<String>("Invalid method provided to Author Controller", HttpStatus.METHOD_NOT_ALLOWED);
+	}
+		
 	@ExceptionHandler(value = org.springframework.web.method.annotation.MethodArgumentTypeMismatchException.class)
 	public ResponseEntity<?> handleTypeMismatchException(org.springframework.web.method.annotation.MethodArgumentTypeMismatchException exc) {
 		return new ResponseEntity<String>("Invalid type for Author Id, must be an Integer", HttpStatus.BAD_REQUEST);
 	}
 	
-	@ExceptionHandler(value = AuthorNotFoundException.class)
-	public ResponseEntity<?> handleAuthorNotFoundException(AuthorNotFoundException exc) {
-		return new ResponseEntity<String>(exc.getMessage(), HttpStatus.NOT_FOUND);
+	@ExceptionHandler(value = BooktownEntityNotFoundException.class)
+	public ResponseEntity<?> handleAuthorNotFoundException(BooktownEntityNotFoundException exc) {
+		return new ResponseEntity<String>("In Author Controller: " + exc.getMessage(), HttpStatus.NOT_FOUND);
 	}
 	
-	@ExceptionHandler(value = AuthorInternalException.class) 
-	public ResponseEntity<?> handleThrowable(AuthorInternalException exc) {
+	@ExceptionHandler(value = BooktownInternalException.class) 
+	public ResponseEntity<?> handleThrowable(BooktownInternalException exc) {
 		return new ResponseEntity<String>(exc.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+	
+	@ExceptionHandler(value = BooktownNotImplementedException.class) 
+	public ResponseEntity<?> handleThrowable(BooktownNotImplementedException exc) {
+		return new ResponseEntity<String>(exc.getMessage(), HttpStatus.NOT_IMPLEMENTED);
 	}
 	
 	@ExceptionHandler(value = java.lang.Throwable.class) 

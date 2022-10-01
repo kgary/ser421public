@@ -1,4 +1,7 @@
-package edu.asu.ser421.booktown.api.model;
+package edu.asu.ser421.booktown.model;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import edu.asu.ser421.booktown.api.modelhelpers.AuthorRequest;
 
@@ -9,11 +12,11 @@ public class Author {
 	public Author(int id, AuthorRequest ar) {
 		this(id, ar.getLastName(), ar.getFirstName(), ar.getBooks());
 	}
-	public Author(int id, String lname, String fname, String[] titles) {
+	public Author(int id, String lname, String fname, List<Book> titles) {
 		__id = id;
 		__lastName  = lname;
 		__firstName = fname;
-		this.setBooks(titles);
+		__books = titles;
 	}
 	public int getAuthorID() {
 		return __id;
@@ -24,10 +27,8 @@ public class Author {
 	public String getFirstName() {
 		return __firstName;
 	}
-	public String[] getBooks() {
-		String[] rval = new String[__titles.length];
-		System.arraycopy(__titles,  0,  rval, 0, __titles.length);
-		return (rval);
+	public List<Book> getBooks() {
+		return __books;
 	}
 	
 	public void setAuthorId(int id) {
@@ -39,11 +40,8 @@ public class Author {
 	public void setFirstName(String fname) {
 		__firstName = fname;
 	}
-	public void setBooks(String[] titles) {
-		if (titles != null) {
-			__titles = new String[titles.length];
-			System.arraycopy(titles,  0,  __titles, 0, titles.length);
-		}
+	public void setBooks(List<Book> titles) {
+		__books = titles;
 	}
 	
 	// Best practices - implement from java.lang.Object
@@ -57,9 +55,9 @@ public class Author {
 		boolean rval = a.getLastName().equals(this.getLastName()) && a.getFirstName().equals(this.getFirstName());
 		
 		// now check the books
-		if (rval && (rval = (a.getBooks() != null && a.getBooks().length == this.getBooks().length))) {
-			for (int i = 0; rval && i < this.getBooks().length; i++) {
-				rval = a.getBooks()[i].equals(this.getBooks()[i]);
+		if (rval && (rval = (a.getBooks() != null && a.getBooks().size() == this.getBooks().size()))) {
+			for (int i = 0; rval && i < this.getBooks().size(); i++) {
+				rval = a.getBooks().get(i).equals(this.getBooks().get(i));
 			}
 		}
 		return rval;
@@ -68,5 +66,5 @@ public class Author {
 	private int    __id;
 	private String __lastName;
 	private String __firstName;
-	private String[] __titles;
+	private List<Book> __books = new ArrayList<Book>();
 }

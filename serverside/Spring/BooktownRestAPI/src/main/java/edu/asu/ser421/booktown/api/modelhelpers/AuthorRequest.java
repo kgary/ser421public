@@ -1,12 +1,17 @@
 package edu.asu.ser421.booktown.api.modelhelpers;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.asu.ser421.booktown.model.Book;
+
 public class AuthorRequest {
 	public AuthorRequest() {		
 	}
-	public AuthorRequest(String lname, String fname, String[] books) {
+	public AuthorRequest(String lname, String fname, List<Book> titles) {
 		__lastName  = lname;
 		__firstName = fname;
-		__titles = books;
+		__books = titles;
 	}
 	public String getLastName() {
 		return __lastName;
@@ -14,13 +19,8 @@ public class AuthorRequest {
 	public String getFirstName() {
 		return __firstName;
 	}
-	public String[] getBooks() {
-		if (__titles == null) {  // defensive programming check
-			__titles = new String[0];
-		}
-		String[] rval = new String[__titles.length];
-		System.arraycopy(__titles,  0,  rval, 0, __titles.length);
-		return (rval);
+	public List<Book> getBooks() {
+		return __books;
 	}
 	
 	public void setLastName(String lname) {
@@ -29,16 +29,11 @@ public class AuthorRequest {
 	public void setFirstName(String fname) {
 		__firstName = fname;
 	}
-	public void setBooks(String[] titles) {
-		if (titles != null) {
-			__titles = new String[titles.length];
-			System.arraycopy(titles,  0,  __titles, 0, titles.length);
-		} else {
-			__titles = new String[0];
-		}
+	public void setBooks(List<Book> titles) {
+		__books = titles;
 	}
 	
 	private String __lastName;
 	private String __firstName;
-	private String[] __titles;
+	private List<Book> __books = new ArrayList<Book>();
 }

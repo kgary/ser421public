@@ -3,7 +3,7 @@ package edu.asu.ser421.booktown.api.modelhelpers;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.asu.ser421.booktown.api.model.Author;
+import edu.asu.ser421.booktown.model.Author;
 
 public class AuthorLink {
 	private String __url;
