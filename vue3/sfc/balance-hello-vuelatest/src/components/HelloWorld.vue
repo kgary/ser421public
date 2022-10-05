@@ -1,9 +1,13 @@
 <script>
   export default {
     name: 'HelloWorld',
+    props: {
+      name: String
+    },
     data() {
         return {
-            msg: "Hello World!"
+            msg: "Hello ",
+            amt: 25
         }
     },
   }
@@ -11,7 +15,7 @@
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <h1 class="green">{{ msg }} {{name}}</h1>
   </div>
 </template>
 

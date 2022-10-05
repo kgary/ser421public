@@ -3,6 +3,12 @@ import Balance from './components/Balance.vue'
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
+  data() {
+    return {
+      fname: "name",
+      bal: 0
+    }
+  },
   components: {
     Balance,
     HelloWorld
@@ -13,8 +19,9 @@ export default {
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld />
-      <Balance />
+      <input v-model="fname">
+      <HelloWorld :name="this.fname" /> you have {{bal}} dollars 
+      <Balance @new-bal="(v) => this.bal=v" />
     </div>
   </header>
   <p>This example shows how to use Options with the npm init vue@latest scaffolding with one parent (App.vue) and 2 child (Balance, HelloWorld) components</p>

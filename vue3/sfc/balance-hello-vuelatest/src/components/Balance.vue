@@ -7,6 +7,7 @@ export default {
             amount: 10
         }
     },
+    emits: ['newBal'], 
     computed: {
         balanceString() {
             return `Account Balance: ${this.balance}`;
@@ -15,6 +16,7 @@ export default {
     methods: {
         addBalance() {
             this.balance += this.amount
+            this.$emit('newBal', this.balance);
             //this.amount = 0;
         },
         subtractBalance() {
