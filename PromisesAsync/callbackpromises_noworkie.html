@@ -61,29 +61,27 @@ This example taken from https://www.geeksforgeeks.org/what-to-understand-callbac
 
     /* Why doesn't this have the intended effect? */
     function animateMe(w, t) {
+		console.log("animateMe for " + w.innerText);
         return new Promise(function(resolve) {
             setTimeout(() => { animate(w) }, t)
         });
     }
+	/* This doesn't work - why? */
     const animateAll = (animate) => {
         animateMe(words[0], 1000).then(animateMe(words[1], 1000)).then(animateMe(words[2], 1000));
     }
-
-/*
+	/* This doesn't work either - why? 
     const animateAll = (animate) => {
         return new Promise(function(resolve, reject) {
-            setTimeout(resolve, 1000);
+            animateMe(words[0], 1000);
         }).then(function(resolve, reject) {
-            animate(words[0]);
-            setTimeout(resolve, 1000);
+            animateMe(words[1], 1000);
         }).then(function(resolve, reject) {
-            animate(words[1]);
-            setTimeout(resolve, 1000);
-        }).then(function() {
-            animate(words[2]);
+            animateMe(words[2]);
         });
     }
-
+	*/
+/*   Below is the original callbackhll version for reference
 	const animateAll = (animate) => {
 		setTimeout(() => {
 			animate(words[0]);
