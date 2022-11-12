@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Grocery Items</title>
+    <link rel="stylesheet" th:href="@{/DrG.css}" />
+  </head>
+
+  <body>
+   	<h2>Groceries in your shopping cart:</h2>
+    <div class="groceryclass" th:each="item: ${selecteditems.groceryIds}">
+    <span th:text="${item}">ITEM</span>
+    </div><br/>
+    
+     <!--  with no ACTION attribute it goes back to the same URL -->
+    <form method="POST" th:object="${payinfo}">
+      <h3>Payment Information:</h3>
+      <label>Person Name:</label>
+      <input name="personName" type="text" th:field="*{name}" />
+      <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+      <br/>
+      <label>Credit Card:</label> <input name="cc" type="text" th:field="*{creditCardNum}" /><br/>
+      <div th:if="${#fields.hasErrors('creditCardNum')}" th:errors="*{creditCardNum}"></div>
+      <label>CVV:</label> <input name="cvv" type="text" th:field="*{cvv}" /><br/>
+      <div th:if="${#fields.hasErrors('cvv')}" th:errors="*{cvv}"></div>
+      <button>Pay</button><button>Cancel</button>
+    </form>
+  </body>
+</html>

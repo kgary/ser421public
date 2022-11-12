@@ -1,0 +1,55 @@
+<!-- tag::all[] -->
+<!-- tag::head[] -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Grocery Items</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+  </head>
+
+  <body>
+    <h2>Choose your Groceries</h2>
+
+    <form method="POST"  th:object="${formlist}">
+
+    <div class="grid">
+      <div class="item-group" id="dairy">
+      <h3>Choose Dairy:</h3>
+      <div th:each="groceryitem : ${dairy}">
+        <input name="groceryitems" type="checkbox"  th:field="*{groceryIds}" th:value="${groceryitem.id}" />
+        <span th:text="${groceryitem.name}">ITEM</span>, <span th:text="${groceryitem.price}">PRICE</span><br/>
+      </div>
+      </div>
+
+	  <div class="item-group" id="breads">
+      <h3>Pick your breads:</h3>
+      <div th:each="groceryitem : ${breads}">
+        <input name="groceryitems" type="checkbox" th:field="*{groceryIds}" th:value="${groceryitem.id}" />
+        <span th:text="${groceryitem.name}">ITEM</span>, <span th:text="${groceryitem.price}">PRICE</span><br/>
+      </div>
+      </div>
+
+	  <div class="item-group" id="deli">
+      <h3>Select your deli items:</h3>
+      <div th:each="groceryitem : ${deli}">
+        <input name="groceryitems" type="checkbox" th:field="*{groceryIds}"  th:value="${groceryitem.id}" />
+        <span th:text="${groceryitem.name}">ITEM</span>, <span th:text="${groceryitem.price}">PRICE</span><br/>
+      </div>
+      </div>
+
+	  <div class="item-group" id="produce">
+      <h3>Determine your produce:</h3>
+      <div th:each="groceryitem : ${produce}">
+        <input name="groceryitems" type="checkbox" th:field="*{groceryIds}"  th:value="${groceryitem.id}" />
+        <span th:text="${groceryitem.name}">ITEM</span>, <span th:text="${groceryitem.price}">PRICE</span><br/>
+      </div>
+      </div>
+      </div>
+      <div>
+
+      <button>Submit your list</button>
+      </div>
+    </form>
+  </body>
+</html>
