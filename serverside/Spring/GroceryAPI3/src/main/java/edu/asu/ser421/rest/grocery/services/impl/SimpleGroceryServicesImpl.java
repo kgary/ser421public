@@ -10,10 +10,12 @@ import java.util.HashMap;
 
 import edu.asu.ser421.rest.grocery.exceptions.GroceryConflictException;
 import edu.asu.ser421.rest.grocery.exceptions.NoSuchGroceryItemException;
+import edu.asu.ser421.rest.grocery.exceptions.NoSuchProducerException;
 import edu.asu.ser421.rest.grocery.model.GroceryItem;
 import edu.asu.ser421.rest.grocery.model.GroceryItem.GroceryType;
 import edu.asu.ser421.rest.grocery.model.Producer;
 import edu.asu.ser421.rest.grocery.services.GroceryServices;
+import edu.asu.ser421.rest.grocery.services.ProducerServices;
 
 public class SimpleGroceryServicesImpl implements GroceryServices {
 
@@ -171,7 +173,7 @@ public class SimpleGroceryServicesImpl implements GroceryServices {
 			if (gItem != null) {
 				return gItem.getProducers();
 			} else {
-				throw new NoSuchGroceryItemException("No such Grocery Item");
+				throw new NoSuchGroceryItemException(groceryId);
 			}
 		} catch(Throwable t) {
 			throw new Exception(t);
@@ -179,22 +181,60 @@ public class SimpleGroceryServicesImpl implements GroceryServices {
 	}
 
 	@Override
-	public List<Producer> findGroceryProducersByAddress(String groceryId, String address) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean addGroceryProducer(String groceryId, String producerAbbrev) 
+			throws NoSuchGroceryItemException, NoSuchProducerException, Exception {
+		boolean rval = false;  // by default we assume the relationship exists
+		GroceryItem gItem = this.findOne(groceryId);
+		if (gItem == null) {
+			throw new NoSuchGroceryItemException(groceryId);
+		}
+		Producer producer = ProducerServices.getProducerService().findOne(producerAbbrev);
+		if (producer == null) {
+			throw new NoSuchProducerException(producerAbbrev);
+		}
+		// OK now we have a valid grocery id and a valid producer id
+		// this whole block should really be synchronized - why?
+		synchronized(gItem) {
+			List<Producer> producers = gItem.getProducers();
+			if (producers == null) {
+				producers = new ArrayList<Producer>();
+				gItem.setProducers(producers);
+			} 
+			// does the relationship already exist? If it does not we add and return true
+			if (rval = (!producers.stream().filter(p -> p.getAbbreviation().equals(producerAbbrev)).findFirst().isPresent())) {
+				// false. no relationship exists, create it
+				producers.add(producer);
+			}
+		}
+		return rval;
 	}
 
 	@Override
-	public boolean createGroceryProducer(String groceryId, String producerAbbrev) throws Exception {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean deleteGroceryProducer(String groceryId, String producerAbbred)
-			throws GroceryConflictException, Exception {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean deleteGroceryProducer(String groceryId, String producerAbbrev)
+			throws NoSuchGroceryItemException, NoSuchProducerException, GroceryConflictException, Exception {
+		boolean rval = false;  // by default we assume the relationship exists
+		GroceryItem gItem = this.findOne(groceryId);
+		if (gItem == null) {
+			throw new NoSuchGroceryItemException(groceryId);
+		}
+		Producer producer = ProducerServices.getProducerService().findOne(producerAbbrev);
+		if (producer == null) {
+			throw new NoSuchProducerException(producerAbbrev);
+		}
+		// OK now we have a valid grocery id and a valid producer id
+		// this whole block should really be synchronized - why?
+		synchronized(gItem) {
+			List<Producer> producers = gItem.getProducers();
+			if (producers == null) {  // easy exit case
+				return false;
+			}
+			// check the producers to see if it is there. This checks id field, could also implement equals
+			if (rval = (producers.stream().filter(p -> p.getAbbreviation().equals(producerAbbrev)).findFirst().isPresent())) {
+				// true. relationship exists, remove it
+				producers.remove(producer);
+			}
+		}
+		return rval;
 	}
 }
 
