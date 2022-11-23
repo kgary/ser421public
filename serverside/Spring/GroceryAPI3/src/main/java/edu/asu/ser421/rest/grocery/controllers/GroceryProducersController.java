@@ -33,6 +33,12 @@ public class GroceryProducersController {
 	public List<Producer> findAllGroceryProducers(@PathVariable ("id") String id) throws NoSuchGroceryItemException, Exception {
 			return __groceryService.findAllGroceryProducers(id);
 	}
+	
+	@GetMapping("/{pid}")
+	public Producer findOneGroceryProducer(@PathVariable ("id") String id, @PathVariable ("pid") String pid)
+		throws NoSuchEntityException, Exception {
+		return __groceryService.findOneGroceryProducer(id, pid);
+	}
 	// PUT is idempotent and will handle our create and update case, so no POST
 	// Question: Do we require the entire Producer in the payload, or just the id since we should already have it?
 	// I am going with just the identifier (abbreviation of a Producer), and making it another Path Variable
@@ -64,7 +70,7 @@ public class GroceryProducersController {
 	// Exception handling
 	// I always include this one - there are almost always some HTTP methods our resource does not respond to
 	@ExceptionHandler(value = HttpRequestMethodNotSupportedException.class)
-	public ResponseEntity<?> handleMethodNotSupportedException(HttpRequestMethodNotSupportedException exc) {
+	public ResponseEntity<String> handleMethodNotSupportedException(HttpRequestMethodNotSupportedException exc) {
 		return new ResponseEntity<String>("Invalid method provided to GroceryItemController", HttpStatus.METHOD_NOT_ALLOWED);
 	}
 	
@@ -75,7 +81,7 @@ public class GroceryProducersController {
 	
 	// This is the catch-all, returns our 500-level error
 	@ExceptionHandler(value = java.lang.Throwable.class) 
-	public ResponseEntity<?> handleThrowable(java.lang.Throwable t) {
+	public ResponseEntity<String> handleThrowable(java.lang.Throwable t) {
 		return new ResponseEntity<String>(t.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 }

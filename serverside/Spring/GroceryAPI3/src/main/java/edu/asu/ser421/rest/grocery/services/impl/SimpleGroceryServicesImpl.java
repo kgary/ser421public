@@ -5,11 +5,13 @@ import static edu.asu.ser421.rest.grocery.services.ProducerServices.getProducerS
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.HashMap;
 
 import edu.asu.ser421.rest.grocery.exceptions.GroceryConflictException;
 import edu.asu.ser421.rest.grocery.exceptions.NoSuchGroceryItemException;
+import edu.asu.ser421.rest.grocery.exceptions.NoSuchGroceryProducerException;
 import edu.asu.ser421.rest.grocery.exceptions.NoSuchProducerException;
 import edu.asu.ser421.rest.grocery.model.GroceryItem;
 import edu.asu.ser421.rest.grocery.model.GroceryItem.GroceryType;
@@ -62,9 +64,13 @@ public class SimpleGroceryServicesImpl implements GroceryServices {
 	}
 
 	@Override
-	public GroceryItem findOne(String id) throws Exception {
+	public GroceryItem findOne(String id) throws NoSuchGroceryItemException, Exception {
 		try {
-			return __groceryItems.get(id);
+			GroceryItem gItem = __groceryItems.get(id);
+			if (gItem == null) {
+				throw new NoSuchGroceryItemException(id);
+			}
+			return gItem;
 		} catch (Throwable t) {
 			// why do we handle unchecked exceptions? In writing the most robust code we
 			// should always trap anything that could make it back through our response pipeline
@@ -120,11 +126,13 @@ public class SimpleGroceryServicesImpl implements GroceryServices {
 	}
 
 	@Override
-	public boolean delete(String id) throws Exception {
+	public boolean delete(String id) throws NoSuchGroceryItemException, Exception {
 		try {
 			boolean rval = __groceryItems.containsKey(id);
 			if (rval) {
 				__groceryItems.remove(id);
+			} else {
+				throw new NoSuchGroceryItemException(id);
 			}
 			return rval; // true if deleted, false if not there
 		} catch (Throwable t) {
@@ -177,6 +185,31 @@ public class SimpleGroceryServicesImpl implements GroceryServices {
 			}
 		} catch(Throwable t) {
 			throw new Exception(t);
+		}
+	}
+	
+	@Override
+	public Producer findOneGroceryProducer(String groceryId, String producerAbbrev) 
+			throws NoSuchGroceryItemException, NoSuchGroceryProducerException, Exception  {
+		
+		GroceryItem gItem = this.findOne(groceryId);
+		if (gItem == null) {
+			throw new NoSuchGroceryItemException(groceryId);
+		}
+		// OK now we have a valid grocery id, check for the Producer
+		// this whole block should really be synchronized - why?
+		synchronized(gItem) {
+			List<Producer> producers = gItem.getProducers();
+			if (producers == null) {
+				throw new NoSuchGroceryProducerException(groceryId, producerAbbrev);
+			}
+			// does the relationship already exist? If it does not we add and return true
+			Optional<Producer> producer = producers.stream().filter(p -> p.getAbbreviation().equals(producerAbbrev)).findFirst();
+			if (producer.isPresent()) {
+				return producer.get();
+			} else {
+				throw new NoSuchGroceryProducerException(groceryId, producerAbbrev);
+			}
 		}
 	}
 
