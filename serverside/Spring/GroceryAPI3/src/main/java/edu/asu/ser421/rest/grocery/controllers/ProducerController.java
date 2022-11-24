@@ -2,6 +2,7 @@ package edu.asu.ser421.rest.grocery.controllers;
 
 import java.net.URI;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -10,6 +11,7 @@ import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -71,6 +73,26 @@ public class ProducerController {
 			headers.set(HttpHeaders.LOCATION, location.toString());
 			return new ResponseEntity<Producer>(pItem, headers, HttpStatus.CREATED);
 		}
+	}
+	// Something new - try a PATCH. Here we accept partial updates to the address attribute of a Producer
+	@PatchMapping("/{id}")
+	public ResponseEntity<String> patchProducer(@PathVariable("id") String id, @RequestBody Map<String, String> addressBody) throws Exception {
+		// The path variable identifies our Producer, the payload (RequestBody) our address in the presumed form { "address" : "<new address>" }
+		// let's check the payload first
+		String address = addressBody.get("address");
+		if (address == null) { // if there wasn't an address what did we get from the client? Whatever it was deserves a 400!
+			return new ResponseEntity<String>("Invalid payload to PATCH", HttpStatus.BAD_REQUEST);
+		}
+		// ok so we have a new address, let's update the Producer. As usual we delegate to the service
+		boolean rval =  __ProducerService.changeAddress(id, address);
+		if (!rval) { // if we returned false it is a 404
+			return new ResponseEntity<String>("No such Producer with abbreviation " + id, HttpStatus.NOT_FOUND);
+		}
+		// we returned true, so the address was successfully updated and we can tell the client
+		// we could return a 200 and the whole updated resource, but the client probably already had it if it sent the PATCH
+		// so we'll return a 204. Either one works and is RESTful however.
+		return new ResponseEntity<String>(HttpStatus.NO_CONTENT);
+	
 	}
 	@DeleteMapping("/{id}")
 	public ResponseEntity<String> deleteProducer(@PathVariable("id") String id) throws Exception{

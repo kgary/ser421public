@@ -146,8 +146,12 @@ public class SimpleProducerServicesImpl implements ProducerServices {
 
 	@Override
 	public boolean changeAddress(String abbrev, String newAddress) throws Exception {
-		// TODO Auto-generated method stub
-		return false;
+		Producer p = findOne(abbrev);
+		if (p == null) {
+			return false;   // no such Producer
+		}
+		p.setAddress(newAddress);
+		return true;
 	}
 }
 
