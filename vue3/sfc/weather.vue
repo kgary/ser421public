@@ -3,24 +3,34 @@ export default {
   data() {
     return {
       city: "",
-      weatherData: null,
+      weatherData: [],
     };
   },
   methods: {
     async fetchWeather() {
       if (this.city.trim() !== "") {
-        // You will need to go get your own free API key to get this to work
-        const apiKey = "Your API Key";
+        const apiKey = "YOUR API KEY"; // Replace with your actual API key
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${apiKey}`;
 
         try {
           const response = await fetch(apiUrl);
           const data = await response.json();
-          this.weatherData = data;
+
+          const weatherEntry = {
+            city: data.name,
+            timestamp: new Date().toISOString(),
+            temperature: data.main.temp,
+            humidity: data.main.humidity,
+            windSpeed: data.wind.speed,
+            cloudiness: data.clouds.all,
+          };
+
+          this.weatherData.push(weatherEntry);
         } catch (error) {
           console.error("Error fetching weather data:", error);
         }
       }
+      this.city = "";
     },
   },
 };
@@ -36,12 +46,31 @@ export default {
       placeholder="Enter city name"
     />
     <button @click="fetchWeather">Fetch Weather</button>
-
-    <div v-if="weatherData">
-      <h2>{{ weatherData.name }}</h2>
-      <p>Temperature: {{ weatherData.main.temp }}°C</p>
-      <p>Weather: {{ weatherData.weather[0].description }}</p>
-    </div>
+  </div>
+  <div class="weather-report">
+    <h2>Weather Report</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>City Name</th>
+          <th>Timestamp<br />(yyyy:mm:dd:hh:mm:ss)</th>
+          <th>Temperature<br />in &#8490;</th>
+          <th>Humidity<br />in %</th>
+          <th>Wind Speed<br />in miles per hour</th>
+          <th>Cloudiness<br />in %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="entry in weatherData" :key="entry.timestamp">
+          <td>{{ entry.city }}</td>
+          <td>{{ entry.timestamp }}</td>
+          <td>{{ entry.temperature }}</td>
+          <td>{{ entry.humidity }}</td>
+          <td>{{ entry.windSpeed }}</td>
+          <td>{{ entry.cloudiness }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -77,5 +106,23 @@ h2 {
 
 p {
   margin: 5px 0;
+}
+
+.weather-report {
+  max-width: 800px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
 }
 </style>

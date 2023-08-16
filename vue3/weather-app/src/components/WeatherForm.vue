@@ -22,13 +22,19 @@ const fetchWeather = async () => {
   } catch (e) {
     error.value = e.message;
   }
+  city.value = "";
 };
 </script>
 
 <template>
   <div class="weather-app">
     <h1>Weather App</h1>
-    <input type="text" v-model="city" placeholder="Enter city name" />
+    <input
+      type="text"
+      v-model="city"
+      placeholder="Enter city name"
+      @keyup.enter="fetchWeather"
+    />
     <button @click="fetchWeather">Fetch Weather</button>
   </div>
   <WeatherReport v-if="weatherData" :weatherEntries="weatherData" />
