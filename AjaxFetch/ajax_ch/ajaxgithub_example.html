@@ -29,7 +29,7 @@
               if (respJson.followers_url) {
                     xhr2 = new XMLHttpRequest();
                     // Will this work using the true flag (meaning async call?)
-                    xhr2.open(methodType, respJson.followers_url, true);
+                    xhr2.open(methodType, respJson.followers_url, false);
                     xhr2.send();
                     console.log("xhr2 sent");
                     if (xhr2.readyState === 4 && xhr2.status === 200) {
@@ -40,7 +40,7 @@
                         // Level 3: Get first followers info, the response was an array
                         let xhr3 = new XMLHttpRequest();
                         // Will this work using the true flag (meaning async call?)
-                        xhr3.open(methodType, resp2Json[0].url, true);
+                        xhr3.open(methodType, resp2Json[0].url, false);
                         xhr3.send();
                         console.log("xhr3 sent");
                         if (xhr3.readyState === 4 && xhr3.status === 200) {
