@@ -2,10 +2,12 @@
 import { ref } from "vue";
 import { fetchWeatherAPI } from "../utils/api";
 import WeatherReport from "./WeatherReport.vue";
+import WeatherVisual from "./WeatherVisual.vue";
 
 const city = ref("");
 const weatherData = ref([]);
 const error = ref(null);
+const selectedEntry = ref(null);
 
 const fetchWeather = async () => {
   error.value = null;
@@ -14,15 +16,21 @@ const fetchWeather = async () => {
     weatherData.value.push({
       city: city.value,
       timestamp: new Date().toISOString(),
-      temperature: data.main.temp,
+      temperature: ((data.main.temp * 9) / 5 + 32).toFixed(0),
       humidity: data.main.humidity,
       windSpeed: data.wind.speed,
       cloudiness: data.clouds.all,
+      weather: data.weather,
     });
   } catch (e) {
     error.value = e.message;
   }
   city.value = "";
+};
+
+const handleEntrySelected = (entry) => {
+  selectedEntry.value = entry;
+  console.log(selectedEntry.value);
 };
 </script>
 
@@ -37,7 +45,12 @@ const fetchWeather = async () => {
     />
     <button @click="fetchWeather">Fetch Weather</button>
   </div>
-  <WeatherReport v-if="weatherData" :weatherEntries="weatherData" />
+  <WeatherReport
+    v-if="weatherData"
+    :weatherEntries="weatherData"
+    @entry-selected="handleEntrySelected"
+  />
+  <WeatherVisual v-if="selectedEntry" :selectedEntry="selectedEntry" />
 </template>
 
 <style>
