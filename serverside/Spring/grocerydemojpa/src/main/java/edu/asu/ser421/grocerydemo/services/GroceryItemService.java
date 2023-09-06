@@ -26,7 +26,4 @@ public class GroceryItemService {
 		return groceryItemRepository.findAll();
 	}
 	
-	public void saveSelectedItems () {
-		
-	}
 }

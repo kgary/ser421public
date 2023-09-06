@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import edu.asu.ser421.grocerydemo.dto.GroceryFormList;
 import edu.asu.ser421.grocerydemo.dto.PayInfo;
+import edu.asu.ser421.grocerydemo.services.PayInfoServices;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -18,7 +19,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 @RequestMapping("checkout")
 public class CheckoutController {
-
+	
+	private final PayInfoServices payInfoService;
+	public CheckoutController(PayInfoServices payInfoService) {
+		this.payInfoService = payInfoService;
+	}
+	
 	@GetMapping
 	public String showCheckoutForm(Model model, HttpSession session) {
 		GroceryFormList gfl = new GroceryFormList();
@@ -54,6 +60,7 @@ public class CheckoutController {
 			return "checkout";
 		} else { 
 			System.out.println("VALIDATION NO ERRORS");
+			payInfoService.savePaymentInfo(payInfo);
 		}
 		// 2. then simulate payment processing (usually this invokes a 3rd party service)
 		// 3. if we did not validate then or payment processing fails we could inform and ask for repayment
