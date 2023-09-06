@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Grocery Items</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+  </head>
+
+  <body>
+    <h2>Groceries selected</h2>
+    <div th:each="item: ${selecteditems.groceryIds}">
+    <span th:text="${item}">ITEM</span>
+    </div><br/>
+    <a href="./checkout">Proceed to Checkout</a> or <a href="./groceries">Go Back</a>
+  </body>
+</html>
