@@ -1,5 +1,9 @@
 package edu.asu.ser421.grocerydemo.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "groceryitems")
 public class GroceryItem {
 
 	public String getId() {
@@ -41,9 +45,16 @@ public class GroceryItem {
 		this.price = p;
 	}
 	
+	@Id
 	private String id;
+	
+	@Column(name = "name")
 	private String name;
+	
+	@Column(name = "price")
 	private float price;
+	
+	@Enumerated(EnumType.STRING)
 	private GroceryType groceryType;
 	
 	public static enum GroceryType {
