@@ -37,6 +37,10 @@ public class GroceryItem {
 	public void setGroceryType(GroceryType type) {
 		this.groceryType = type;
 	}
+	
+	public GroceryItem() {
+		
+	}
 
 	public GroceryItem(String id, String name, GroceryType type, float p) {
 		this.id = id;

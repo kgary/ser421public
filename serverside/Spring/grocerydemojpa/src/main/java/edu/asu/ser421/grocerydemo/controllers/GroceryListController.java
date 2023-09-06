@@ -16,25 +16,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import edu.asu.ser421.grocerydemo.dto.GroceryFormList;
 import edu.asu.ser421.grocerydemo.model.GroceryItem;
 import edu.asu.ser421.grocerydemo.model.GroceryItem.GroceryType;
+import edu.asu.ser421.grocerydemo.repository.GroceryItemRepository;
+import edu.asu.ser421.grocerydemo.services.GroceryItemService;
 
 @Controller
 @RequestMapping("groceries")
 public class GroceryListController {
+	
+	private final GroceryItemService groceryItemService;
+	
+	public GroceryListController(GroceryItemService groceryItemService) {
+		this.groceryItemService = groceryItemService;
+	}
 
 	// Step 2: GET to show groceries
 	@GetMapping
 	public String showGroceryList(Model model) {
-		List<GroceryItem> groceryItems = Arrays.asList(
-				new GroceryItem("MLK", "milk", GroceryType.DAIRY, 3.99f),
-				new GroceryItem("SWC", "swiss cheese", GroceryType.DAIRY, 4.49f),
-				new GroceryItem("YOG", "yogurt", GroceryType.DAIRY, 0.99f),
-				new GroceryItem("WHB", "wheat bread", GroceryType.BREADS, 2.79f),
-				new GroceryItem("GRB", "garlic bread", GroceryType.BREADS, 1.99f),
-				new GroceryItem("APL", "apples", GroceryType.PRODUCE, 0.69f),
-				new GroceryItem("BRC", "broccoli", GroceryType.PRODUCE, 1.19f),
-				new GroceryItem("PAS", "pastrami", GroceryType.DELI, 8.99f),
-				new GroceryItem("HAM", "ham", GroceryType.PRODUCE, 5.69f)
-		);
+		
+		List<GroceryItem> groceryItems = groceryItemService.getGroceryList();
+		
 		for (GroceryType gType : GroceryType.values()) {
 			model.addAttribute(gType.toString().toLowerCase(), filterByType(groceryItems, gType));
 		}
