@@ -67,6 +67,7 @@ For detailed schema documentation, please refer to the "GraphQL Schema" section 
 - **GraphQL Playground**: [http://localhost:8080/graphiql?path=/graphql](http://localhost:8080/graphiql?path=/graphql)
 
 
+**Check GraphQLReadme.md for sample queries and mutation**
 
    
 

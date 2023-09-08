@@ -14,7 +14,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query {\n  authors {\n    id\n    lastName\n    firstName\n    books\n  }\n}",
+						"query": "query {\n  authors {\n    id\n    lastName\n    firstName\n    books {\n        isbn\n        title\n    }\n  }\n}",
 						"variables": ""
 					}
 				},
