@@ -1,0 +1,83 @@
+# The root Query type defines the entry points for querying data.
+type Query {
+    # Fetch a list of authors.
+    authors: [Author]
+
+    # Fetch an author by their unique ID.
+    authorById(id: ID): Author
+
+    # Fetch a list of books.
+    books: [Book]
+
+    # Fetch a book by its ISBN (International Standard Book Number).
+    bookByISBN(isbn: String): Book
+}
+
+# Represents a book in the system.
+type Book {
+    # The ISBN (International Standard Book Number) of the book.
+    isbn: String
+
+    # The title of the book.
+    title: String
+
+    # The unique ID of the author of the book.
+    authorId: ID
+}
+
+# Represents an author who writes books.
+type Author {
+    # The unique ID of the author.
+    id: ID
+
+    # The first name of the author.
+    firstName: String
+
+    # The last name of the author.
+    lastName: String
+
+    # A list of books written by the author.
+    books: [Book]
+}
+
+# Input type for adding a new author.
+input AddAuthorInput {
+    # The first name of the author.
+    firstName: String
+
+    # The last name of the author.
+    lastName: String
+}
+
+# Input type for adding a new book.
+input AddBookInput {
+    # The ISBN (International Standard Book Number) of the book.
+    isbn: String
+
+    # The title of the book.
+    title: String
+
+    # The unique ID of the author of the book.
+    authorId: ID
+}
+
+# Payload returned after successfully adding an author.
+type AddAuthorPayload {
+    # The newly added author.
+    author: Author
+}
+
+# Payload returned after successfully adding a book.
+type AddBookPayload {
+    # The newly added book.
+    book: Book
+}
+
+# The root Mutation type defines the entry points for mutating data.
+type Mutation {
+    # Add a new author to the system.
+    addAuthor(input: AddAuthorInput): AddAuthorPayload
+
+    # Add a new book to the system.
+    addBook(input: AddBookInput): AddBookPayload
+}
