@@ -21,7 +21,7 @@ git clone https://github.com/kgary/ser421public.git
 ### Navigate to the project directory
 
 ```shell
-   cd ser421public/serverside/Spring/grocerydemojpa
+cd ser421public/serverside/Spring/grocerydemojpa
 ```
 
 ### Build the project
