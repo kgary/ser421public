@@ -31,9 +31,26 @@ public class GroceryListController {
 
 	// Step 2: GET to show groceries
 	@GetMapping
-	public String showGroceryList(Model model) {
+	public String showGroceryList(Model model, HttpSession session) {
 		
 		List<GroceryItem> groceryItems = groceryItemService.getGroceryList();
+
+		GroceryFormList groceryFormList = new GroceryFormList();
+		
+		if (session != null) {
+			if (session.getAttribute("selecteditems") != null) {
+				groceryFormList = (GroceryFormList) session.getAttribute("selecteditems");
+				System.out.println("GFL found in session with items: " + groceryFormList.getGroceryIds().size());
+				List<String> selectedItems =  groceryFormList.getGroceryIds();
+				for (GroceryItem gItem: groceryItems) {
+					if (selectedItems.contains(gItem.getId())) {
+						gItem.setSubscribed(true);
+					}else {
+						gItem.setSubscribed(false);
+					}					
+				}
+			}
+		}
 		
 		for (GroceryType gType : GroceryType.values()) {
 			model.addAttribute(gType.toString().toLowerCase(), filterByType(groceryItems, gType));

@@ -11,4 +11,5 @@ public class GroceryFormList {
 			public void setGroceryIds(List<String> ids) {
 				groceryIds = ids;
 			}
+			
 }

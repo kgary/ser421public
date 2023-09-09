@@ -38,15 +38,24 @@ public class GroceryItem {
 		this.groceryType = type;
 	}
 	
+	public boolean isSubscribed() {
+        return subscribed;
+    }
+
+    public void setSubscribed(boolean subscribed) {
+        this.subscribed = subscribed;
+    }
+	
 	public GroceryItem() {
 		
 	}
 
-	public GroceryItem(String id, String name, GroceryType type, float p) {
+	public GroceryItem(String id, String name, GroceryType type, float p, boolean subscribed) {
 		this.id = id;
 		this.name = name;
 		this.groceryType = type;
 		this.price = p;
+		this.subscribed = subscribed;
 	}
 	
 	@Id
@@ -58,8 +67,11 @@ public class GroceryItem {
 	@Column(name = "price")
 	private float price;
 	
+	@Column(name = "subscribed")
+	private boolean subscribed;
+	
 	@Enumerated(EnumType.STRING)
-	private GroceryType groceryType;
+	private GroceryType groceryType; 
 	
 	public static enum GroceryType {
 		DAIRY, BREADS, DELI, PRODUCE

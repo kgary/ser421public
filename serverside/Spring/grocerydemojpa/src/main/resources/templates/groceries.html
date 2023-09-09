@@ -6,6 +6,52 @@
   <head>
     <title>Grocery Items</title>
     <link rel="stylesheet" th:href="@{/styles.css}" />
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        var dairy = /*[[${dairy}]]*/ 'default';
+        var breads = /*[[${breads}]]*/ 'default';
+        var deli = /*[[${deli}]]*/ 'default';
+        var produce = /*[[${produce}]]*/ 'default';
+        
+        document.addEventListener('DOMContentLoaded', (event) => {
+            dairy.forEach((gItem, index) => {
+                var checkbox = document.getElementById("dairy" + index.toString());
+                if (gItem.subscribed) {
+                    checkbox.checked = true;
+                } else {
+                    checkbox.checked = false;
+                }
+            });
+            
+            breads.forEach((gItem, index) => {
+                var checkbox = document.getElementById("bread" + index.toString());
+                if (gItem.subscribed) {
+                    checkbox.checked = true;
+                } else {
+                    checkbox.checked = false;
+                }
+            });
+            
+            deli.forEach((gItem, index) => {
+                var checkbox = document.getElementById("deli" + index.toString());
+                if (gItem.subscribed) {
+                    checkbox.checked = true;
+                } else {
+                    checkbox.checked = false;
+                }
+            });
+            
+            produce.forEach((gItem, index) => {
+                var checkbox = document.getElementById("produce" + index.toString());
+                if (gItem.subscribed) {
+                    checkbox.checked = true;
+                } else {
+                    checkbox.checked = false;
+                }
+            });
+        });
+        /*]]>*/
+    </script>
   </head>
 
   <body>
@@ -16,32 +62,32 @@
     <div class="grid">
       <div class="item-group" id="dairy">
       <h3>Choose Dairy:</h3>
-      <div th:each="groceryitem : ${dairy}">
-        <input name="groceryitems" type="checkbox"  th:field="*{groceryIds}" th:value="${groceryitem.id}" />
-        <span th:text="${groceryitem.name}">ITEM</span>, <span th:text="${groceryitem.price}">PRICE</span><br/>
+      <div th:each="groceryitem, groceryitemStat : ${dairy}">
+        <input name="groceryitems" type="checkbox" th:id="dairy + ${groceryitemStat.index}" th:field="*{groceryIds}"  th:value="${groceryitem.id}"/>
+        <span th:text="${groceryitem.name}">ITEM</span>, <span th:text="${groceryitem.price}">PRICE</span>
       </div>
       </div>
 
 	  <div class="item-group" id="breads">
       <h3>Pick your breads:</h3>
-      <div th:each="groceryitem : ${breads}">
-        <input name="groceryitems" type="checkbox" th:field="*{groceryIds}" th:value="${groceryitem.id}" />
+      <div th:each="groceryitem, groceryitemStat : ${breads}">
+        <input name="groceryitems" type="checkbox" th:id="bread + ${groceryitemStat.index}" th:field="*{groceryIds}" th:value="${groceryitem.id}" />
         <span th:text="${groceryitem.name}">ITEM</span>, <span th:text="${groceryitem.price}">PRICE</span><br/>
       </div>
       </div>
 
 	  <div class="item-group" id="deli">
       <h3>Select your deli items:</h3>
-      <div th:each="groceryitem : ${deli}">
-        <input name="groceryitems" type="checkbox" th:field="*{groceryIds}"  th:value="${groceryitem.id}" />
+      <div th:each="groceryitem, groceryitemStat : ${deli}">
+        <input name="groceryitems" type="checkbox" th:id="deli + ${groceryitemStat.index}" th:field="*{groceryIds}"  th:value="${groceryitem.id}" />
         <span th:text="${groceryitem.name}">ITEM</span>, <span th:text="${groceryitem.price}">PRICE</span><br/>
       </div>
       </div>
 
 	  <div class="item-group" id="produce">
       <h3>Determine your produce:</h3>
-      <div th:each="groceryitem : ${produce}">
-        <input name="groceryitems" type="checkbox" th:field="*{groceryIds}"  th:value="${groceryitem.id}" />
+      <div th:each="groceryitem, groceryitemStat : ${produce}">
+        <input name="groceryitems" type="checkbox" th:id="produce + ${groceryitemStat.index}" th:field="*{groceryIds}"  th:value="${groceryitem.id}" />
         <span th:text="${groceryitem.name}">ITEM</span>, <span th:text="${groceryitem.price}">PRICE</span><br/>
       </div>
       </div>
