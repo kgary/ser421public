@@ -3,27 +3,38 @@ import { ref } from "vue";
 import { fetchWeatherAPI } from "../utils/api";
 import WeatherReport from "./WeatherReport.vue";
 import WeatherVisual from "./WeatherVisual.vue";
+import Modal from "../utils/Modal.vue";
 
 const city = ref("");
 const weatherData = ref([]);
 const error = ref(null);
 const selectedEntry = ref(null);
+const isModalOpen = ref(false);
 
 const fetchWeather = async () => {
   error.value = null;
   try {
-    const data = await fetchWeatherAPI(city.value);
-    weatherData.value.push({
-      city: city.value,
-      timestamp: new Date().toISOString(),
-      temperature: ((data.main.temp * 9) / 5 + 32).toFixed(0),
-      humidity: data.main.humidity,
-      windSpeed: data.wind.speed,
-      cloudiness: data.clouds.all,
-      weather: data.weather,
-    });
+    const response = await fetchWeatherAPI(city.value);
+
+    if (!response.error) {
+      weatherData.value.push({
+        city: city.value,
+        timestamp: new Date().toISOString(),
+        temperature: ((response.data.main.temp * 9) / 5 + 32).toFixed(0),
+        humidity: response.data.main.humidity,
+        windSpeed: response.data.wind.speed,
+        cloudiness: response.data.clouds.all,
+        weather: response.data.weather,
+      });
+    } else {
+      error.value = response.message;
+      if (response.code === 401 || response.code === 404) {
+        isModalOpen.value = true;
+      }
+    }
   } catch (e) {
     error.value = e.message;
+    isModalOpen.value = true;
   }
   city.value = "";
 };
@@ -44,7 +55,16 @@ const handleEntrySelected = (entry) => {
       @keyup.enter="fetchWeather"
     />
     <button @click="fetchWeather">Fetch Weather</button>
+    <div class="error" v-if="error">{{ error }}</div>
   </div>
+
+  <Modal v-if="isModalOpen" @close="isModalOpen = false">
+    <div>
+      <h2>Error</h2>
+      <p>{{ error }}</p>
+    </div>
+  </Modal>
+
   <WeatherReport
     v-if="weatherData"
     :weatherEntries="weatherData"
@@ -81,5 +101,9 @@ button {
 
 h1 {
   margin-top: 20px;
+}
+
+.error {
+  color: red;
 }
 </style>
