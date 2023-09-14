@@ -23,7 +23,8 @@
       <div th:if="${#fields.hasErrors('creditCardNum')}" th:errors="*{creditCardNum}"></div>
       <label>CVV:</label> <input name="cvv" type="text" th:field="*{cvv}" /><br/>
       <div th:if="${#fields.hasErrors('cvv')}" th:errors="*{cvv}"></div>
-      <button>Pay</button><button>Cancel</button>
+      <button name="action" value="pay">Pay</button>
+      <button name="action" value="cancel">Cancel</button>
     </form>
   </body>
 </html>
