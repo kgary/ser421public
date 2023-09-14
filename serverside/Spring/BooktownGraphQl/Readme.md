@@ -40,9 +40,9 @@ Before you begin, ensure you have met the following requirements:
    ```shell
    git clone https://github.com/kgary/ser421public.git
    
-2. Go to serverside/spring/BooktownGraphQLAPI/ser421
+2. Go to serverside/spring/BooktownGraphQl/ser421
    ```shell
-   cd serverside/Spring/BooktownGraphQLAPI/ser421
+   cd serverside/Spring/BooktownGraphQl/ser421
 
 3. Use gradlew to run the application
    ```shell
