@@ -3,7 +3,6 @@ package edu.asu.ser421.grocerydemo.services;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
-
 import edu.asu.ser421.grocerydemo.model.GroceryItem;
 import edu.asu.ser421.grocerydemo.repository.GroceryItemRepository;
 
@@ -18,7 +17,7 @@ public class GroceryItemService {
 	//generally recommended  
 	private final GroceryItemRepository groceryItemRepository;
 	
-	GroceryItemService(GroceryItemRepository groceryItemRepository) {
+	public GroceryItemService(GroceryItemRepository groceryItemRepository) {
 		this.groceryItemRepository = groceryItemRepository;
 	}
 	
@@ -26,4 +25,11 @@ public class GroceryItemService {
 		return groceryItemRepository.findAll();
 	}
 	
+	public void saveGroceryItem(GroceryItem gItem) {
+		groceryItemRepository.save(new GroceryItem(gItem.getId(),
+					gItem.getName(),
+					gItem.getGroceryType(),
+					gItem.getPrice(),
+					false));
+	}
 }

@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Add Grocery Item</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+    <script>
+        // Remove the success message after 5 seconds
+        setTimeout(function() {
+            var element = document.getElementById("successMessage");
+            if (element) {
+                element.style.display = "none";
+            }
+        }, 5000);  // 5 seconds
+    </script>
+  </head>
+
+  <body>
+    <h2>Add a Grocery Item</h2>
+
+    	<form method="POST"  th:object="${groceryitem}">
+		
+		<label for="id">Unique Identifier:</label>
+        <input type="text" id="id" th:field="*{id}" required>
+        <small>example: MLK for Milk, PAS for  Pastrami</small>
+        <br>
+        <br>
+        <label for="name">Item Name:</label>
+        <input type="text" id="name" th:field="*{name}" required>
+        <br>
+        <br>
+        <label for="price">Price:</label>
+        <input type="number" id="price" th:field="*{price}" step="0.01" required>
+        <br>
+		<br>
+        <label for="groceryType">Grocery Type:</label>
+        <select id="groceryType" th:field="*{groceryType}">
+            <option th:each="groceryType : ${groceryTypes}" th:value="${groceryType}" th:text="${groceryType}">Grocery Type</option>
+        </select>
+        <br>
+        <br>
+        <div>
+			<button name="action" value="additem">Add Grocery Item</button> <button name="action" value="goback" formnovalidate>Go Back</button>
+		</div>
+    	</form>
+    	<div id="successMessage" th:if="${successMessage}" style="color: green;" th:text="${successMessage}"></div>
+  </body>
+</html>
