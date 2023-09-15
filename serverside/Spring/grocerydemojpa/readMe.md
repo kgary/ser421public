@@ -57,12 +57,14 @@ The application will start running at `http://localhost:8080/groceries`.
 
 ## API Endpoints
 
-| Method | Endpoint   | Description                               |
-| ------ | ---------- | ----------------------------------------- |
-| GET    | /groceries | Get all the groceries                     |
-| POST   | /groceries | Selected groceries to proceed to checkout |
-| GET    | /checkout  | Get all the selected groceris             |
-| POST   | /checkout  | Redirected to success page                |
+| Method | Endpoint        | Description                               |
+| ------ | --------------- | ----------------------------------------- |
+| GET    | /groceries      | Get all the groceries                     |
+| POST   | /groceries      | Selected groceries to proceed to checkout |
+| GET    | /addgroceryitem | Get add grocery item form                 |
+| POST   | /addgroceryitem | add grocery item to h2 database           |
+| GET    | /checkout       | Get all the selected groceris             |
+| POST   | /checkout       | Redirected to success page                |
 
 ## Database
 
