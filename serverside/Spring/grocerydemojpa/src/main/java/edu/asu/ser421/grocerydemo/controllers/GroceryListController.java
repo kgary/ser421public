@@ -1,6 +1,5 @@
 package edu.asu.ser421.grocerydemo.controllers;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import edu.asu.ser421.grocerydemo.dto.GroceryFormList;
 import edu.asu.ser421.grocerydemo.model.GroceryItem;
 import edu.asu.ser421.grocerydemo.model.GroceryItem.GroceryType;
-import edu.asu.ser421.grocerydemo.repository.GroceryItemRepository;
 import edu.asu.ser421.grocerydemo.services.GroceryItemService;
 
 @Controller
