@@ -34,13 +34,11 @@ public class AuthorRepository {
         return null;
     }
 
-    public Author save(String firstName, String lastName, List<Book> books) {
+    public Author save(String firstName, String lastName) {
+        List<Book> book = new ArrayList<>();
         int nextId = dummyAuthors.isEmpty() ? 0 : dummyAuthors.get(dummyAuthors.size() - 1).getId() + 1;
-
-        Author newAuthor = new Author(nextId, lastName, firstName, books);
-
+        Author newAuthor = new Author(nextId, firstName, lastName, book);
         dummyAuthors.add(newAuthor);
-
         return newAuthor;
     }
 }
