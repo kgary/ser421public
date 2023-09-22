@@ -1,6 +1,7 @@
 package com.example.graphqlserver.model;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Author {
@@ -8,7 +9,7 @@ public class Author {
     private int id;
     private final String firstName;
 
-    private List<Book> books;
+    private List<Book> books = new ArrayList<>();
 
     public Author(int id, String firstName, String lastName, List<Book> books) {
         this.id = id;

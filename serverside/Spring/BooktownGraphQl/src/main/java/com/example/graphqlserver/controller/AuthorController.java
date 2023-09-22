@@ -34,7 +34,7 @@ public class AuthorController {
 
     @MutationMapping
     public AddAuthorPayload addAuthor(@Argument AddAuthorInput input) {
-        var author = authorRepository.save(input.lastName(), input.firstName(), input.books());
+        var author = authorRepository.save(input.firstName(), input.lastName());
         var out = new AddAuthorPayload(author);
         return out;
     }

@@ -14,7 +14,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query {\n  authors {\n    id\n    lastName\n    firstName\n    books {\n        isbn\n        title\n    }\n  }\n}",
+						"query": "query {\n  authors {\n    id\n    firstName\n    lastName\n    books {\n        isbn\n        title\n        authorId\n    }\n  }\n}",
 						"variables": ""
 					}
 				},
@@ -40,33 +40,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query {\n  authorById(id: 0) {\n    id\n    lastName\n    firstName\n    books {\n        isbn\n        title\n    }\n  }\n}",
-						"variables": ""
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/graphql",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"graphql"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "addAuthor",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "mutation {\n  addAuthor(input: {\n    firstName: \"Subham\"\n    lastName:\"Kumar\"\n  }) {\n    author {\n      id\n      firstName\n      lastName\n    }\n  }\n}",
+						"query": "query {\n  authorById(id: 0) {\n    id\n    firstName\n    lastName\n    books {\n        isbn\n        title\n    }\n  }\n}",
 						"variables": ""
 					}
 				},
@@ -137,6 +111,32 @@
 			"response": []
 		},
 		{
+			"name": "addAuthor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\n  addAuthor(input: {\n    firstName: \"Subham\"\n    lastName:\"Kumar\"\n  }) {\n    author {\n      id\n      firstName\n      lastName\n      books {\n          isbn\n          title\n      }\n    }\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "addBook",
 			"request": {
 				"method": "POST",
@@ -144,7 +144,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation {\n  addBook(input:{\n    isbn: \"2222\"\n    title: \"Test book2\"\n    authorId: 1\n  }) {\n    book {\n      isbn\n      title\n      authorId\n    }\n  }\n}",
+						"query": "mutation {\n  addBook(input:{\n    isbn: \"1111\"\n    title: \"Test book\"\n    authorId: 4\n  }) {\n    book {\n      isbn\n      title\n      authorId\n    }\n  }\n}",
 						"variables": ""
 					}
 				},

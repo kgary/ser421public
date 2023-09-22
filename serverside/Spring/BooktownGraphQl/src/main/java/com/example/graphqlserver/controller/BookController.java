@@ -40,7 +40,7 @@ public class BookController {
     public AddBookPayload addBook(@Argument AddBookInput input) {
         Author author = authorRepository.getAuthorById(input.authorId());
         if (author == null) {
-            throw  new IllegalArgumentException("Author with ID" + input.authorId() + "does not exist");
+            throw  new IllegalArgumentException("Author with ID " + input.authorId() + "does not exist");
         }
         var book = bookRepository.save(input.isbn(), input.title(), input.authorId());
         author.getBooks().add(book);

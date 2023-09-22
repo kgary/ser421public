@@ -14,9 +14,9 @@ public class AuthorRepository {
     private static ArrayList<Author> dummyAuthors = new ArrayList<>();
 
     static {
-        Author author1 = new Author(0, "Frost", "Robert", BookRepository.getBooksByAuthorId(0));
-        Author author2 = new Author(1, "Fowler", "Martin", BookRepository.getBooksByAuthorId(1));
-        Author author3 = new Author(2, "Gary", "Kevin", BookRepository.getBooksByAuthorId(2));
+        Author author1 = new Author(0, "Robert", "Frost", BookRepository.getBooksByAuthorId(0));
+        Author author2 = new Author(1, "Martin", "Fowler", BookRepository.getBooksByAuthorId(1));
+        Author author3 = new Author(2, "Kevin", "Gary", BookRepository.getBooksByAuthorId(2));
 
         dummyAuthors.addAll(Arrays.asList(author1, author2, author3));
     }
@@ -34,13 +34,11 @@ public class AuthorRepository {
         return null;
     }
 
-    public Author save(String firstName, String lastName, List<Book> books) {
+    public Author save(String firstName, String lastName) {
+        List<Book> book = new ArrayList<>();
         int nextId = dummyAuthors.isEmpty() ? 0 : dummyAuthors.get(dummyAuthors.size() - 1).getId() + 1;
-
-        Author newAuthor = new Author(nextId, lastName, firstName, books);
-
+        Author newAuthor = new Author(nextId, firstName, lastName, book);
         dummyAuthors.add(newAuthor);
-
         return newAuthor;
     }
 }
