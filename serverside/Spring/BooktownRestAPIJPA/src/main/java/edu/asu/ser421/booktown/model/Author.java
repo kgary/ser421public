@@ -3,8 +3,18 @@ package edu.asu.ser421.booktown.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
 import edu.asu.ser421.booktown.api.modelhelpers.AuthorRequest;
 
+@Entity
+@Table(name = "authors")
 public class Author {
 	public Author() {
 		
@@ -67,9 +77,16 @@ public class Author {
 		}
 		return rval;
 	}
-
+	
+	@Id
 	private int    __id;
+	
+	@Column(name = "last_name")
 	private String __lastName;
+	
+	@Column(name = "first_name")
 	private String __firstName;
+	
+	@OneToMany(mappedBy = "author", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Book> __books = new ArrayList<Book>();
 }
