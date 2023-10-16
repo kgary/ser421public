@@ -13,6 +13,7 @@ import javax.persistence.Table;
 public class Book {
 	
 	@Id
+	@Column(length = 9)
 	private String isbn;   // always 9
 	
 	@Column(name = "title")

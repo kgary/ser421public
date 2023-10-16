@@ -79,7 +79,7 @@ public class Author {
 	}
 	
 	@Id
-	private int    __id;
+	private Integer __id;
 	
 	@Column(name = "last_name")
 	private String __lastName;
