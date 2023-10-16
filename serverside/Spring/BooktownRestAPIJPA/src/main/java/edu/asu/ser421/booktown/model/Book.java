@@ -1,14 +1,31 @@
 package edu.asu.ser421.booktown.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "books")
 public class Book {
+	
+	@Id
 	private String isbn;   // always 9
+	
+	@Column(name = "title")
 	private String title;
-	private int authorId;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "author_id")
+	private Author authorId;
 	
 	public Book() {	
 	}
 	
-	public Book(String isbn, String t, int aid) {
+	public Book(String isbn, String t, Author aid) {
 		this.isbn = isbn;
 		this.title = t;
 		this.authorId = aid;
@@ -28,10 +45,10 @@ public class Book {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public int getAuthorId() {
+	public Author getAuthorId() {
 		return authorId;
 	}
-	public void setAuthorId(int authorId) {
+	public void setAuthorId(Author authorId) {
 		this.authorId = authorId;
 	}
 }
