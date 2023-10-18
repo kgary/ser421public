@@ -64,10 +64,29 @@ The application will start and by default will be accessible at `http://localhos
 - POST /authors: Create a new author.
 - PUT /authors/{id}: Update an existing author or create a new one.
 - PATCH /authors/{id}: Modify an existing author by ID.
-- DELETE /authors/{id}: Delete an author by ID.
+- DELETE /authors/{id}: Delete an author by ID (associated books will also get deleted).
 - GET /books: Fetch all books.
 - GET /books/{isbn}: Fetch a specific book by ISBN.
 - DELETE /books/{isbn}: Delete a book by ISBN.
+
+## Sample Payload for POST request
+
+```json
+{
+  "lastName": "Doe",
+  "firstName": "John",
+  "books": [
+    {
+      "isbn": "123456780",
+      "title": "Book Title 1"
+    },
+    {
+      "isbn": "987654320",
+      "title": "Book Title 2"
+    }
+  ]
+}
+```
 
 ## Database
 
