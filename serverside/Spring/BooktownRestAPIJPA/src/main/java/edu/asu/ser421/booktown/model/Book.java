@@ -21,15 +21,15 @@ public class Book {
 	
 	@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "author_id")
-	private Author authorId;
+	private Author author;
 	
 	public Book() {	
 	}
 	
-	public Book(String isbn, String t, Author aid) {
+	public Book(String isbn, String t, Author author) {
 		this.isbn = isbn;
 		this.title = t;
-		this.authorId = aid;
+		this.author = author;
 	}
 	
 	public String getIsbn() {
@@ -46,10 +46,13 @@ public class Book {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public Author getAuthorId() {
-		return authorId;
+	public Author getAuthor() {
+		return author;
 	}
-	public void setAuthorId(Author authorId) {
-		this.authorId = authorId;
+	public void setAuthor(Author author) {
+		this.author = author;
+	}
+	public Integer getAuthorId() {
+		return author.getAuthorID();
 	}
 }

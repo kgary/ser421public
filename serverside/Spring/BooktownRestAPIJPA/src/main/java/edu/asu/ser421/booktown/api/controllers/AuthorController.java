@@ -22,12 +22,18 @@ import edu.asu.ser421.booktown.model.Author;
 import edu.asu.ser421.booktown.model.exceptions.BooktownInternalException;
 import edu.asu.ser421.booktown.model.exceptions.BooktownNotImplementedException;
 import edu.asu.ser421.booktown.model.exceptions.BooktownEntityNotFoundException;
-import edu.asu.ser421.booktown.services.BooktownService;
+import edu.asu.ser421.booktown.services.AuthorService;
 
 @RequestMapping("/authors")
 @RestController
 public class AuthorController {
-	private BooktownService __authorService = BooktownService.getInstance();
+	
+	
+	private final AuthorService __authorService;
+	
+	public AuthorController(AuthorService __authorService) {
+        this.__authorService = __authorService;
+    }
 	
 	//first endpoint, return a collection of authors
 	@GetMapping

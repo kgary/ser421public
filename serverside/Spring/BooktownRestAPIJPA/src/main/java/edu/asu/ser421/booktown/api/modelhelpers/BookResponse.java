@@ -3,6 +3,7 @@ package edu.asu.ser421.booktown.api.modelhelpers;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.asu.ser421.booktown.model.Author;
 import edu.asu.ser421.booktown.model.Book;
 
 public class BookResponse {
@@ -49,11 +50,11 @@ public class BookResponse {
 	public void setTitle(String title) {
 		__book.setTitle(title);
 	}
-	public int getAuthorId() {
+	public Integer getAuthorId() {
 		return __book.getAuthorId();
 	}
-	public void setAuthorId(int authorId) {
-		__book.setAuthorId(authorId);
+	public void setAuthor(Author author) {
+		__book.setAuthor(author);
 	}
 	
 	// static utility method

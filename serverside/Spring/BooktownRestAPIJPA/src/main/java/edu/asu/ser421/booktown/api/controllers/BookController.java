@@ -15,23 +15,28 @@ import org.springframework.web.bind.annotation.RestController;
 import edu.asu.ser421.booktown.api.modelhelpers.BookResponse;
 import edu.asu.ser421.booktown.model.exceptions.BooktownInternalException;
 import edu.asu.ser421.booktown.model.exceptions.BooktownEntityNotFoundException;
-import edu.asu.ser421.booktown.services.BooktownService;
+import edu.asu.ser421.booktown.services.BookService;
 
 @RequestMapping("/books")
 @RestController
 public class BookController {
-	private BooktownService __booktownService = BooktownService.getInstance();
+	
+	private BookService __bookService;
+	
+	public BookController(BookService __bookService) {
+        this.__bookService = __bookService;
+    }
 	
 	//first endpoint, return a collection of Books
 	@GetMapping
 	public ResponseEntity<List<BookResponse>> returnBooks() throws Throwable {
-		return new ResponseEntity<List<BookResponse>>(BookResponse.convertBooksToResponses(__booktownService.getBooks()), HttpStatus.OK);
+		return new ResponseEntity<List<BookResponse>>(BookResponse.convertBooksToResponses(__bookService.getBooks()), HttpStatus.OK);
 	}
 	
 	//second endpoint, return a specific Book by id
 	@GetMapping("/{isbn}")
 	public ResponseEntity<BookResponse> returnBook(@PathVariable String isbn) {
-		return new ResponseEntity<BookResponse>(new BookResponse(__booktownService.getBook(isbn)), HttpStatus.OK);
+		return new ResponseEntity<BookResponse>(new BookResponse(__bookService.getBook(isbn)), HttpStatus.OK);
 	}
 	
 	// Book does not support POST, PUT, or PATCH. If you want to fix a Book, delete it and re-add it through Author
@@ -39,7 +44,7 @@ public class BookController {
 	// Sixth endpoint: DELETE
 	@DeleteMapping("/{isbn}")
 	public ResponseEntity<BookResponse> deleteBook(@PathVariable String isbn) {
-		return new ResponseEntity<BookResponse>(new BookResponse(__booktownService.deleteBook(isbn)), HttpStatus.NO_CONTENT);
+		return new ResponseEntity<BookResponse>(new BookResponse(__bookService.deleteBook(isbn)), HttpStatus.NO_CONTENT);
 	}
 	
 	// Class-level Exception Handling methods
