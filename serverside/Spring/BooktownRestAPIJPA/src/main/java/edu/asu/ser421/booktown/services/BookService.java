@@ -3,30 +3,22 @@ package edu.asu.ser421.booktown.services;
 import java.util.List;
 import java.util.Optional;
 
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import edu.asu.ser421.booktown.model.Author;
 import edu.asu.ser421.booktown.model.Book;
 import edu.asu.ser421.booktown.model.exceptions.BooktownEntityNotFoundException;
-import edu.asu.ser421.booktown.repository.AuthorRepository;
 import edu.asu.ser421.booktown.repository.BookRepository;
 
 @Service
 public class BookService {
 	
 	private final BookRepository bookRepository;
-	
-	private AuthorRepository authorRepository;
 
-    public BookService(BookRepository bookRepository, AuthorRepository authorRepository) {
+    public BookService(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
-        this.authorRepository = authorRepository;
     }
     
-//    private static final Logger log = LoggerFactory.getLogger(AuthorService.class);
     
     // Book related
     public List<Book> getBooks() {

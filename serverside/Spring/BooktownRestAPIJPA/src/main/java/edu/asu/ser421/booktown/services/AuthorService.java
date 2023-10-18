@@ -5,7 +5,6 @@ import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,6 +12,7 @@ import edu.asu.ser421.booktown.model.Author;
 import edu.asu.ser421.booktown.model.Book;
 import edu.asu.ser421.booktown.model.exceptions.BooktownEntityNotFoundException;
 import edu.asu.ser421.booktown.model.exceptions.BooktownInternalException;
+import edu.asu.ser421.booktown.model.exceptions.DuplicateIsbnException;
 import edu.asu.ser421.booktown.repository.AuthorRepository;
 import edu.asu.ser421.booktown.repository.BookRepository;
 
@@ -50,6 +50,8 @@ public class AuthorService {
 	        Author rval = new Author();
 	        rval.setLastName(lastName);
 	        rval.setFirstName(firstName);
+	        
+	        validateIsbn(titles);
 	        // Associate each book with the author before saving
 	        for (Book book : titles) {
 	            book.setAuthor(rval);
@@ -72,7 +74,7 @@ public class AuthorService {
 	            throw new BooktownEntityNotFoundException("Author with ID " + author.getAuthorID() + " not found.");
 	        }
 	    } catch (Exception e) {
-//	    	log.error("Error updating author with ID " + author.getAuthorID(), e);
+	    	log.error("Error updating author with ID " + author.getAuthorID(), e);
 	        throw new BooktownInternalException("Internal error while updating author.");
 	    }
 	}
@@ -104,8 +106,7 @@ public class AuthorService {
 	            throw new BooktownEntityNotFoundException("Author with ID " + partialAuthor.getAuthorID() + " not found.");
 	        }
 	    } catch (Exception e) {
-	        // Logging the exception is a better practice than printStackTrace
-//	        log.error("Error modifying author with ID " + partialAuthor.getAuthorID(), e);
+	        log.error("Error modifying author with ID " + partialAuthor.getAuthorID(), e);
 	        throw new BooktownInternalException("Internal error while modifying author.");
 	    }
 	}
@@ -135,6 +136,14 @@ public class AuthorService {
 	    } catch (Exception e) {
 	        log.error("Error deleting author with ID " + id, e);
 	        throw new BooktownInternalException("Internal error while deleting author.");
+	    }
+	}
+	
+	private void validateIsbn(List<Book> books) throws DuplicateIsbnException {
+	    for (Book book : books) {
+	        if (bookRepository.existsById(book.getIsbn())) {
+	            throw new DuplicateIsbnException("ISBN " + book.getIsbn() + " already exists.");
+	        }
 	    }
 	}
 	
