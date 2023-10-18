@@ -14,14 +14,18 @@ import edu.asu.ser421.booktown.model.Book;
 import edu.asu.ser421.booktown.model.exceptions.BooktownEntityNotFoundException;
 import edu.asu.ser421.booktown.model.exceptions.BooktownInternalException;
 import edu.asu.ser421.booktown.repository.AuthorRepository;
+import edu.asu.ser421.booktown.repository.BookRepository;
 
 @Service
 public class AuthorService {
 	
 	private final AuthorRepository authorRepository;
 	
-    public AuthorService(AuthorRepository authorRepository) {
+	private final BookRepository bookRepository;
+	
+    public AuthorService(AuthorRepository authorRepository, BookRepository bookRepository) {
         this.authorRepository = authorRepository;
+        this.bookRepository = bookRepository;
     }
     
     private static final Logger log = LoggerFactory.getLogger(AuthorService.class);
@@ -87,6 +91,10 @@ public class AuthorService {
 	                existingAuthor.setLastName(partialAuthor.getLastName());
 	            }
 	            if (partialAuthor.getBooks() != null) {
+	            	List<Book> titles = partialAuthor.getBooks();
+	            	for (Book book : titles) {
+	    	            book.setAuthor(existingAuthor);
+	    	        }
 	                existingAuthor.setBooks(partialAuthor.getBooks());
 	            }
 
@@ -102,12 +110,22 @@ public class AuthorService {
 	    }
 	}
 	
+	@Transactional
 	public Author deleteAuthor(int id) throws BooktownEntityNotFoundException, BooktownInternalException {
 	    try {
 	        Optional<Author> optionalAuthor = authorRepository.findById(id);
 
 	        if (optionalAuthor.isPresent()) {
 	            Author authorToDelete = optionalAuthor.get();
+	            
+	            // Disassociate books from the author
+	            List<Book> authorBooks = authorToDelete.getBooks();
+	            for (Book book : authorBooks) {
+	                book.setAuthor(null);
+	            }
+	            
+	            bookRepository.deleteAll(authorBooks);
+	            
 	            authorToDelete.getBooks().clear();
 	            authorRepository.delete(authorToDelete);
 	            return authorToDelete;
@@ -115,8 +133,7 @@ public class AuthorService {
 	            throw new BooktownEntityNotFoundException("Author with ID " + id + " not found.");
 	        }
 	    } catch (Exception e) {
-	        // Logging the exception is a better practice than printStackTrace
-//	        log.error("Error deleting author with ID " + id, e);
+	        log.error("Error deleting author with ID " + id, e);
 	        throw new BooktownInternalException("Internal error while deleting author.");
 	    }
 	}
