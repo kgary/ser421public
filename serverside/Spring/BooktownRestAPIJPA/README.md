@@ -71,6 +71,10 @@ The application will start and by default will be accessible at `http://localhos
 
 ## Sample Payload for POST request
 
+Example:
+
+POST: http://localhost:8080/authors
+
 ```json
 {
   "lastName": "Doe",
@@ -83,6 +87,23 @@ The application will start and by default will be accessible at `http://localhos
     {
       "isbn": "987654320",
       "title": "Book Title 2"
+    }
+  ]
+}
+```
+
+## Sample Payload for PATCH request
+
+Example:
+
+PATCH: http://localhost:8080/authors/5
+
+```json
+{
+  "books": [
+    {
+      "isbn": "123456000",
+      "title": "Book Title 3"
     }
   ]
 }
