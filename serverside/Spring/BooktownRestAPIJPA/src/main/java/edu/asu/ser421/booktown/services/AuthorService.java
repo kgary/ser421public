@@ -69,6 +69,10 @@ public class AuthorService {
 	        // Check if the author with the given ID exists in the database
 	        if (authorRepository.existsById(author.getAuthorID())) {
 	            // Save updates the entity if it already exists
+	        	List<Book> titles = author.getBooks();
+            	for (Book book : titles) {
+    	            book.setAuthor(author);
+    	        }
 	            return authorRepository.save(author);
 	        } else {
 	            throw new BooktownEntityNotFoundException("Author with ID " + author.getAuthorID() + " not found.");

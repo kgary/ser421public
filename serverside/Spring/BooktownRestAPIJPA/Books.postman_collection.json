@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "ca784c65-b2f1-409c-a8e4-c9f74d842f95",
+		"name": "Books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31187423"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/books/123556000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/books/123556000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"123556000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/books/333333333",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/books/333333333",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"333333333"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
