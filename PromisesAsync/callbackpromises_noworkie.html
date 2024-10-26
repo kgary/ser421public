@@ -69,7 +69,7 @@ This example taken from https://www.geeksforgeeks.org/what-to-understand-callbac
 	/* This doesn't work - why? */
     const animateAll = (animate) => {
         animateMe(words[0], 1000).then(animateMe(words[1], 1000)).then(animateMe(words[2], 1000));
-    }
+    } 
 	/* This doesn't work either - why? 
     const animateAll = (animate) => {
         return new Promise(function(resolve, reject) {
@@ -79,8 +79,9 @@ This example taken from https://www.geeksforgeeks.org/what-to-understand-callbac
         }).then(function(resolve, reject) {
             animateMe(words[2]);
         });
-    }
-	*/
+    }*/
+	
+	
 /*   Below is the original callbackhll version for reference
 	const animateAll = (animate) => {
 		setTimeout(() => {

@@ -13,7 +13,7 @@ function computeArea2(length, width) {
     return length * width;
 }
 console.log("Area: " + computeArea2(5)); // now we are good
-let rect2;
+var rect2;
 rect2 = {
     length: 15,
     width: 25
@@ -26,8 +26,8 @@ function computeArea3(r) {
 console.log("Area: " + computeArea3(rect2)); // good
 // RETURN TYPING
 // you can implicitly return type, in fact we did with computeArea
-let x = computeArea(5, 7);
-let y = computeArea(5, 7); // oopsey!
+var x = computeArea(5, 7);
+var y = computeArea(5, 7); // oopsey!
 // I personally do not like implicit typing, paticularly when it comes to return values
 // explicit is better, and with parameter types gives us a classic signature
 function computeArea4(length, width) {
@@ -38,7 +38,7 @@ function computeArea5(length, width) {
 } // not fine
 // so we have arrow syntax and an identifier computeAreaType now, so
 function timedCompute(l, w, ca) {
-    setTimeout(() => {
+    setTimeout(function () {
         console.log("timedCompute: " + ca(l, w));
     }, 5000);
 }
@@ -49,15 +49,15 @@ timedCompute(11, 13, computeArea3); // nope, does not know what a rectangle is
 timedCompute(13, 15, computeArea4); // explicit function type signatures fine too if they match
 // we can also do it inline
 function timedCompute2(l, w, ca2) {
-    setTimeout(() => {
+    setTimeout(function () {
         console.log("timedCompute2: " + ca2(l, w));
     }, 2000);
 }
 timedCompute2(7, 9, computeArea);
 // I can send in a closure too
-timedCompute2(1, 3, (x, y) => { return x + y; });
+timedCompute2(1, 3, function (x, y) { return x + y; });
 // but not one that doesn't match
-timedCompute2(1, 3, (x, y) => { return x + y; });
+timedCompute2(1, 3, function (x, y) { return x + y; });
 // Functions in Javascript do not have to have a return, or could have an empty one,
 // in which case undefined is the value of the expression. In TS we can use void to express this
 // Note there is also a "never" you can use which means no return or thrown exception at all

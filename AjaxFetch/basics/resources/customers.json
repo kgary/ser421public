@@ -3,14 +3,14 @@
     "rating": "vip",
     "customer": [
       {
-        "id": "a1234",
-        "firstName": "Rafael",
-        "lastName": "Nadal"
+        "id": "a4321",
+        "firstName": "Bjorn",
+        "lastName": "Borg"
       },
       {
-        "id": "a1235",
-        "firstName": "Roger",
-        "lastName": "Federer"
+        "id": "a5321",
+        "firstName": "John",
+        "lastName": "McEnroe"
       }
     ]
   }

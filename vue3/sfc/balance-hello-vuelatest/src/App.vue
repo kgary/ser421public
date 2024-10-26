@@ -20,7 +20,7 @@ export default {
   <header>
     <div class="wrapper">
       <input v-model="fname">
-      <HelloWorld :name="this.fname" /> you have {{bal}} dollars 
+      <HelloWorld v-bind:name="this.fname" /> you have {{bal}} dollars 
       <Balance @new-bal="(v) => this.bal=v" />
     </div>
   </header>

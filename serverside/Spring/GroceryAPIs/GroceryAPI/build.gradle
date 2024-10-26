@@ -6,7 +6,7 @@ plugins {
 
 group = 'edu.asu.ser421.rest.grocery'
 version = '0.0.1'
-sourceCompatibility = '17'
+sourceCompatibility = '21'
 
 repositories {
 	mavenCentral()
