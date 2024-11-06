@@ -13,9 +13,11 @@ import java.util.Random;
 
 @SuppressWarnings("serial")
 public class PlayerServlet extends HttpServlet {
-    String[] suspects = {"Miss Scarlet", "Professor Plum", "Mrs. Peacock", "Reverend Green", "Colonel Mustard", "Mrs. White"};
-    String[] rooms = {"Kitchen", "Ballroom", "Conservatory", "Dining room", "Lounge", "Hall", "Study", "Library", "Billiard Room"};
-    String[] weapons = {"Candlestick", "Dagger", "Lead pipe", "Revolver", "Rope", "Spanner"};
+    String[] suspects = { "Miss Scarlet", "Professor Plum", "Mrs. Peacock", "Reverend Green", "Colonel Mustard",
+            "Mrs. White" };
+    String[] rooms = { "Kitchen", "Ballroom", "Conservatory", "Dining room", "Lounge", "Hall", "Study", "Library",
+            "Billiard Room" };
+    String[] weapons = { "Candlestick", "Dagger", "Lead pipe", "Revolver", "Rope", "Spanner" };
 
     List<String> playerRooms;
     List<String> playerSuspects;
@@ -27,33 +29,34 @@ public class PlayerServlet extends HttpServlet {
 
     String[] winningSecret = new String[3];
 
-    // Use doGet when game is ongoing. Redirect user to this servlet by a GET request after the user has took turn to
+    // Use doGet when game is ongoing. Redirect user to this servlet by a GET
+    // request after the user has took turn to
     // guess
     @SuppressWarnings("unchecked")
-	@Override
+    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession(false);
         PrintWriter out = resp.getWriter();
         resp.setContentType("text/html");
         out.print("<html><body>");
         out.print("<span>");
-        for (String s: suspects)
+        for (String s : suspects)
             out.print(s + ",");
         out.print("</span>");
         out.print("</br>");
         out.print("<span>");
-        for(String s: rooms)
+        for (String s : rooms)
             out.print(s + ",");
         out.print("</span>");
         out.print("</br>");
         out.print("<span>");
-        for(String s: weapons)
+        for (String s : weapons)
             out.print(s + ",");
         out.print("</span>");
         out.print("</br>");
         out.print("</br>");
 
-        out.print("<p>Your Guess " + (String)session.getAttribute("playerName") + ":</p>");
+        out.print("<p>Your Guess " + (String) session.getAttribute("playerName") + ":</p>");
 
         // Form for playing the game with select widgets
         out.print("<form method=\"POST\" action=\"guess\">");
@@ -61,19 +64,19 @@ public class PlayerServlet extends HttpServlet {
         playerRooms = (ArrayList<String>) session.getAttribute("playerRoomsList");
         playerSuspects = (ArrayList<String>) session.getAttribute("playerSuspectsList");
         playerWeapons = (ArrayList<String>) session.getAttribute("playerWeaponsList");
-        for (String s: playerSuspects){
+        for (String s : playerSuspects) {
             out.print("<option value=\"" + s + "\">" + s + "</option>");
         }
         out.print("</select>");
         out.print("</br>");
         out.print("<select id=\"room\" name=\"room\">");
-        for (String s: playerRooms){
+        for (String s : playerRooms) {
             out.print("<option value=\"" + s + "\">" + s + "</option>");
         }
         out.print("</select>");
         out.print("</br>");
         out.print("<select id=\"weapon\" name=\"weapon\">");
-        for (String s: playerWeapons){
+        for (String s : playerWeapons) {
             out.print("<option value=\"" + s + "\">" + s + "</option>");
         }
         out.print("</select>");
@@ -81,21 +84,24 @@ public class PlayerServlet extends HttpServlet {
         out.print("<input type=\"submit\" value=\"Submit\"/>");
         out.print("</form>");
 
-        out.close();    }
+        out.close();
+    }
 
-
-    // Use doPost to start a new game. When user enters name, submit the form to post and create new session
+    // Use doPost to start a new game. When user enters name, submit the form to
+    // post and create new session
     @SuppressWarnings("unchecked")
-	@Override
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         // Creates a new session if one does not exist
         HttpSession session = req.getSession(true);
         session.setAttribute("playerName", req.getParameter("playerName"));
 
-        // If a new session, generate player's cards and computer's cards and add them to the current session
-        // Additionally, randomly generate a winning secret and add that to the current session
-        if (session.isNew()){
+        // If a new session, generate player's cards and computer's cards and add them
+        // to the current session
+        // Additionally, randomly generate a winning secret and add that to the current
+        // session
+        if (session.isNew()) {
             playerRooms = new ArrayList<>();
             playerSuspects = new ArrayList<>();
             playerWeapons = new ArrayList<>();
@@ -109,34 +115,33 @@ public class PlayerServlet extends HttpServlet {
                     weapons[r.nextInt(weapons.length)],
                     rooms[r.nextInt(rooms.length)]);
 
-            for(int i = 0;i<suspects.length;i++){
-                if(winningSecret.suspect.equals(suspects[i])){
+            for (int i = 0; i < suspects.length; i++) {
+                if (winningSecret.suspect.equals(suspects[i])) {
                     playerSuspects.add(suspects[i]);
                     computerSuspects.add(suspects[i]);
-                } else if(i%2 == 0)
+                } else if (i % 2 == 0)
                     playerSuspects.add(suspects[i]);
                 else
                     computerSuspects.add(suspects[i]);
             }
-            for(int i = 0;i<rooms.length;i++){
-                if(winningSecret.room.equals(rooms[i])){
+            for (int i = 0; i < rooms.length; i++) {
+                if (winningSecret.room.equals(rooms[i])) {
                     playerRooms.add(rooms[i]);
                     computerRooms.add(rooms[i]);
-                }else if(i%2 == 0)
+                } else if (i % 2 == 0)
                     playerRooms.add(rooms[i]);
                 else
                     computerRooms.add(rooms[i]);
             }
-            for(int i = 0;i<weapons.length;i++){
-                if(winningSecret.weapon.equals(weapons[i])){
+            for (int i = 0; i < weapons.length; i++) {
+                if (winningSecret.weapon.equals(weapons[i])) {
                     playerWeapons.add(weapons[i]);
                     computerWeapons.add(weapons[i]);
-                }else if(i%2 == 0)
+                } else if (i % 2 == 0)
                     playerWeapons.add(weapons[i]);
                 else
                     playerWeapons.add(weapons[i]);
             }
-
 
             System.out.println("Winning Secret " + winningSecret);
             session.setAttribute("playerRoomsList", playerRooms);
@@ -152,42 +157,42 @@ public class PlayerServlet extends HttpServlet {
 
         out.print("<html><body>");
         out.print("<span>");
-        for (String s: suspects)
+        for (String s : suspects)
             out.print(s + ",");
         out.print("</span>");
         out.print("</br>");
         out.print("<span>");
-        for(String s: rooms)
+        for (String s : rooms)
             out.print(s + ",");
         out.print("</span>");
         out.print("</br>");
         out.print("<span>");
-        for(String s: weapons)
+        for (String s : weapons)
             out.print(s + ",");
         out.print("</span>");
         out.print("</br>");
         out.print("</br>");
 
-        out.print("<p>Your Guess " + (String)session.getAttribute("playerName") + ":</p>");
-        
+        out.print("<p>Your Guess " + (String) session.getAttribute("playerName") + ":</p>");
+
         out.print("<form method=\"POST\" action=\"guess\">");
         out.print("<select id=\"suspect\" name=\"suspect\">");
         playerRooms = (ArrayList<String>) session.getAttribute("playerRoomsList");
         playerSuspects = (ArrayList<String>) session.getAttribute("playerSuspectsList");
         playerWeapons = (ArrayList<String>) session.getAttribute("playerWeaponsList");
-        for (String s: playerSuspects){
+        for (String s : playerSuspects) {
             out.print("<option value=\"" + s + "\">" + s + "</option>");
         }
         out.print("</select>");
         out.print("</br>");
         out.print("<select id=\"room\" name=\"room\">");
-        for (String s: playerRooms){
+        for (String s : playerRooms) {
             out.print("<option value=\"" + s + "\">" + s + "</option>");
         }
         out.print("</select>");
         out.print("</br>");
         out.print("<select id=\"weapon\" name=\"weapon\">");
-        for (String s: playerWeapons){
+        for (String s : playerWeapons) {
             out.print("<option value=\"" + s + "\">" + s + "</option>");
         }
         out.print("</select>");
