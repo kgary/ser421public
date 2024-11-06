@@ -9,9 +9,8 @@ age : 39
 /* 
   Uncomment this one to see a typescript compilation error
   Also note in IDEs like VSCode you will get error highlighting  
-
+*/
 const p2: Person = {
   name : "Robert",
   age : "thirty-nine"
 } 
-*/

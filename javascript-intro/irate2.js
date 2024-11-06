@@ -8,7 +8,6 @@ function Irate(cap,rt) {
     this.computeYield = function(years, rate) {
         return this.cap * this.yieldRate(years, rate);
     };
-
     this.yieldRate = function(years, rate) {
         if (years <= 1) {
             return 1 + rate;
@@ -20,8 +19,8 @@ function Irate(cap,rt) {
     };
 }
 
-let ir = new Irate(10000, 0.1);
-console.log(ir.constructor.name);
+let ir3 = new Irate(10000, 0.1);
+console.log(ir3.constructor.name);
 
-console.log("yield: " + ir.computeYield(4, 0.1));
-console.log("yield rate: " + ir.yieldRate(4, 0.1));
+console.log("yield: " + ir3.computeYield(4, 0.1));
+console.log("yield rate: " + ir3.yieldRate(4, 0.1));
